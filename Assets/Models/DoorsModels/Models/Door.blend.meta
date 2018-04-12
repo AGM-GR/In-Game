@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 57217ca74018b5a4980f7a8b6b7b9ad2
+timeCreated: 1523559894
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bisagra
+    100002: Bisagra_001
+    100004: Bisagra_002
+    100006: Bisagra_003
+    100008: Cerradura
+    100010: //RootNode
+    100012: EmbellecedorPomo
+    100014: Pomo
+    100016: Puerta
+    400000: Bisagra
+    400002: Bisagra_001
+    400004: Bisagra_002
+    400006: Bisagra_003
+    400008: Cerradura
+    400010: //RootNode
+    400012: EmbellecedorPomo
+    400014: Pomo
+    400016: Puerta
+    2100000: Marco__TexturaMarco_png
+    2100002: Pomo__TexturaPomo_png
+    2100004: Puerta__TexturaPuerta_png
+    2100006: Embellecedor__TexturaEmbellecedor_png
+    2100008: Cerradura__TexturaCerradura_png
+    2100010: Bisagra__TexturaBisagra_png
+    2100012: Bisagra_003__TexturaBisagra_png_003
+    2100014: Bisagra_005__TexturaBisagra_png_005
+    2100016: Bisagra_004__TexturaBisagra_png_004
+    2300000: Bisagra
+    2300002: Bisagra_001
+    2300004: Bisagra_002
+    2300006: Bisagra_003
+    2300008: Cerradura
+    2300010: //RootNode
+    2300012: EmbellecedorPomo
+    2300014: Pomo
+    2300016: Puerta
+    3300000: Bisagra
+    3300002: Bisagra_001
+    3300004: Bisagra_002
+    3300006: Bisagra_003
+    3300008: Cerradura
+    3300010: //RootNode
+    3300012: EmbellecedorPomo
+    3300014: Pomo
+    3300016: Puerta
+    4300000: Marco
+    4300002: Pomo
+    4300004: Puerta
+    4300006: EmbellecedorPomo
+    4300008: Cerradura
+    4300010: Bisagra
+    4300012: Bisagra_001
+    4300014: Bisagra_003
+    4300016: Bisagra_002
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
