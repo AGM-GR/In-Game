@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 65655367731979296}
   - component: {fileID: 54695919665819800}
   - component: {fileID: 114889074625741856}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LeftHandController
   m_TagString: Untagged
   m_Icon: {fileID: 0}

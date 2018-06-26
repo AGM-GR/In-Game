@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 65357952736731204}
   - component: {fileID: 54973479734735244}
   - component: {fileID: 114612015268751806}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RightHandController
   m_TagString: Untagged
   m_Icon: {fileID: 0}

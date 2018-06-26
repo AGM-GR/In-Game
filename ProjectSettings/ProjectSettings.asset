@@ -589,6 +589,7 @@ PlayerSettings:
       InternetClient: False
       InternetClientServer: False
       PrivateNetworkClientServer: False
+      SpatialPerception: True
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
