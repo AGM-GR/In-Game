@@ -7,7 +7,7 @@ public class Door : MonoBehaviour {
 	public GameObject leaf;
 	public GameObject handle;
 
-	public float openingAngle = 40f;
+	public float openingAngle = 90f;
 
 	public bool startLocked = true;
 
