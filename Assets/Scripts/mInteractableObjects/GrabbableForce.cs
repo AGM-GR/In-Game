@@ -37,7 +37,7 @@ public class GrabbableForce : BaseGrabbable {
 	protected override void DetachFromGrabber(BaseGrabber grabber) {
 		base.DetachFromGrabber(grabber);
 		if (GrabState == GrabStateEnum.Inactive)
-			rb.AddForce (Vector3.zero);
+			rb.velocity = Vector2.zero;
 	}
 
 	void FixedUpdate() {
@@ -47,7 +47,8 @@ public class GrabbableForce : BaseGrabbable {
 			float distance = forceDirection.sqrMagnitude;
 			forceDirection = forceDirection.normalized;
 
-			rb.AddForce (forceDirection * force);
+			//rb.AddForce (forceDirection * force);
+			rb.velocity = forceDirection * distance * force;
 		}
 	}
 

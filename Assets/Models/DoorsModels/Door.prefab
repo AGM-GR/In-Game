@@ -196,8 +196,9 @@ GameObject:
   - component: {fileID: 65736554090057080}
   - component: {fileID: 54837327653364168}
   - component: {fileID: 59581166864104388}
-  - component: {fileID: 114321974747957628}
   - component: {fileID: 114302509322366574}
+  - component: {fileID: 114455222424522402}
+  - component: {fileID: 114487723866365778}
   m_Layer: 8
   m_Name: Pomo
   m_TagString: Untagged
@@ -357,8 +358,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1289752950776186}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 2.62}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4725700316640778}
@@ -901,26 +902,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabSpot: {fileID: 4530496084578644}
   grabStyle: 0
-  force: 100
+  force: 1000
   minDistance: 0
   maxDistance: 0
---- !u!114 &114321974747957628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1999284016974294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f6fd86af1fe2247802734a0e9c3553, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorOnContactSingle: {r: 0, g: 0, b: 1, a: 1}
-  colorOnContactMulti: {r: 0, g: 1, b: 1, a: 1}
-  colorOnGrabSingle: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  colorOnGrabMulti: {r: 1, g: 0, b: 0, a: 1}
-  targetRenderer: {fileID: 0}
-  grabbable: {fileID: 0}
 --- !u!114 &114395884621188300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -936,3 +920,40 @@ MonoBehaviour:
   handle: {fileID: 1999284016974294}
   openingAngle: 80
   startLocked: 1
+--- !u!114 &114455222424522402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999284016974294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48de4710a8232714eb582efdc2b80bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorOnContactSingle: {r: 0, g: 0, b: 1, a: 1}
+  colorOnContactMulti: {r: 0, g: 1, b: 1, a: 1}
+  colorOnGrabSingle: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorOnGrabMulti: {r: 1, g: 0, b: 0, a: 1}
+  outlineMode: 3
+  outlineWidth: 3
+  targetOutlineObject: {fileID: 0}
+  outlineAllChildrens: 0
+  grabbable: {fileID: 0}
+--- !u!114 &114487723866365778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999284016974294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
