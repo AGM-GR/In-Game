@@ -7,7 +7,7 @@ public class Door : MonoBehaviour {
 	public GameObject leaf;
 	public GameObject handle;
 
-	public float openingAngle = 90f;
+	public float openingAngle = 80f;
 
 	public bool startLocked = true;
 
@@ -38,7 +38,7 @@ public class Door : MonoBehaviour {
 
 	void Update () {
 
-		if (Mathf.Abs(handleJoint.angle) >= Mathf.Abs(40))
+		if (Mathf.Abs(handleJoint.angle) >= Mathf.Abs(openingAngle))
 			UnlockDoor ();
 	}
 }
