@@ -14,6 +14,8 @@ ModelImporter:
     100012: EmbellecedorPomo
     100014: Pomo
     100016: Puerta
+    100018: PomoFrontal
+    100020: PomoTrasero
     400000: Bisagra
     400002: Bisagra_001
     400004: Bisagra_002
@@ -23,6 +25,8 @@ ModelImporter:
     400012: EmbellecedorPomo
     400014: Pomo
     400016: Puerta
+    400018: PomoFrontal
+    400020: PomoTrasero
     2100000: Marco__TexturaMarco_png
     2100002: Pomo__TexturaPomo_png
     2100004: Puerta__TexturaPuerta_png
@@ -41,6 +45,8 @@ ModelImporter:
     2300012: EmbellecedorPomo
     2300014: Pomo
     2300016: Puerta
+    2300018: PomoFrontal
+    2300020: PomoTrasero
     3300000: Bisagra
     3300002: Bisagra_001
     3300004: Bisagra_002
@@ -50,6 +56,8 @@ ModelImporter:
     3300012: EmbellecedorPomo
     3300014: Pomo
     3300016: Puerta
+    3300018: PomoFrontal
+    3300020: PomoTrasero
     4300000: Marco
     4300002: Pomo
     4300004: Puerta
@@ -59,6 +67,8 @@ ModelImporter:
     4300012: Bisagra_001
     4300014: Bisagra_003
     4300016: Bisagra_002
+    4300018: PomoFrontal
+    4300020: PomoTrasero
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
