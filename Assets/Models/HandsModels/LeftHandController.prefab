@@ -4104,5 +4104,5 @@ MonoBehaviour:
   handedness: 1
   grabbableLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   pressType: 3

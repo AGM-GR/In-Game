@@ -143,5 +143,10 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             return true;
         }
 #endif
+
+		//Función propia, finaliza el agarre.
+		public void FinishGrab () {
+			GrabEnd ();
+		}
     }
 }

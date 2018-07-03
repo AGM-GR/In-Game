@@ -29,7 +29,7 @@ public class GrabbableColorOutliner : MonoBehaviour {
 	private Outline targetOutlineObject;
 
 	[SerializeField]
-	private bool outlineAllChildrens;
+	private bool outlineAllChildrens = false;
 
 	[SerializeField]
 	private BaseGrabbable grabbable;
