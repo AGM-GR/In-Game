@@ -53,8 +53,7 @@ public class GrabbableRotation : BaseGrabbable {
 		this.grabber = null;
 	}
 
-	protected override void Update() {
-		base.Update ();
+	void FixedUpdate() {
 		if (grabber != null) {
 
 			Vector3 dest = grabberTransform.position - RotateTransform.position;
@@ -86,7 +85,7 @@ public class GrabbableRotation : BaseGrabbable {
 	}
 
 	public float GetAngle() {
-		return Vector2.Angle (forwardDirection, grabberTransform.position - RotateTransform.position);
+		return Vector3.SignedAngle (forwardDirection, grabberTransform.position - RotateTransform.position, rotationAxis);
 	}
 
 	void OnDrawGizmosSelected() {

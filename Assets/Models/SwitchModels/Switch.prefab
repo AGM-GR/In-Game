@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 33523593988953810}
   - component: {fileID: 23236724719492920}
   - component: {fileID: 65804527597367988}
-  - component: {fileID: 54637118822632736}
-  - component: {fileID: 138386163072227422}
-  - component: {fileID: 114981221447610064}
+  - component: {fileID: 114265292760419112}
   - component: {fileID: 114154096145956896}
   - component: {fileID: 114405431507345560}
   m_Layer: 0
@@ -128,8 +126,6 @@ GameObject:
   - component: {fileID: 4880446423380010}
   - component: {fileID: 33973753442553034}
   - component: {fileID: 23439662586269560}
-  - component: {fileID: 54905195436831074}
-  - component: {fileID: 59744945208550990}
   m_Layer: 0
   m_Name: Bisagra
   m_TagString: Untagged
@@ -251,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1042244385386084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.281, y: 0.9, z: -0.547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4079667746248608}
@@ -697,70 +693,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1538032219359714}
   m_Mesh: {fileID: 4300012, guid: b0d330f7ddf76af40b62db16c17115b8, type: 3}
---- !u!54 &54637118822632736
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039038216633148}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!54 &54905195436831074
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1538032219359714}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!59 &59744945208550990
-HingeJoint:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1538032219359714}
-  m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2.281, y: 0.97999996, z: -0.547}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: -179
-    max: -2
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!65 &65468111100885332
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -812,11 +744,31 @@ MonoBehaviour:
   colorOnContactMulti: {r: 0, g: 1, b: 1, a: 1}
   colorOnGrabSingle: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   colorOnGrabMulti: {r: 1, g: 0, b: 0, a: 1}
-  outlineMode: 3
-  outlineWidth: 3
+  outlineMode: 0
+  outlineWidth: 6
   targetOutlineObject: {fileID: 0}
   outlineAllChildrens: 0
   grabbable: {fileID: 0}
+--- !u!114 &114265292760419112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1039038216633148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8188a932236d664a94d5bf94185bc91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabSpot: {fileID: 0}
+  grabStyle: 0
+  objectToRotate: {fileID: 4880446423380010}
+  maxDistance: 0.2
+  forwardDirection: {x: 1, y: 0, z: 0}
+  rotationAxis: {x: 0, y: 0, z: 1}
+  limits: 1
+  minAngle: 2
+  maxAngle: 178
 --- !u!114 &114405431507345560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -834,32 +786,3 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &114981221447610064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039038216633148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c5e1b5af2a8f04ebf73838bed7bacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabSpot: {fileID: 0}
-  grabStyle: 0
-  force: 100
-  minDistance: 0
-  maxDistance: 0
---- !u!138 &138386163072227422
-FixedJoint:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039038216633148}
-  m_ConnectedBody: {fileID: 54905195436831074}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
