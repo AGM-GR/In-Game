@@ -5,9 +5,8 @@ using UnityEngine;
 public class Door : MonoBehaviour {
 
 	[Header("Door Elements")]
-	public Rigidbody leaf;
-	public HingeJoint doorHinge;
-	public List<HingeJoint> handles = new List<HingeJoint>();
+	public GrabHingeRotation doorHinge;
+	public List<GrabbableRotation> handles = new List<GrabbableRotation>();
 
 	[Header("Key Lock")]
 	[SerializeField]
@@ -18,37 +17,41 @@ public class Door : MonoBehaviour {
 	private float openingAngle = 40f;
 	private float clossingAngle = 2f;
 
+	void Awake() {
+		if (doorHinge == null)
+			doorHinge = GetComponentInChildren<GrabHingeRotation> ();
+	}
+
 	void Start () {
-		
 		LockDoor ();
 	}
 
 	void Update () {
 
 		if (!locked) {
-			if (handles.Exists (handle => Mathf.Abs (handle.angle) >= Mathf.Abs (openingAngle)))
+			if (handles.Exists (handle => Mathf.Abs (handle.GetAngle()) >= Mathf.Abs (openingAngle)))
 				OpenDoor ();
-			else if (Mathf.Abs (doorHinge.angle) <= clossingAngle)
+			else if (Mathf.Abs (doorHinge.GetAngle()) <= clossingAngle)
 				CloseDoor ();
 		}
 	}
 
 
 	private void OpenDoor () {
-		leaf.isKinematic = false;
+		doorHinge.enableRotation = true;
 	}
 
 	private void CloseDoor () {
-		leaf.isKinematic = true;
+		doorHinge.enableRotation = false;
 	}
 
 
-	private void UnlockDoor () {
+	public void UnlockDoor () {
 
 		locked = false;
 	}
 
-	private void LockDoor () {
+	public void LockDoor () {
 
 		locked = true;
 	}

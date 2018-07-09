@@ -16,8 +16,8 @@ TagManager:
   - Grabbable
   - ControllerCollisionable
   - Interactable
-  - 
-  - 
+  - Particles
+  - IgnoreParticles
   - 
   - 
   - 

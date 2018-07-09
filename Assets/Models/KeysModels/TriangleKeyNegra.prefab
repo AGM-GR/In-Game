@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33562984054725848}
   - component: {fileID: 23310823201559088}
   - component: {fileID: 114156004299388596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TriangleKeyModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33103600030119394}
   - component: {fileID: 23742719364086964}
   - component: {fileID: 114052700187377958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Llave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 65413875255804998}
   - component: {fileID: 114699283862888776}
   - component: {fileID: 114250498726773350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TriangleKeyNegra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 33029650154090722}
   - component: {fileID: 23173774760076026}
   - component: {fileID: 114881065574802612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mango
   m_TagString: Untagged
   m_Icon: {fileID: 0}

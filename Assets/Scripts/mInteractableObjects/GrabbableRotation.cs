@@ -12,12 +12,15 @@ public class GrabbableRotation : BaseGrabbable {
 
 	[Header("Rotation Restriction")]
 	[SerializeField]
+	protected Transform parentLocalDirectionJoin;
+	[SerializeField]
 	protected Vector3 forwardDirection = Vector3.forward;
 	[SerializeField]
 	protected Vector3 rotationAxis = Vector3.up;
 
+	[Header("Rotation Limits")]
 	[SerializeField]
-	protected bool limits = false;
+	protected bool useLimits = false;
 	[SerializeField]
 	protected int minAngle = 0;
 	[SerializeField]
@@ -26,20 +29,34 @@ public class GrabbableRotation : BaseGrabbable {
 	private Grabber grabber;
 	private Transform grabberTransform;
 	private Vector3 initialrotation;
-	private Vector3 valuesMultiplier;
+	private Vector3 dest;
 
 	private Transform RotateTransform {
-		get { 
+		get {
 			return objectToRotate != null ? objectToRotate : transform; 
+		}
+	}
+
+	private Vector3 GlobalForwardDirection {
+		get { 
+			if (parentLocalDirectionJoin != null)
+				return (parentLocalDirectionJoin.rotation * forwardDirection);
+			return forwardDirection;
+		}
+	}
+
+	private Vector3 GlobalRotationAxis {
+		get { 
+			if (parentLocalDirectionJoin != null)
+				return parentLocalDirectionJoin.rotation * rotationAxis;
+			return rotationAxis;
 		}
 	}
 
 	void Awake() {
 		grabber = null;
 		initialrotation = RotateTransform.rotation.eulerAngles;
-		valuesMultiplier = new Vector3 (1 - rotationAxis.normalized.x, 
-										1 - rotationAxis.normalized.y, 
-										1 - rotationAxis.normalized.z);
+		dest = GlobalForwardDirection;
 	}
 
 	protected override void AttachToGrabber(BaseGrabber grabber) {
@@ -56,28 +73,16 @@ public class GrabbableRotation : BaseGrabbable {
 	void FixedUpdate() {
 		if (grabber != null) {
 
-			Vector3 dest = grabberTransform.position - RotateTransform.position;
+			dest = grabberTransform.position - RotateTransform.position;
 			float distance = (grabberTransform.position - GrabPoint).sqrMagnitude;
+			//Se proyecta el punto de agarre en el plano perpendicular al eje de giro para obtener el vector de destino
+			dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
 
 			if (distance > maxDistance)
 				grabber.FinishGrab ();
-			else if (!limits || (GetAngle() >= minAngle && GetAngle() <= maxAngle)){
-
-				//En el editor de Unity actualiza el eje de rotación si este se modifica
-				#if UNITY_EDITOR
-				if (Application.isPlaying)
-					valuesMultiplier = new Vector3 (1 - rotationAxis.normalized.x, 
-													1 - rotationAxis.normalized.y, 
-													1 - rotationAxis.normalized.z);
-				#endif
-
-				//Calcula el punto objetivo teniendo el cuenta el eje ce rotación
-				dest = new Vector3 (dest.x * valuesMultiplier.x, 
-									dest.y * valuesMultiplier.y, 
-									dest.z * valuesMultiplier.z);
-
+			else if (!useLimits || (GetAngle() >= minAngle && GetAngle() <= maxAngle)){
 				//Rota el object desde la posición indicada como forward hasta el vector de destino
-				RotateTransform.rotation = Quaternion.FromToRotation (forwardDirection.normalized, dest.normalized);
+				RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized);
 				//Añade la rotación del object inicial
 				RotateTransform.Rotate (initialrotation);
 			}
@@ -85,7 +90,12 @@ public class GrabbableRotation : BaseGrabbable {
 	}
 
 	public float GetAngle() {
-		return Vector3.SignedAngle (forwardDirection, grabberTransform.position - RotateTransform.position, rotationAxis);
+		return Vector3.SignedAngle (GlobalForwardDirection, dest, GlobalRotationAxis);
+	}
+
+	public void FinishGrab() {
+		if (grabber != null)
+			grabber.FinishGrab ();
 	}
 
 	void OnDrawGizmosSelected() {
@@ -100,9 +110,9 @@ public class GrabbableRotation : BaseGrabbable {
 
 		//Forward
 		Gizmos.color = Color.yellow;
-		Gizmos.DrawRay(RotateTransform.position, forwardDirection / 4);
+		Gizmos.DrawRay(RotateTransform.position, GlobalForwardDirection /4);
 		//Eje de rotación
 		Gizmos.color = Color.magenta;
-		Gizmos.DrawLine(RotateTransform.position - (rotationAxis / 10), RotateTransform.position + (rotationAxis / 10));
+		Gizmos.DrawLine(RotateTransform.position, RotateTransform.position + (GlobalRotationAxis / 10));
 	}
 }
