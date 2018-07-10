@@ -29,10 +29,14 @@ public class GrabHingeRotation : MonoBehaviour {
 	protected int maxAngle = 0;
 
 	private GrabStateEnum grabState;
+	private GrabStateEnum lastGrabState;
+	private Quaternion rotationOffset;
+	private float angleOffset;
 	private Transform grabberTransform;
 	private Quaternion initialrotation;
 	private Quaternion worldRotation;
 	private Vector3 dest;
+	private Vector3 lastDest;
 
 	private Transform RotateTransform {
 		get {
@@ -60,6 +64,10 @@ public class GrabHingeRotation : MonoBehaviour {
 		grabState = GrabStateEnum.Inactive;
 		initialrotation = RotateTransform.localRotation;
 		dest = GlobalForwardDirection;
+		lastDest = GlobalForwardDirection;
+		lastGrabState = GrabStateEnum.Inactive;
+		rotationOffset = Quaternion.identity;
+		angleOffset = 0f;
 
 		if (grabbables.Count == 0)
 			grabbables.Add(GetComponent<BaseGrabbable> ());
@@ -77,27 +85,51 @@ public class GrabHingeRotation : MonoBehaviour {
 		grabState = baseGrab.GrabState;
 	}
 
-	void FixedUpdate() {
-		Debug.Log ("State: " + grabState + " Angle: " + GetAngle());
-		if (grabState != GrabStateEnum.Inactive && enableRotation) {
-			dest = grabberTransform.position - RotateTransform.position;
-			//Se proyecta el punto de agarre en el plano perpendicular al eje de giro para obtener el vector de destino
-			dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
+	void Update() {
+		
+		if (grabState != GrabStateEnum.Inactive) {
+			//En cuanto agarra el objeto calcula el offset de rotación con la posición inicial del grabber
+			if (lastGrabState == GrabStateEnum.Inactive) {
+				dest = grabberTransform.position - RotateTransform.position;
+				dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
+				rotationOffset = Quaternion.FromToRotation (lastDest.normalized, dest.normalized);
+				angleOffset = Vector3.SignedAngle (lastDest, dest, GlobalRotationAxis);
+				dest = lastDest;
+			}
 
-			if (!useLimits || (GetAngle() >= minAngle && GetAngle() <= maxAngle)){
-				//Devuelve el objeto a su rotación inicial local y obtiene la rotación global de este
-				RotateTransform.localRotation = initialrotation;
-				worldRotation = RotateTransform.rotation;
-				//Rota el object desde la posición indicada como forward hasta el vector de destino
-				RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized);
-				//Añade la rotación del object global inicial
-				RotateTransform.Rotate(worldRotation.eulerAngles);
+			if (enableRotation) {
+				dest = grabberTransform.position - RotateTransform.position;
+				//Se proyecta el punto de agarre en el plano perpendicular al eje de giro para obtener el vector de destino
+				dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
+
+				if (!useLimits || (GetAngleWithOffset () >= minAngle && GetAngleWithOffset () <= maxAngle)) {
+					//Devuelve el objeto a su rotación inicial local y obtiene la rotación global de este
+					RotateTransform.localRotation = initialrotation;
+					worldRotation = RotateTransform.rotation;
+					//Rota el object desde la posición indicada como forward hasta el vector de destino
+					RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized) * Quaternion.Inverse (rotationOffset);
+					//Añade la rotación del object global inicial
+					RotateTransform.Rotate (worldRotation.eulerAngles);
+
+					//Corrige el vector dest para que punte en la misma dirección que el objeto
+					dest = Quaternion.Inverse (rotationOffset) * dest;
+					lastDest = dest;
+
+				} else {
+					dest = lastDest;
+				}
 			}
 		}
+
+		lastGrabState = grabState;
 	}
 
 	public float GetAngle() {
 		return Vector3.SignedAngle (GlobalForwardDirection, dest, GlobalRotationAxis);
+	}
+
+	public float GetAngleWithOffset() {
+		return Vector3.SignedAngle (GlobalForwardDirection, dest, GlobalRotationAxis) - angleOffset;
 	}
 
 	void OnDrawGizmosSelected() {

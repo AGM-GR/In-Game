@@ -31,6 +31,7 @@ public class GrabbableRotation : BaseGrabbable {
 	private Quaternion initialrotation;
 	private Quaternion worldRotation;
 	private Vector3 dest;
+	private Vector3 lastDest;
 
 	private Transform RotateTransform {
 		get {
@@ -58,6 +59,7 @@ public class GrabbableRotation : BaseGrabbable {
 		grabber = null;
 		initialrotation = RotateTransform.localRotation;
 		dest = GlobalForwardDirection;
+		lastDest = GlobalForwardDirection;
 	}
 
 	protected override void AttachToGrabber(BaseGrabber grabber) {
@@ -71,7 +73,8 @@ public class GrabbableRotation : BaseGrabbable {
 		this.grabber = null;
 	}
 
-	void FixedUpdate() {
+	protected override void Update() {
+		base.Update ();
 		if (grabber != null) {
 
 			dest = grabberTransform.position - RotateTransform.position;
@@ -89,7 +92,11 @@ public class GrabbableRotation : BaseGrabbable {
 				RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized);
 				//Añade la rotación del object global inicial
 				RotateTransform.Rotate(worldRotation.eulerAngles);
+			} else {
+				dest = lastDest;
 			}
+
+			lastDest = dest;
 		}
 	}
 
