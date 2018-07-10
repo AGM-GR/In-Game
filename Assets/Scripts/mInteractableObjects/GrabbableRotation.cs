@@ -28,7 +28,8 @@ public class GrabbableRotation : BaseGrabbable {
 
 	private Grabber grabber;
 	private Transform grabberTransform;
-	private Vector3 initialrotation;
+	private Quaternion initialrotation;
+	private Quaternion worldRotation;
 	private Vector3 dest;
 
 	private Transform RotateTransform {
@@ -55,7 +56,7 @@ public class GrabbableRotation : BaseGrabbable {
 
 	void Awake() {
 		grabber = null;
-		initialrotation = RotateTransform.rotation.eulerAngles;
+		initialrotation = RotateTransform.localRotation;
 		dest = GlobalForwardDirection;
 	}
 
@@ -81,10 +82,13 @@ public class GrabbableRotation : BaseGrabbable {
 			if (distance > maxDistance)
 				grabber.FinishGrab ();
 			else if (!useLimits || (GetAngle() >= minAngle && GetAngle() <= maxAngle)){
+				//Devuelve el objeto a su rotación inicial local y obtiene la rotación global de este
+				RotateTransform.localRotation = initialrotation;
+				worldRotation = RotateTransform.rotation;
 				//Rota el object desde la posición indicada como forward hasta el vector de destino
 				RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized);
-				//Añade la rotación del object inicial
-				RotateTransform.Rotate (initialrotation);
+				//Añade la rotación del object global inicial
+				RotateTransform.Rotate(worldRotation.eulerAngles);
 			}
 		}
 	}

@@ -23,13 +23,13 @@ public class Door : MonoBehaviour {
 	}
 
 	void Start () {
-		LockDoor ();
+		CloseDoor ();
 	}
 
 	void Update () {
 
 		if (!locked) {
-			if (handles.Exists (handle => Mathf.Abs (handle.GetAngle()) >= Mathf.Abs (openingAngle)))
+			if (handles.Exists (handle => (Mathf.Abs (handle.GetAngle()) >= Mathf.Abs (openingAngle))))
 				OpenDoor ();
 			else if (Mathf.Abs (doorHinge.GetAngle()) <= clossingAngle)
 				CloseDoor ();

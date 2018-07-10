@@ -30,7 +30,8 @@ public class GrabHingeRotation : MonoBehaviour {
 
 	private GrabStateEnum grabState;
 	private Transform grabberTransform;
-	private Vector3 initialrotation;
+	private Quaternion initialrotation;
+	private Quaternion worldRotation;
 	private Vector3 dest;
 
 	private Transform RotateTransform {
@@ -57,7 +58,7 @@ public class GrabHingeRotation : MonoBehaviour {
 
 	void Awake() {
 		grabState = GrabStateEnum.Inactive;
-		initialrotation = RotateTransform.rotation.eulerAngles;
+		initialrotation = RotateTransform.localRotation;
 		dest = GlobalForwardDirection;
 
 		if (grabbables.Count == 0)
@@ -71,22 +72,26 @@ public class GrabHingeRotation : MonoBehaviour {
 	}
 
 	private void UpdateGrabState(BaseGrabbable baseGrab) {
-		Debug.Log ("Updated: " + baseGrab.GrabState + " Angle: " + GetAngle() + " Enabled Rotation: " + enableRotation);
 		if (baseGrab.GrabState != GrabStateEnum.Inactive)
 			grabberTransform = baseGrab.GrabberPrimary.GetComponent<Transform> ();
 		grabState = baseGrab.GrabState;
 	}
 
 	void FixedUpdate() {
+		Debug.Log ("State: " + grabState + " Angle: " + GetAngle());
 		if (grabState != GrabStateEnum.Inactive && enableRotation) {
+			dest = grabberTransform.position - RotateTransform.position;
+			//Se proyecta el punto de agarre en el plano perpendicular al eje de giro para obtener el vector de destino
+			dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
+
 			if (!useLimits || (GetAngle() >= minAngle && GetAngle() <= maxAngle)){
-				dest = grabberTransform.position - RotateTransform.position;
-				//Se proyecta el punto de agarre en el plano perpendicular al eje de giro para obtener el vector de destino
-				dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
+				//Devuelve el objeto a su rotación inicial local y obtiene la rotación global de este
+				RotateTransform.localRotation = initialrotation;
+				worldRotation = RotateTransform.rotation;
 				//Rota el object desde la posición indicada como forward hasta el vector de destino
 				RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized);
-				//Añade la rotación del object inicial
-				RotateTransform.Rotate (initialrotation);
+				//Añade la rotación del object global inicial
+				RotateTransform.Rotate(worldRotation.eulerAngles);
 			}
 		}
 	}
