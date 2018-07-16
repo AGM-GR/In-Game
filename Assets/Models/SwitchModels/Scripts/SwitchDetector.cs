@@ -9,15 +9,13 @@ public class SwitchDetector : MonoBehaviour {
 
 	public float flashDuration = 0.05f;
 
-	private GameObject sparks;
+	private ParticleSystem sparks;
 	private Light flashLight;
 
 	void Awake () {
 		if (GetComponentInChildren<ParticleSystem> ())
-			sparks = GetComponentInChildren<ParticleSystem> ().gameObject;
+			sparks = GetComponentInChildren<ParticleSystem> ();
 		flashLight = GetComponentInChildren<Light> ();
-
-		sparks.SetActive (false);
 	}
 
 	protected virtual void OnTriggerEnter(Collider collider) {
@@ -33,12 +31,12 @@ public class SwitchDetector : MonoBehaviour {
 
 	private void SwitchOn() {
 		StartCoroutine (Flash());
-		sparks.SetActive (true);
+		sparks.Play ();
 		switchObject.SwitchOn ();
 	}
 
 	private void SwitchOff() {
-		sparks.SetActive (false);
+		sparks.Stop ();
 		switchObject.SwitchOff ();
 	}
 

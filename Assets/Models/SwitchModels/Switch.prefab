@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33523593988953810}
   - component: {fileID: 23236724719492920}
   - component: {fileID: 65804527597367988}
+  - component: {fileID: 65924967413524058}
   - component: {fileID: 114265292760419112}
   - component: {fileID: 114154096145956896}
   - component: {fileID: 114405431507345560}
@@ -296,7 +297,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1042244385386084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.287568, y: 0.901, z: -0.739641}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4079667746248608}
@@ -796,6 +797,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 0.78000015, z: 0.78000015}
   m_Center: {x: -0.0000076293945, y: 0, z: 0.0000019073486}
+--- !u!65 &65924967413524058
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1039038216633148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9, y: 1, z: 1}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0.0000019073486}
 --- !u!65 &65961145220759492
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -951,7 +964,7 @@ ParticleSystem:
   stopAction: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -999,7 +1012,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -224231336
+  randomSeed: 706606800
   InitialModule:
     serializedVersion: 3
     enabled: 1

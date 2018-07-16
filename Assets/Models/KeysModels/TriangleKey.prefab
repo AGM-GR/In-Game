@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 4938088079187130}
   - component: {fileID: 54387104471521084}
   - component: {fileID: 65534988048890700}
+  - component: {fileID: 65195743825581556}
   - component: {fileID: 114193403868612452}
   - component: {fileID: 114101756549173754}
   m_Layer: 8
@@ -277,6 +278,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65195743825581556
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780697073115482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.08, z: 0.08}
+  m_Center: {x: 0.05, y: 0.008, z: 0}
 --- !u!65 &65534988048890700
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -305,7 +318,7 @@ MonoBehaviour:
   colorOnGrabSingle: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   colorOnGrabMulti: {r: 1, g: 0, b: 0, a: 1}
   outlineMode: 3
-  outlineWidth: 3
+  outlineWidth: 6
   targetOutlineObject: {fileID: 0}
   outlineAllChildrens: 1
   grabbable: {fileID: 0}
