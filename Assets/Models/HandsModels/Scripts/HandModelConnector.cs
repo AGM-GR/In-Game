@@ -57,13 +57,14 @@ public class HandModelConnector : MonoBehaviour {
 		}
 	}
 
-	public Transform SetHandModelParent (Transform newParent, Vector3 newPosition, Quaternion newRotation) {
+	public Transform SetHandModelParent (Transform newParent, Vector3 newPosition, Vector3 newRotation, Vector3 newScale) {
 		controller.ActiveControllerIndicator ();
 		handModel.SetParent (newParent);
+		handModel.localScale = newScale;
 		initialPosition = handModel.localPosition;
 		initialRotation = handModel.localRotation;
 		destPosition = newPosition;
-		destRotation = newRotation;
+		destRotation = Quaternion.Euler(newRotation);
 		changeStep = 0f;
 		changeParent = true;
 
@@ -73,6 +74,7 @@ public class HandModelConnector : MonoBehaviour {
 	public void ReconectHandModel () {
 		controller.DeactivateControllerAction ();
 		handModel.SetParent (transform);
+		handModel.localScale = localScale;
 		initialPosition = handModel.localPosition;
 		initialRotation = handModel.localRotation;
 		destPosition = localPosition;

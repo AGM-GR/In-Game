@@ -4614,10 +4614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f68397c96a97143838bd04afb7804b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hide: 0
-  show: 0
   handModel: {fileID: 4643027697649858}
-  changeSpeed: 1
+  changeSpeed: 8
   scaleSpeed: 8
 --- !u!114 &114889074625741856
 MonoBehaviour:
