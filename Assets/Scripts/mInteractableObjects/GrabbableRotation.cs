@@ -63,8 +63,8 @@ public class GrabbableRotation : BaseGrabbable {
 	}
 
 	protected override void AttachToGrabber(BaseGrabber grabber) {
-		base.AttachToGrabber(grabber);
-		this.grabber = (Grabber) grabber;
+		base.AttachToGrabber (grabber);
+		this.grabber = (Grabber)grabber;
 		grabberTransform = GrabberPrimary.GetComponent<Transform> ();
 	}
 
@@ -102,11 +102,6 @@ public class GrabbableRotation : BaseGrabbable {
 
 	public float GetAngle() {
 		return Vector3.SignedAngle (GlobalForwardDirection, dest, GlobalRotationAxis);
-	}
-
-	public void FinishGrab() {
-		if (grabber != null)
-			grabber.FinishGrab ();
 	}
 
 	void OnDrawGizmosSelected() {

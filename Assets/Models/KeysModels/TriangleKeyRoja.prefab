@@ -42,8 +42,24 @@ GameObject:
   - component: {fileID: 65927974933569570}
   - component: {fileID: 114284715075821200}
   - component: {fileID: 114302268300164436}
+  - component: {fileID: 114049175775347828}
   m_Layer: 8
   m_Name: TriangleKeyRoja
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1559476441829504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4181471736406500}
+  m_Layer: 8
+  m_Name: TriangleKeyModelRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +85,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1730124600137134
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -91,15 +107,29 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730124600137134}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalRotation: {x: -0.000000029802322, y: 0.7071068, z: 0.7071068, w: 0.000000029802322}
+  m_LocalPosition: {x: 0.09899998, y: 0, z: 0}
+  m_LocalScale: {x: 0.02000006, y: 0.020000037, z: 0.020000027}
   m_Children:
   - {fileID: 4899348057061848}
   - {fileID: 4655115892009350}
+  m_Father: {fileID: 4181471736406500}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+--- !u!4 &4181471736406500
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559476441829504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4181196270370220}
   m_Father: {fileID: 4392161611572146}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4392161611572146
 Transform:
   m_ObjectHideFlags: 1
@@ -110,7 +140,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4181196270370220}
+  - {fileID: 4181471736406500}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -302,6 +332,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.08, z: 0.08}
   m_Center: {x: 0.05, y: 0.008, z: 0}
+--- !u!114 &114049175775347828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212303213472006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89307d8275429f43b6a7698ea04d337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryItem: {fileID: 1559476441829504}
+  inMenuPosition: {x: 0, y: 0, z: 0}
+  inMenuRotation: {x: 130, y: 270, z: 270}
+  inMenuSelectedPosition: {x: 0, y: 0, z: 0}
+  inMenuSelectedRotation: {x: 130, y: 270, z: 270}
+  inRightHandPosition: {x: 0.054, y: -0.053, z: 0.053}
+  inRightHandRotation: {x: 90, y: 0, z: 0}
+  inLeftHandPosition: {x: 0.054, y: -0.053, z: -0.053}
+  inLeftHandRotation: {x: 90, y: 0, z: 0}
+  inHandAction: 2
+  displayMode: 2
+  transitionDuration: 0.35
+  transitionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114089894759148850
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -69,7 +69,7 @@ public class GrabHandRotation : MonoBehaviour {
 
 	private void UpdateGrabState(BaseGrabbable baseGrab) {
 		if (baseGrab.GrabState != GrabStateEnum.Inactive)
-			grabberTransform = baseGrab.GrabberPrimary.GetComponent<Transform> ();
+			grabberTransform = baseGrab.GrabberPrimary.GetComponent<ControllerController> ().GetControllerTransform ();
 		grabState = baseGrab.GrabState;
 	}
 

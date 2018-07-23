@@ -83,4 +83,7 @@ public class ControllerController : MonoBehaviour {
 		rotate = true;
 	}
 
+	public Transform GetControllerTransform () {
+		return controller;
+	}
 }

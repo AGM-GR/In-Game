@@ -10,20 +10,13 @@ public class Switch : MonoBehaviour {
 	public UnityEvent switchOffMethods;
 
 	[Header("Switcher Options")]
-	public bool blockOnSwitch = false;
 	public GrabbableRotation grabbable;
 
 	public void SwitchOn() {
-		if (blockOnSwitch) {
-			grabbable.FinishGrab ();
-			grabbable.enabled = false;
-		}
 		switchOnMethods.Invoke();
 	}
 
 	public void SwitchOff() {
-		if (blockOnSwitch)
-			grabbable.enabled = false;
 		switchOffMethods.Invoke();
 	}
 }

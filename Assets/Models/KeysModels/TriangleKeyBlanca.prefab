@@ -13,7 +13,7 @@ Prefab:
   m_IsPrefabParent: 1
 --- !u!1 &1096159654039434
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -24,6 +24,21 @@ GameObject:
   - component: {fileID: 114830394450278342}
   m_Layer: 8
   m_Name: TriangleKeyModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1111694068807952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4347281718566308}
+  m_Layer: 8
+  m_Name: TriangleKeyModelRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,6 +93,7 @@ GameObject:
   - component: {fileID: 65796757207648018}
   - component: {fileID: 114367697989726578}
   - component: {fileID: 114926878051569916}
+  - component: {fileID: 114397622061528064}
   m_Layer: 8
   m_Name: TriangleKeyBlanca
   m_TagString: Untagged
@@ -85,6 +101,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4347281718566308
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111694068807952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4512300196293424}
+  m_Father: {fileID: 4416456880352826}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4416456880352826
 Transform:
   m_ObjectHideFlags: 1
@@ -95,7 +125,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4512300196293424}
+  - {fileID: 4347281718566308}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -105,15 +135,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1096159654039434}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalRotation: {x: -0.000000029802319, y: 0.7071068, z: 0.7071068, w: 0.000000029802319}
+  m_LocalPosition: {x: 0.09899998, y: 0, z: 0}
+  m_LocalScale: {x: 0.020000095, y: 0.020000044, z: 0.020000046}
   m_Children:
   - {fileID: 4788569709994182}
   - {fileID: 4930507610840090}
-  m_Father: {fileID: 4416456880352826}
+  m_Father: {fileID: 4347281718566308}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
 --- !u!4 &4788569709994182
 Transform:
   m_ObjectHideFlags: 1
@@ -300,7 +330,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.055, z: 0.06}
+  m_Size: {x: 0.16, y: 0.08, z: 0.08}
   m_Center: {x: 0.05, y: 0.008, z: 0}
 --- !u!114 &114367697989726578
 MonoBehaviour:
@@ -315,6 +345,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabSpot: {fileID: 0}
   grabStyle: 0
+--- !u!114 &114397622061528064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1985245385558886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89307d8275429f43b6a7698ea04d337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryItem: {fileID: 1111694068807952}
+  inMenuPosition: {x: 0, y: 0, z: 0}
+  inMenuRotation: {x: 130, y: 270, z: 270}
+  inMenuSelectedPosition: {x: 0, y: 0, z: 0}
+  inMenuSelectedRotation: {x: 130, y: 270, z: 270}
+  inRightHandPosition: {x: 0.054, y: -0.053, z: 0.053}
+  inRightHandRotation: {x: 90, y: 0, z: 0}
+  inLeftHandPosition: {x: 0.054, y: -0.053, z: -0.053}
+  inLeftHandRotation: {x: 90, y: 0, z: 0}
+  inHandAction: 2
+  displayMode: 2
+  transitionDuration: 0.35
+  transitionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114562882934085408
 MonoBehaviour:
   m_ObjectHideFlags: 1

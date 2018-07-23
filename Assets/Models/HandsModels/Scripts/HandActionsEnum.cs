@@ -2,5 +2,6 @@
 	HANDLE,
 	GRAB,
 	GRABKEY,
-	SPOT
+	SPOT,
+	NONE
 }

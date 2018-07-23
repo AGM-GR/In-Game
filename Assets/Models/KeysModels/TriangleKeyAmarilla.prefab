@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 65959165017257324}
   - component: {fileID: 114808227138764828}
   - component: {fileID: 114728924367022314}
+  - component: {fileID: 114759460116214754}
   m_Layer: 8
   m_Name: TriangleKeyAmarilla
   m_TagString: Untagged
@@ -67,9 +68,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1653713046738664
+--- !u!1 &1612445344397110
 GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4858961991014906}
+  m_Layer: 8
+  m_Name: TriangleKeyModelRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1653713046738664
+GameObject:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -108,7 +124,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4691256994419354}
+  - {fileID: 4858961991014906}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -118,15 +134,29 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653713046738664}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0.09899998, y: 0, z: 0}
+  m_LocalScale: {x: 0.020000052, y: 0.020000018, z: 0.020000016}
   m_Children:
   - {fileID: 4955402985682664}
   - {fileID: 4122776012384074}
+  m_Father: {fileID: 4858961991014906}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+--- !u!4 &4858961991014906
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1612445344397110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4691256994419354}
   m_Father: {fileID: 4640250913269180}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4955402985682664
 Transform:
   m_ObjectHideFlags: 1
@@ -356,6 +386,47 @@ MonoBehaviour:
   targetOutlineObject: {fileID: 0}
   outlineAllChildrens: 1
   grabbable: {fileID: 0}
+--- !u!114 &114759460116214754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1608957585248498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89307d8275429f43b6a7698ea04d337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryItem: {fileID: 1612445344397110}
+  inMenuPosition: {x: 0, y: 0, z: 0}
+  inMenuRotation: {x: 130, y: 270, z: 270}
+  inMenuSelectedPosition: {x: 0, y: 0, z: 0}
+  inMenuSelectedRotation: {x: 130, y: 270, z: 270}
+  inRightHandPosition: {x: 0.054, y: -0.053, z: 0.053}
+  inRightHandRotation: {x: 90, y: 0, z: 0}
+  inLeftHandPosition: {x: 0.054, y: -0.053, z: -0.053}
+  inLeftHandRotation: {x: 90, y: 0, z: 0}
+  inHandAction: 2
+  displayMode: 2
+  transitionDuration: 0.35
+  transitionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114808227138764828
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -49,6 +49,9 @@ public class GrabbableHandModelPositioner : MonoBehaviour {
 	}
 
 	private void AttachHandModel (BaseGrabber grabber) {
+		if (this.grabber != null && this.grabber != grabber)
+			DetachHandModel ();
+		
 		this.grabber = grabber;
 		handModel = grabber.GetComponent<HandModelConnector> ();
 		handAnimator = grabber.GetComponent<HandAnimationsController> ();
