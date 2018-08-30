@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Door : MonoBehaviour {
 
@@ -13,8 +14,10 @@ public class Door : MonoBehaviour {
 	protected bool locked = false;
 	[SerializeField]
 	protected int keyId = 0;
+    public UnityEvent OnUnlockDoor;
+    public UnityEvent OnLockDoor;
 
-	private float openingAngle = 40f;
+    private float openingAngle = 40f;
 	private float clossingAngle = 2f;
 
 	void Awake() {
@@ -47,13 +50,14 @@ public class Door : MonoBehaviour {
 
 
 	public void UnlockDoor () {
-
-		locked = false;
+        OnUnlockDoor.Invoke();
+        locked = false;
 	}
 
 	public void LockDoor () {
 
-		locked = true;
+        OnLockDoor.Invoke();
+        locked = true;
 	}
 
 

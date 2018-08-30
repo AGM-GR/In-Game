@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LibraryCodeController : MonoBehaviour {
 
     public Transform objectToMove;
     public Vector3 openPosition;
     public float movementSpeed = 1f;
+
+    [Header("Events")]
+    public UnityEvent SecretUnlock;
+    public UnityEvent SecretLock;
 
     private Dictionary<NumberSelector, bool> codeStatus = new Dictionary<NumberSelector, bool>();
 
@@ -36,6 +41,7 @@ public class LibraryCodeController : MonoBehaviour {
         }
         else if (opened) {
 
+            SecretLock.Invoke();
             StopCoroutine(OpenSecret());
             StartCoroutine(CloseSecret());
         }
@@ -47,6 +53,7 @@ public class LibraryCodeController : MonoBehaviour {
                 return;
         }
 
+        SecretUnlock.Invoke();
         StopCoroutine(CloseSecret());
         StartCoroutine(OpenSecret());
     }
