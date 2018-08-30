@@ -39,6 +39,10 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             InteractionManager.InteractionSourcePressed -= InteractionSourcePressed;
             InteractionManager.InteractionSourceReleased -= InteractionSourceReleased;
 #endif
+			//Clear grab at disable
+			GrabEnd ();
+			ClearContact();
+
             base.OnDisable();
         }
 
@@ -67,6 +71,10 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
         /// <param name="other"></param>
         protected virtual void OnTriggerEnter(Collider other)
         {
+            if (!gameObject.activeInHierarchy || !this.enabled) {
+                return;
+            }
+
             Debug.Log("Entered trigger with " + other.name);
             if (((1 << other.gameObject.layer) & grabbableLayers.value) == 0)
             {
@@ -84,6 +92,11 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
                 return;
             }
 
+			if (!bg.enabled)
+			{
+				return;
+			}
+
             Debug.Log("Adding contact");
 
             AddContact(bg);
@@ -91,6 +104,10 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
 
         protected virtual void OnTriggerExit(Collider other)
         {
+            if (!gameObject.activeInHierarchy || !this.enabled) {
+                return;
+            }
+
             Debug.Log("Exited trigger with " + other.name);
             if (((1 << other.gameObject.layer) & grabbableLayers.value) == 0)
             {
@@ -107,6 +124,11 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             {
                 return;
             }
+
+			if (!bg.enabled)
+			{
+				return;
+			}
 
             Debug.Log("Removing contact");
 
@@ -143,10 +165,5 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             return true;
         }
 #endif
-
-		//Función propia, finaliza el agarre.
-		public void FinishGrab () {
-			GrabEnd ();
-		}
     }
 }

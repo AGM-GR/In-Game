@@ -1,0 +1,698 @@
+fileFormatVersion: 2
+guid: 3ac183c8148f1194191d3b2fc16858cd
+timeCreated: 1535125045
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 05a9ceead6fa10c14c04497d72b6fbfe
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.978069, y: 7.738694, z: -10.494398}
+      lookAt: {x: -1.4710906, y: 6.9643626, z: -8.68367}
+      up: {x: 0.1026641, y: 0.92466694, z: 0.36667585}
+      fov: 28.932076
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: 8.470804, y: 1.1930642, z: 2.0792463}
+        lookAt: {x: 7.169622, y: 1.0667654, z: 3.6260688}
+        up: {x: -0.04014401, y: 0.9980536, z: 0.04772251}
+        fov: 28.932076
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Scene 1
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 1
+    100002: 10
+    100004: 11
+    100006: 2
+    100008: 314-403
+    100010: 314-403 1
+    100012: 4
+    100014: 5
+    100016: 7
+    100018: 8
+    100020: Agrupar#1
+    100022: Center
+    100024: Component
+    100026: Component#1
+    100028: Component#1 1
+    100030: Component#1 2
+    100032: Component#1 3
+    100034: Component#27
+    100036: Component#27 1
+    100038: Component#7
+    100040: Component#7 1
+    100042: Component#77
+    100044: Component#9
+    100046: cupboard handle
+    100048: cupboard handle 1
+    100050: cupboard handle 10
+    100052: cupboard handle 11
+    100054: cupboard handle 12
+    100056: cupboard handle 13
+    100058: cupboard handle 14
+    100060: cupboard handle 15
+    100062: cupboard handle 2
+    100064: cupboard handle 3
+    100066: cupboard handle 4
+    100068: cupboard handle 5
+    100070: cupboard handle 6
+    100072: cupboard handle 7
+    100074: cupboard handle 8
+    100076: cupboard handle 9
+    100078: Group 11
+    100080: Group 13
+    100082: Group 15
+    100084: Group 17
+    100086: Group 19
+    100088: Group 23
+    100090: Group#18
+    100092: Group#19
+    100094: Group_4
+    100096: handle
+    100098: handle 1
+    100100: handle 10
+    100102: handle 11
+    100104: handle 12
+    100106: handle 13
+    100108: handle 14
+    100110: handle 15
+    100112: handle 2
+    100114: handle 3
+    100116: handle 4
+    100118: handle 5
+    100120: handle 6
+    100122: handle 7
+    100124: handle 8
+    100126: handle 9
+    100128: Horno Teka HPE 735 Inox
+    100130: Jason_Wu_Odin_Single_Hole_Single_Handle_Lavatory_Black
+    100132: //RootNode
+    100134: Nine
+    100136: obj10
+    100138: obj10 1
+    100140: obj10 2
+    100142: obj10 3
+    100144: obj10#2
+    100146: obj10#2 1
+    100148: obj14
+    100150: obj14 1
+    100152: obj15#1
+    100154: obj15#1 1
+    100156: obj15#1 2
+    100158: obj15#1 3
+    100160: obj2#2
+    100162: obj2#2 1
+    100164: obj2#2 2
+    100166: obj2#2 3
+    100168: obj3#2
+    100170: obj3#2 1
+    100172: obj4#2
+    100174: obj4#2 1
+    100176: obj4#2 2
+    100178: obj4#2 3
+    100180: obj5#2
+    100182: obj5#2 1
+    100184: obj6#2
+    100186: obj6#2 1
+    100188: obj6#2 2
+    100190: obj6#2 3
+    100192: obj7#1
+    100194: obj7#1 1
+    100196: obj8#1
+    100198: obj8#1 1
+    100200: obj9
+    100202: obj9 1
+    100204: obj9 2
+    100206: obj9 3
+    100208: six
+    100210: tree
+    100212: twelve
+    100214: Untitled(40)
+    100216: V-Ray Rectangle Light
+    400000: 1
+    400002: 10
+    400004: 11
+    400006: 2
+    400008: 314-403
+    400010: 314-403 1
+    400012: 4
+    400014: 5
+    400016: 7
+    400018: 8
+    400020: Agrupar#1
+    400022: Center
+    400024: Component
+    400026: Component#1
+    400028: Component#1 1
+    400030: Component#1 2
+    400032: Component#1 3
+    400034: Component#27
+    400036: Component#27 1
+    400038: Component#7
+    400040: Component#7 1
+    400042: Component#77
+    400044: Component#9
+    400046: cupboard handle
+    400048: cupboard handle 1
+    400050: cupboard handle 10
+    400052: cupboard handle 11
+    400054: cupboard handle 12
+    400056: cupboard handle 13
+    400058: cupboard handle 14
+    400060: cupboard handle 15
+    400062: cupboard handle 2
+    400064: cupboard handle 3
+    400066: cupboard handle 4
+    400068: cupboard handle 5
+    400070: cupboard handle 6
+    400072: cupboard handle 7
+    400074: cupboard handle 8
+    400076: cupboard handle 9
+    400078: Group 11
+    400080: Group 13
+    400082: Group 15
+    400084: Group 17
+    400086: Group 19
+    400088: Group 23
+    400090: Group#18
+    400092: Group#19
+    400094: Group_4
+    400096: handle
+    400098: handle 1
+    400100: handle 10
+    400102: handle 11
+    400104: handle 12
+    400106: handle 13
+    400108: handle 14
+    400110: handle 15
+    400112: handle 2
+    400114: handle 3
+    400116: handle 4
+    400118: handle 5
+    400120: handle 6
+    400122: handle 7
+    400124: handle 8
+    400126: handle 9
+    400128: Horno Teka HPE 735 Inox
+    400130: Jason_Wu_Odin_Single_Hole_Single_Handle_Lavatory_Black
+    400132: //RootNode
+    400134: Nine
+    400136: obj10
+    400138: obj10 1
+    400140: obj10 2
+    400142: obj10 3
+    400144: obj10#2
+    400146: obj10#2 1
+    400148: obj14
+    400150: obj14 1
+    400152: obj15#1
+    400154: obj15#1 1
+    400156: obj15#1 2
+    400158: obj15#1 3
+    400160: obj2#2
+    400162: obj2#2 1
+    400164: obj2#2 2
+    400166: obj2#2 3
+    400168: obj3#2
+    400170: obj3#2 1
+    400172: obj4#2
+    400174: obj4#2 1
+    400176: obj4#2 2
+    400178: obj4#2 3
+    400180: obj5#2
+    400182: obj5#2 1
+    400184: obj6#2
+    400186: obj6#2 1
+    400188: obj6#2 2
+    400190: obj6#2 3
+    400192: obj7#1
+    400194: obj7#1 1
+    400196: obj8#1
+    400198: obj8#1 1
+    400200: obj9
+    400202: obj9 1
+    400204: obj9 2
+    400206: obj9 3
+    400208: six
+    400210: tree
+    400212: twelve
+    400214: Untitled(40)
+    400216: V-Ray Rectangle Light
+    2100000: _defaultMat
+    2100002: U765_ST15
+    2100004: 8796568616990
+    2100006: 8798106517534
+    2100008: '[Color H01]'
+    2100010: _54
+    2100012: '[Metal_Aluminum_Anodized]'
+    2100014: '[Blinds_Vertical_Stripe_Gray]'
+    2100016: '[Color_002]'
+    2100018: '[Color M08]'
+    2100020: getimage (10)
+    2100022: 65675LF-BL
+    2100024: Color_006
+    2100026: '[Translucent_Glass_Gray]'
+    2100028: Metal_Corrogated_Shiny
+    2100030: Material1
+    2100032: _1
+    2100034: b113_BS
+    2100036: 12_s21
+    2100038: '[Color B03]'
+    2100040: '[Color_009]'
+    2100042: _auto_
+    2100044: PORTAS______________________PVC ACABAMENTO
+    2100046: csm_D34321_DP_04_c40dd285d5
+    2100048: 8796973203486
+    2300000: 1
+    2300002: 10
+    2300004: 11
+    2300006: 2
+    2300008: 4
+    2300010: 5
+    2300012: 7
+    2300014: 8
+    2300016: Center
+    2300018: Component#1
+    2300020: Component#1 1
+    2300022: Component#1 2
+    2300024: Component#1 3
+    2300026: Component#27
+    2300028: Component#27 1
+    2300030: Component#7
+    2300032: Component#7 1
+    2300034: Component#77
+    2300036: Component#9
+    2300038: Group 11
+    2300040: Group 13
+    2300042: Group 15
+    2300044: Group 17
+    2300046: Group 19
+    2300048: Group 23
+    2300050: Group#19
+    2300052: Group_4
+    2300054: handle
+    2300056: handle 1
+    2300058: handle 10
+    2300060: handle 11
+    2300062: handle 12
+    2300064: handle 13
+    2300066: handle 14
+    2300068: handle 15
+    2300070: handle 2
+    2300072: handle 3
+    2300074: handle 4
+    2300076: handle 5
+    2300078: handle 6
+    2300080: handle 7
+    2300082: handle 8
+    2300084: handle 9
+    2300086: Horno Teka HPE 735 Inox
+    2300088: //RootNode
+    2300090: Nine
+    2300092: obj10
+    2300094: obj10 1
+    2300096: obj10 2
+    2300098: obj10 3
+    2300100: obj10#2
+    2300102: obj10#2 1
+    2300104: obj14
+    2300106: obj14 1
+    2300108: obj15#1
+    2300110: obj15#1 1
+    2300112: obj15#1 2
+    2300114: obj15#1 3
+    2300116: obj2#2
+    2300118: obj2#2 1
+    2300120: obj2#2 2
+    2300122: obj2#2 3
+    2300124: obj3#2
+    2300126: obj3#2 1
+    2300128: obj4#2
+    2300130: obj4#2 1
+    2300132: obj4#2 2
+    2300134: obj4#2 3
+    2300136: obj5#2
+    2300138: obj5#2 1
+    2300140: obj6#2
+    2300142: obj6#2 1
+    2300144: obj6#2 2
+    2300146: obj6#2 3
+    2300148: obj7#1
+    2300150: obj7#1 1
+    2300152: obj8#1
+    2300154: obj8#1 1
+    2300156: obj9
+    2300158: obj9 1
+    2300160: obj9 2
+    2300162: obj9 3
+    2300164: six
+    2300166: tree
+    2300168: twelve
+    2300170: V-Ray Rectangle Light
+    3300000: 1
+    3300002: 10
+    3300004: 11
+    3300006: 2
+    3300008: 4
+    3300010: 5
+    3300012: 7
+    3300014: 8
+    3300016: Center
+    3300018: Component#1
+    3300020: Component#1 1
+    3300022: Component#1 2
+    3300024: Component#1 3
+    3300026: Component#27
+    3300028: Component#27 1
+    3300030: Component#7
+    3300032: Component#7 1
+    3300034: Component#77
+    3300036: Component#9
+    3300038: Group 11
+    3300040: Group 13
+    3300042: Group 15
+    3300044: Group 17
+    3300046: Group 19
+    3300048: Group 23
+    3300050: Group#19
+    3300052: Group_4
+    3300054: handle
+    3300056: handle 1
+    3300058: handle 10
+    3300060: handle 11
+    3300062: handle 12
+    3300064: handle 13
+    3300066: handle 14
+    3300068: handle 15
+    3300070: handle 2
+    3300072: handle 3
+    3300074: handle 4
+    3300076: handle 5
+    3300078: handle 6
+    3300080: handle 7
+    3300082: handle 8
+    3300084: handle 9
+    3300086: Horno Teka HPE 735 Inox
+    3300088: //RootNode
+    3300090: Nine
+    3300092: obj10
+    3300094: obj10 1
+    3300096: obj10 2
+    3300098: obj10 3
+    3300100: obj10#2
+    3300102: obj10#2 1
+    3300104: obj14
+    3300106: obj14 1
+    3300108: obj15#1
+    3300110: obj15#1 1
+    3300112: obj15#1 2
+    3300114: obj15#1 3
+    3300116: obj2#2
+    3300118: obj2#2 1
+    3300120: obj2#2 2
+    3300122: obj2#2 3
+    3300124: obj3#2
+    3300126: obj3#2 1
+    3300128: obj4#2
+    3300130: obj4#2 1
+    3300132: obj4#2 2
+    3300134: obj4#2 3
+    3300136: obj5#2
+    3300138: obj5#2 1
+    3300140: obj6#2
+    3300142: obj6#2 1
+    3300144: obj6#2 2
+    3300146: obj6#2 3
+    3300148: obj7#1
+    3300150: obj7#1 1
+    3300152: obj8#1
+    3300154: obj8#1 1
+    3300156: obj9
+    3300158: obj9 1
+    3300160: obj9 2
+    3300162: obj9 3
+    3300164: six
+    3300166: tree
+    3300168: twelve
+    3300170: V-Ray Rectangle Light
+    4300000: Mesh kitchen14clean
+    4300002: Mesh Component#77
+    4300004: Mesh Group#19
+    4300006: Mesh Group_4
+    4300008: Mesh Group 11
+    4300010: Mesh Group 13
+    4300012: Mesh Group 15
+    4300014: Mesh Group 17
+    4300016: Mesh Group 19
+    4300018: Mesh Horno Teka HPE 735 Inox
+    4300020: Mesh Group 23
+    4300022: Mesh obj8#1
+    4300024: Mesh obj3#2
+    4300026: Mesh obj14
+    4300028: Mesh obj5#2
+    4300030: Mesh obj10#2
+    4300032: Mesh obj7#1
+    4300034: Mesh obj6#2
+    4300036: Mesh obj10
+    4300038: Mesh obj15#1
+    4300040: Mesh obj2#2
+    4300042: Mesh obj9
+    4300044: Mesh obj4#2
+    4300046: Mesh Component#1
+    4300048: Mesh 7
+    4300050: Mesh 8
+    4300052: Mesh Component#9
+    4300054: Mesh Component#7
+    4300056: Mesh 10
+    4300058: Mesh 5
+    4300060: Mesh 11
+    4300062: Mesh Nine
+    4300064: Mesh 1
+    4300066: Mesh 2
+    4300068: Mesh 4
+    4300070: Mesh tree
+    4300072: Mesh twelve
+    4300074: Mesh six
+    4300076: Mesh V-Ray Rectangle Light
+    4300078: Mesh handle
+    4300080: Mesh Component#27
+    4300082: Mesh Center
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12_s21
+    second: {fileID: 2100000, guid: 681a33a5f8d498b49aa902ac07793f88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 65675LF-BL
+    second: {fileID: 2100000, guid: c93a6a966ebd1d4419dfe91a304317c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8796568616990
+    second: {fileID: 2100000, guid: 0c76e5d29c2e01647b9c0e55ad2315c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8796973203486
+    second: {fileID: 2100000, guid: 425b25b35d0c02541b0bef3dabde9ae8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8798106517534
+    second: {fileID: 2100000, guid: ce5531bea8f4898458f7879e27b2c7e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_006
+    second: {fileID: 2100000, guid: a850ddc9eb4a38b4eb9d2371b4fb3a8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material1
+    second: {fileID: 2100000, guid: 709892cf80b8830498d3a9db125732ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Corrogated_Shiny
+    second: {fileID: 2100000, guid: aecea37af9263c74e917e96d9685a61c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PORTAS______________________PVC ACABAMENTO
+    second: {fileID: 2100000, guid: 6ac2bffcee6997e429bbe275b86a4951, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: U765_ST15
+    second: {fileID: 2100000, guid: c93c7bc7d840e5246bbb097e347810fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Blinds_Vertical_Stripe_Gray]'
+    second: {fileID: 2100000, guid: fad3ca03b648688439efe1f1c0763ecc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color B03]'
+    second: {fileID: 2100000, guid: eea2a319d212b484a8c9573420993bd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color H01]'
+    second: {fileID: 2100000, guid: df6e5dd49a69c0642b8f9f310f799635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M08]'
+    second: {fileID: 2100000, guid: 4e9de585b34ef8d409d010876f06c037, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_002]'
+    second: {fileID: 2100000, guid: 335831e0867b36848ad996f84c1b84de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_009]'
+    second: {fileID: 2100000, guid: 0808f35aa746b2a4d85d03de556c2b9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal_Aluminum_Anodized]'
+    second: {fileID: 2100000, guid: eed00e059d6d6a642a3313fd4eb5f9fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent_Glass_Gray]'
+    second: {fileID: 2100000, guid: a7cfc7303fd68f043b0dd05fee834bca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: 1ab8ee5c69c0cf94db7309be7344c19f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _54
+    second: {fileID: 2100000, guid: 7ed3dcc94b372a0498a375a505ec16c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _auto_
+    second: {fileID: 2100000, guid: c3c8eefb1d5dd314dac20c07a4f5281c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 2991b48e6b385744abb65532845bcac8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: b113_BS
+    second: {fileID: 2100000, guid: 93a4ec5099d2f084e8b6e41b703e8cb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: csm_D34321_DP_04_c40dd285d5
+    second: {fileID: 2100000, guid: 5ee17ae48dcace249b82251aa942876b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: getimage (10)
+    second: {fileID: 2100000, guid: 5f96242fa07c6594181b11f7f676119b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.026
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

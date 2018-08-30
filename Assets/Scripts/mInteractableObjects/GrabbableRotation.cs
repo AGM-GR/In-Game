@@ -18,7 +18,13 @@ public class GrabbableRotation : BaseGrabbable {
 	[SerializeField]
 	protected Vector3 rotationAxis = Vector3.up;
 
-	[Header("Rotation Limits")]
+    [Header("Auto Return")]
+    [SerializeField]
+    protected bool autoReturnToInitialRotation = false;
+    [SerializeField]
+    protected float autoReturnSpeed = 2f;
+
+    [Header("Rotation Limits")]
 	[SerializeField]
 	protected bool useLimits = false;
 	[SerializeField]
@@ -28,12 +34,15 @@ public class GrabbableRotation : BaseGrabbable {
 
 	private Grabber grabber;
 	private Transform grabberTransform;
-	private Quaternion initialrotation;
+	private Quaternion initialRotation;
 	private Quaternion worldRotation;
 	private Vector3 dest;
 	private Vector3 lastDest;
 
-	private Transform RotateTransform {
+    private Quaternion lastRotation;
+    private float lerpStep;
+
+    private Transform RotateTransform {
 		get {
 			return objectToRotate != null ? objectToRotate : transform; 
 		}
@@ -57,7 +66,7 @@ public class GrabbableRotation : BaseGrabbable {
 
 	void Awake() {
 		grabber = null;
-		initialrotation = RotateTransform.localRotation;
+        initialRotation = RotateTransform.localRotation;
 		dest = GlobalForwardDirection;
 		lastDest = GlobalForwardDirection;
 	}
@@ -65,20 +74,23 @@ public class GrabbableRotation : BaseGrabbable {
 	protected override void AttachToGrabber(BaseGrabber grabber) {
 		base.AttachToGrabber (grabber);
 		this.grabber = (Grabber)grabber;
-		grabberTransform = GrabberPrimary.GetComponent<Transform> ();
-	}
+		grabberTransform = GrabberPrimary.GrabHandle;
+        StopCoroutine(AutoReturn());
+    }
 
 	protected override void DetachFromGrabber(BaseGrabber grabber) {
 		base.DetachFromGrabber(grabber);
 		this.grabber = null;
-	}
+        if (autoReturnToInitialRotation)
+            StartCoroutine(AutoReturn());
+    }
 
 	protected override void Update() {
 		base.Update ();
 		if (grabber != null) {
 
 			dest = grabberTransform.position - RotateTransform.position;
-			float distance = (grabberTransform.position - GrabPoint).sqrMagnitude;
+			float distance = (grabberTransform.position - GrabPoint).magnitude;
 			//Se proyecta el punto de agarre en el plano perpendicular al eje de giro para obtener el vector de destino
 			dest = Vector3.ProjectOnPlane (dest, GlobalRotationAxis.normalized);
 
@@ -86,7 +98,7 @@ public class GrabbableRotation : BaseGrabbable {
 				grabber.FinishGrab ();
 			else if (!useLimits || (GetAngle() >= minAngle && GetAngle() <= maxAngle)){
 				//Devuelve el objeto a su rotación inicial local y obtiene la rotación global de este
-				RotateTransform.localRotation = initialrotation;
+				RotateTransform.localRotation = initialRotation;
 				worldRotation = RotateTransform.rotation;
 				//Rota el object desde la posición indicada como forward hasta el vector de destino
 				RotateTransform.rotation = Quaternion.FromToRotation (GlobalForwardDirection.normalized, dest.normalized);
@@ -104,7 +116,17 @@ public class GrabbableRotation : BaseGrabbable {
 		return Vector3.SignedAngle (GlobalForwardDirection, dest, GlobalRotationAxis);
 	}
 
-	void OnDrawGizmosSelected() {
+    private IEnumerator AutoReturn() {
+        lerpStep = 0f;
+        lastRotation = RotateTransform.localRotation;
+        while (lerpStep < 1f) {
+            lerpStep = lerpStep + Time.deltaTime * autoReturnSpeed;
+            RotateTransform.localRotation = Quaternion.Lerp(lastRotation, initialRotation, lerpStep);
+            yield return null;
+        }
+    }
+
+    void OnDrawGizmosSelected() {
 		//Distancia a la que el Grab se desactiva
 		Color color = Color.blue;
 		color.a = 0.1f;

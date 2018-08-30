@@ -260,5 +260,26 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             prevGrabState = GrabState;
             prevContactState = ContactState;
         }
+
+		//Limpia la lista de Grabbers
+		public void ClearContact() {
+			foreach (BaseGrabber bg in availableGrabbers)
+				bg.RemoveContactList (this);
+			availableGrabbers.Clear ();
+		}
+
+		protected virtual void OnDisable() {
+			if (GrabberPrimary)
+				GrabberPrimary.FinishGrab ();
+			ClearContact();
+			activeGrabbers.Clear ();
+
+			if (OnGrabStateChange != null)
+				OnGrabStateChange (this);
+			if (OnContactStateChange != null)
+				OnContactStateChange (this);
+			if (OnReleased != null)
+				OnReleased (this);
+		}
     }
 }

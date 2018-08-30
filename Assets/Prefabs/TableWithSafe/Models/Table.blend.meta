@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 7e609e2379716d34dbad94cccc1f6978
+timeCreated: 1535197531
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: DoorHandle
+    100002: Embellisher
+    100004: Handle
+    100006: Key0
+    100008: Key1
+    100010: Key2
+    100012: Key3
+    100014: Key4
+    100016: Key5
+    100018: Key6
+    100020: Key7
+    100022: Key8
+    100024: Key9
+    100026: KeyDelete
+    100028: Keys
+    100030: leg
+    100032: leg_001
+    100034: leg_002
+    100036: leg_003
+    100038: SafeBox
+    100040: SafeCodeLock
+    100042: SafeDoor
+    100044: SafeDoorHinge
+    100046: //RootNode
+    100048: UnderTable
+    100050: UpperTableLeft
+    100052: UpperTableRight
+    400000: DoorHandle
+    400002: Embellisher
+    400004: Handle
+    400006: Key0
+    400008: Key1
+    400010: Key2
+    400012: Key3
+    400014: Key4
+    400016: Key5
+    400018: Key6
+    400020: Key7
+    400022: Key8
+    400024: Key9
+    400026: KeyDelete
+    400028: Keys
+    400030: leg
+    400032: leg_001
+    400034: leg_002
+    400036: leg_003
+    400038: SafeBox
+    400040: SafeCodeLock
+    400042: SafeDoor
+    400044: SafeDoorHinge
+    400046: //RootNode
+    400048: UnderTable
+    400050: UpperTableLeft
+    400052: UpperTableRight
+    2100000: TableMat
+    2100002: unnamed
+    2100004: None__TableSafeScreen_png
+    2100006: None__TableSafeKeyBoard_png
+    2100008: None__TableSafeKey7_png
+    2100010: None__TableSafeKeyDelete_png
+    2100012: None__TableSafeKey9_png
+    2100014: None__TableSafeKey8_png
+    2100016: None__TableSafeKey6_png
+    2100018: None__TableSafeKey5_png
+    2100020: None__TableSafeKey4_png
+    2100022: None__TableSafeKey3_png
+    2100024: None__TableSafeKey2_png
+    2100026: None__TableSafeKey1_png
+    2100028: None__TableSafeKey0_png
+    2300000: DoorHandle
+    2300002: Embellisher
+    2300004: Handle
+    2300006: Key0
+    2300008: Key1
+    2300010: Key2
+    2300012: Key3
+    2300014: Key4
+    2300016: Key5
+    2300018: Key6
+    2300020: Key7
+    2300022: Key8
+    2300024: Key9
+    2300026: KeyDelete
+    2300028: Keys
+    2300030: leg
+    2300032: leg_001
+    2300034: leg_002
+    2300036: leg_003
+    2300038: SafeBox
+    2300040: SafeCodeLock
+    2300042: SafeDoor
+    2300044: SafeDoorHinge
+    2300046: UnderTable
+    2300048: UpperTableLeft
+    2300050: UpperTableRight
+    3300000: DoorHandle
+    3300002: Embellisher
+    3300004: Handle
+    3300006: Key0
+    3300008: Key1
+    3300010: Key2
+    3300012: Key3
+    3300014: Key4
+    3300016: Key5
+    3300018: Key6
+    3300020: Key7
+    3300022: Key8
+    3300024: Key9
+    3300026: KeyDelete
+    3300028: Keys
+    3300030: leg
+    3300032: leg_001
+    3300034: leg_002
+    3300036: leg_003
+    3300038: SafeBox
+    3300040: SafeCodeLock
+    3300042: SafeDoor
+    3300044: SafeDoorHinge
+    3300046: UnderTable
+    3300048: UpperTableLeft
+    3300050: UpperTableRight
+    4300000: UpperTableRight
+    4300002: UpperTableLeft
+    4300004: Handle
+    4300006: UnderTable
+    4300008: SafeBox
+    4300010: SafeDoorHinge
+    4300012: SafeDoor
+    4300014: SafeCodeLock
+    4300016: Keys
+    4300018: Key7
+    4300020: KeyDelete
+    4300022: Key9
+    4300024: Key8
+    4300026: Key6
+    4300028: Key5
+    4300030: Key4
+    4300032: Key3
+    4300034: Key2
+    4300036: Key1
+    4300038: Key0
+    4300040: Embellisher
+    4300042: DoorHandle
+    4300044: leg_003
+    4300046: leg_002
+    4300048: leg_001
+    4300050: leg
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey0_png
+    second: {fileID: 2100000, guid: 9e42015f59fb4424ebbcd6677f7fd92b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey1_png
+    second: {fileID: 2100000, guid: e871cfed513c5d84b8f70c70ed5128b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey2_png
+    second: {fileID: 2100000, guid: cfde9081ac7d2064d96d3906142a6836, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey3_png
+    second: {fileID: 2100000, guid: 44c8fac8fbead604b99db73c316809a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey4_png
+    second: {fileID: 2100000, guid: 59211ffcc0d511e4e8c88a954a3a1534, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey5_png
+    second: {fileID: 2100000, guid: c1f9dfb188a25524abe5aa40d94dd0b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey6_png
+    second: {fileID: 2100000, guid: 3c749942375b5064e8e505982fc1cdee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey7_png
+    second: {fileID: 2100000, guid: d403e612be7e1164485bba985cbd6863, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey8_png
+    second: {fileID: 2100000, guid: 52a1a60f74deb2a42a5a28858be5cd9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKey9_png
+    second: {fileID: 2100000, guid: f2efccfe5d31bab42934518f95917af9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKeyBoard_png
+    second: {fileID: 2100000, guid: 0d2b4fb97c2795e4ab921f52af5cbcc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeKeyDelete_png
+    second: {fileID: 2100000, guid: 94130705f54e0ee459ff4ad4ac930f68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__TableSafeScreen_png
+    second: {fileID: 2100000, guid: a790be5f6df1aac4e9df480800c563e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TableMat
+    second: {fileID: 2100000, guid: 1e18f96f892edbb44b1dbe5bdd768afb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 1058d2fd4631eee49ad1dc55dd7809b2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

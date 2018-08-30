@@ -39,7 +39,7 @@ public class GrabbableForce : BaseGrabbable {
 		if (grabber != null) {
 			
 			Vector3 forceDirection = grabberTransform.position - GrabPoint;
-			float distance = forceDirection.sqrMagnitude;
+			float distance = forceDirection.magnitude;
 			forceDirection = forceDirection.normalized;
 
 			if (distance > maxDistance)

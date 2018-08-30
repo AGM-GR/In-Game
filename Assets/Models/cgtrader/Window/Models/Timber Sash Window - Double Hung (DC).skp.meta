@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 0b47e38d4cd288842b75f89841d202dd
+timeCreated: 1535250226
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c000000
+  assetHash:
+    serializedVersion: 2
+    Hash: c8b9579eff28813b32bd91b17e4ca12f
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.5778085, y: 1.5002156, z: 2.1954062}
+      lookAt: {x: 0.13579714, y: 0.6882022, z: 0.46584123}
+      up: {x: 0.22267698, y: 0.9486317, z: -0.22475083}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bottom_bar
+    100002: bottom_bar_tw
+    100004: bottom_corner_bw
+    100006: bottom_corner_bw 1
+    100008: bottom_corner_tw
+    100010: bottom_corner_tw 1
+    100012: corner_bottom_f
+    100014: corner_bottom_f 1
+    100016: corner_top_f
+    100018: corner_top_f 1
+    100020: footer
+    100022: frame
+    100024: glass_bw
+    100026: glass_tw
+    100028: header
+    100030: Sash Window
+    100032: side
+    100034: side 1
+    100036: side_bar_bw
+    100038: side_bar_bw 1
+    100040: side_bar_tw
+    100042: side_bar_tw 1
+    100044: //RootNode
+    100046: top_bar_bw
+    100048: top_bar_tw
+    100050: top_corner_bw
+    100052: top_corner_bw 1
+    100054: top_corner_tw
+    100056: top_corner_tw 1
+    100058: window_bottom
+    100060: window_top
+    400000: bottom_bar
+    400002: bottom_bar_tw
+    400004: bottom_corner_bw
+    400006: bottom_corner_bw 1
+    400008: bottom_corner_tw
+    400010: bottom_corner_tw 1
+    400012: corner_bottom_f
+    400014: corner_bottom_f 1
+    400016: corner_top_f
+    400018: corner_top_f 1
+    400020: footer
+    400022: frame
+    400024: glass_bw
+    400026: glass_tw
+    400028: header
+    400030: Sash Window
+    400032: side
+    400034: side 1
+    400036: side_bar_bw
+    400038: side_bar_bw 1
+    400040: side_bar_tw
+    400042: side_bar_tw 1
+    400044: //RootNode
+    400046: top_bar_bw
+    400048: top_bar_tw
+    400050: top_corner_bw
+    400052: top_corner_bw 1
+    400054: top_corner_tw
+    400056: top_corner_tw 1
+    400058: window_bottom
+    400060: window_top
+    2100000: _defaultMat
+    2100002: grey glass
+    2300000: bottom_bar
+    2300002: bottom_bar_tw
+    2300004: bottom_corner_bw
+    2300006: bottom_corner_bw 1
+    2300008: bottom_corner_tw
+    2300010: bottom_corner_tw 1
+    2300012: corner_bottom_f
+    2300014: corner_bottom_f 1
+    2300016: corner_top_f
+    2300018: corner_top_f 1
+    2300020: footer
+    2300022: glass_bw
+    2300024: glass_tw
+    2300026: header
+    2300028: side
+    2300030: side 1
+    2300032: side_bar_bw
+    2300034: side_bar_bw 1
+    2300036: side_bar_tw
+    2300038: side_bar_tw 1
+    2300040: top_bar_bw
+    2300042: top_bar_tw
+    2300044: top_corner_bw
+    2300046: top_corner_bw 1
+    2300048: top_corner_tw
+    2300050: top_corner_tw 1
+    3300000: bottom_bar
+    3300002: bottom_bar_tw
+    3300004: bottom_corner_bw
+    3300006: bottom_corner_bw 1
+    3300008: bottom_corner_tw
+    3300010: bottom_corner_tw 1
+    3300012: corner_bottom_f
+    3300014: corner_bottom_f 1
+    3300016: corner_top_f
+    3300018: corner_top_f 1
+    3300020: footer
+    3300022: glass_bw
+    3300024: glass_tw
+    3300026: header
+    3300028: side
+    3300030: side 1
+    3300032: side_bar_bw
+    3300034: side_bar_bw 1
+    3300036: side_bar_tw
+    3300038: side_bar_tw 1
+    3300040: top_bar_bw
+    3300042: top_bar_tw
+    3300044: top_corner_bw
+    3300046: top_corner_bw 1
+    3300048: top_corner_tw
+    3300050: top_corner_tw 1
+    4300000: Mesh top_bar_tw
+    4300002: Mesh bottom_bar_tw
+    4300004: Mesh top_corner_tw
+    4300006: Mesh side_bar_tw
+    4300008: Mesh glass_tw
+    4300010: Mesh bottom_corner_tw
+    4300012: Mesh bottom_corner_bw
+    4300014: Mesh side_bar_bw
+    4300016: Mesh top_corner_bw
+    4300018: Mesh glass_bw
+    4300020: Mesh top_bar_bw
+    4300022: Mesh bottom_bar
+    4300024: Mesh corner_bottom_f
+    4300026: Mesh side
+    4300028: Mesh header
+    4300030: Mesh footer
+    4300032: Mesh corner_top_f
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.024
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

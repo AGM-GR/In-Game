@@ -1,0 +1,322 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1012655438437302}
+  m_IsPrefabParent: 1
+--- !u!1 &1012655438437302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4227997116708120}
+  - component: {fileID: 114833644328147918}
+  m_Layer: 0
+  m_Name: InventorySelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1699803235659290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4536919322002462}
+  - component: {fileID: 114252204013021992}
+  - component: {fileID: 114276962416174772}
+  m_Layer: 0
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1713267123054520
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4313967571853614}
+  m_Layer: 0
+  m_Name: TransformHelper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4227997116708120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1012655438437302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4536919322002462}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4313967571853614
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1713267123054520}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.03999999, y: 0.000025134534, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4536919322002462}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 40, y: 90, z: 0}
+--- !u!4 &4536919322002462
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699803235659290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.036, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4313967571853614}
+  m_Father: {fileID: 4227997116708120}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114252204013021992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699803235659290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de408bb391ea251449125ebbb50d896c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LineStartClamp: 0
+  LineEndClamp: 0.5
+  RotationType: 1
+  FlipUpVector: 1
+  OriginOffset: {x: 0, y: 0, z: 0}
+  ManualUpVectorBlend: 0
+  ManualUpVectors: []
+  VelocitySearchRange: 0.002
+  VelocityBlend: 0.5
+  DistortionType: 0
+  DistortionStrength:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  UniformDistortionStrength: 1
+  distorters: []
+  loops: 0
+  Resolution: 36
+  Radius: {x: 0.04, y: 0.04}
+--- !u!114 &114276962416174772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699803235659290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c509818734592e547a463a2deca85e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objects:
+  - {fileID: 0}
+  DistributionOffset: 0
+  LengthOffset: 1
+  ScaleOffset: 0
+  ScaleMultiplier: 1
+  PositionMultiplier: 1
+  ObjectScale:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.0022407123
+      value: -0.00059232116
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.24
+      value: 0.49970675
+      inSlope: 1.1645257
+      outSlope: 1.1645257
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.44998825
+      value: 1.0000948
+      inSlope: 2.1088006
+      outSlope: 0
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.5501014
+      value: 1.0001875
+      inSlope: 0
+      outSlope: -1.9904659
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.76
+      value: 0.49999624
+      inSlope: -1.2177229
+      outSlope: -1.2177229
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.9611222
+      value: 0.0019291937
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  ObjectPosition:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0026313374
+      value: -1.0059102
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.44984806
+      value: 0.49754605
+      inSlope: 5.165288
+      outSlope: 0
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.55031884
+      value: 0.49745867
+      inSlope: 0
+      outSlope: -6.050386
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 0.9934074
+      value: -1.0107929
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  FlipRotation: 1
+  RotationOffset: {x: 90, y: 0, z: 0}
+  PositionOffset: {x: 0, y: 0, z: 0}
+  RotationTypeOverride: 0
+  DistributionType: 0
+  StepMode: 0
+  source: {fileID: 114252204013021992}
+  transformHelper: {fileID: 4313967571853614}
+--- !u!114 &114833644328147918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1012655438437302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff772ee1a8e8124eb67ad2c3cb86379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: 6
+  handedness: 2
+  SetChildrenInactiveWhenDetached: 1
+  PositionOffset: {x: 0, y: 0, z: 0}
+  RotationOffset: {x: 0, y: 0, z: 0}
+  ScaleOffset: {x: 1, y: 1, z: 1}
+  SetScaleOnAttach: 0
+  itemsCollection: {fileID: 114276962416174772}
+  currentAction: 0
+  swipeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.44065592
+      outSlope: 0.44065592
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.2616839
+      value: 0.7030703
+      inSlope: 4.2307243
+      outSlope: 4.2307243
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.34630072
+      value: 1.1623088
+      inSlope: 5.0791893
+      outSlope: 5.0791893
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.4780403
+      value: 0.90566796
+      inSlope: -0.18335718
+      outSlope: -0.18335718
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.60077304
+      value: 1.1096094
+      inSlope: -1.2465854
+      outSlope: -1.2465854
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.69892895
+      value: 0.98935425
+      inSlope: 1.1235638
+      outSlope: 1.1235638
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8202404
+      value: 1.0088048
+      inSlope: -0.90024406
+      outSlope: -0.90024406
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  swipeDuration: 0.4
+  menuTimeout: 1.4
+  displayItemindex: 0
+  activeItemindex: 0

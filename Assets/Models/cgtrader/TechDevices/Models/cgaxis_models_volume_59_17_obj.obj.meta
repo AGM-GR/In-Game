@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 0093fe826511d99469cd9274b729178a
+timeCreated: 1534876145
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cgaxis_models_59_17_01
+    100002: cgaxis_models_59_17_02_1
+    100004: cgaxis_models_59_17_02_2
+    100006: cgaxis_models_59_17_03_1
+    100008: cgaxis_models_59_17_03_2
+    100010: cgaxis_models_59_17_04
+    100012: cgaxis_models_59_17_05
+    100014: cgaxis_models_59_17_06_1
+    100016: cgaxis_models_59_17_06_2
+    100018: cgaxis_models_59_17_07
+    100020: //RootNode
+    400000: cgaxis_models_59_17_01
+    400002: cgaxis_models_59_17_02_1
+    400004: cgaxis_models_59_17_02_2
+    400006: cgaxis_models_59_17_03_1
+    400008: cgaxis_models_59_17_03_2
+    400010: cgaxis_models_59_17_04
+    400012: cgaxis_models_59_17_05
+    400014: cgaxis_models_59_17_06_1
+    400016: cgaxis_models_59_17_06_2
+    400018: cgaxis_models_59_17_07
+    400020: //RootNode
+    2100000: cgaxis_models_59_17_01Mat
+    2100002: cgaxis_models_59_17_02_1Mat
+    2100004: cgaxis_models_59_17_02_2Mat
+    2100006: cgaxis_models_59_17_03_1Mat
+    2100008: cgaxis_models_59_17_03_2Mat
+    2100010: cgaxis_models_59_17_04Mat
+    2100012: cgaxis_models_59_17_05Mat
+    2100014: cgaxis_models_59_17_06_1Mat
+    2100016: cgaxis_models_59_17_06_2Mat
+    2100018: cgaxis_models_59_17_07Mat
+    2300000: cgaxis_models_59_17_01
+    2300002: cgaxis_models_59_17_02_1
+    2300004: cgaxis_models_59_17_02_2
+    2300006: cgaxis_models_59_17_03_1
+    2300008: cgaxis_models_59_17_03_2
+    2300010: cgaxis_models_59_17_04
+    2300012: cgaxis_models_59_17_05
+    2300014: cgaxis_models_59_17_06_1
+    2300016: cgaxis_models_59_17_06_2
+    2300018: cgaxis_models_59_17_07
+    3300000: cgaxis_models_59_17_01
+    3300002: cgaxis_models_59_17_02_1
+    3300004: cgaxis_models_59_17_02_2
+    3300006: cgaxis_models_59_17_03_1
+    3300008: cgaxis_models_59_17_03_2
+    3300010: cgaxis_models_59_17_04
+    3300012: cgaxis_models_59_17_05
+    3300014: cgaxis_models_59_17_06_1
+    3300016: cgaxis_models_59_17_06_2
+    3300018: cgaxis_models_59_17_07
+    4300000: cgaxis_models_59_17_01
+    4300002: cgaxis_models_59_17_02_1
+    4300004: cgaxis_models_59_17_02_2
+    4300006: cgaxis_models_59_17_03_1
+    4300008: cgaxis_models_59_17_03_2
+    4300010: cgaxis_models_59_17_04
+    4300012: cgaxis_models_59_17_05
+    4300014: cgaxis_models_59_17_06_1
+    4300016: cgaxis_models_59_17_06_2
+    4300018: cgaxis_models_59_17_07
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_01Mat
+    second: {fileID: 2100000, guid: 4beb63d2072c3e342bc7d792e1d986bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_02_1Mat
+    second: {fileID: 2100000, guid: 315543d6c5a4fe04c9f30b1bff72b8da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_02_2Mat
+    second: {fileID: 2100000, guid: 79384c74c25e44742b1641a4c0080523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_03_1Mat
+    second: {fileID: 2100000, guid: c7455088f5cadfa4ea62ae1f96b6312a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_03_2Mat
+    second: {fileID: 2100000, guid: cc1549ad2912c4c43bcf2ee4b6e6d309, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_04Mat
+    second: {fileID: 2100000, guid: 5072e7657eced5541a852fb5cf507d08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_05Mat
+    second: {fileID: 2100000, guid: a7cd2f8ccf8f40243bcfb09024f7eaf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_06_1Mat
+    second: {fileID: 2100000, guid: ffe7ad90cd366d64eb2a8d7b408118e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_06_2Mat
+    second: {fileID: 2100000, guid: 0a54c2cc2f67fdc40b17d2a5fce98821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_17_07Mat
+    second: {fileID: 2100000, guid: c8ae883e44b245f4e80128428ea3309c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.026
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

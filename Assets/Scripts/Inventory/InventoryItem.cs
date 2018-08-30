@@ -9,7 +9,8 @@ public class InventoryItem : MonoBehaviour {
 		InMenuSelected,
 		InRightHand,
 		InLeftHand,
-		Hidden
+		Hidden,
+		NotInInventory
 	}
 
 	public DisplayModeEnum DisplayMode {
@@ -31,9 +32,13 @@ public class InventoryItem : MonoBehaviour {
 	[SerializeField]
 	private Vector3 inMenuRotation = Vector3.zero;
 	[SerializeField]
+	private Vector3 inMenuScale = Vector3.one;
+	[SerializeField]
 	private Vector3 inMenuSelectedPosition = Vector3.zero;
 	[SerializeField]
 	private Vector3 inMenuSelectedRotation = Vector3.zero;
+	[SerializeField]
+	private Vector3 inMenuSelectedScale = Vector3.one;
 	[SerializeField]
 	private Vector3 inRightHandPosition = Vector3.zero;
 	[SerializeField]
@@ -42,6 +47,8 @@ public class InventoryItem : MonoBehaviour {
 	private Vector3 inLeftHandPosition = Vector3.zero;
 	[SerializeField]
 	private Vector3 inLeftHandRotation = Vector3.zero;
+	[SerializeField]
+	private Vector3 inHandScale = Vector3.one;
 	[SerializeField]
 	private HandActionsEnum inHandAction = HandActionsEnum.GRABKEY;
 	[SerializeField]
@@ -61,20 +68,20 @@ public class InventoryItem : MonoBehaviour {
 
 	private IEnumerator UpdateDisplayMode() {
 		// Variables we'll be using
-		Vector3 targetPosition = inMenuPosition;
+		Vector3 targetPosition = itemTransform.localPosition;
 		Vector3 targetScale = Vector3.one;
-		Quaternion targetRotation = Quaternion.Euler(inMenuRotation);
+		Quaternion targetRotation = itemTransform.localRotation;
 		Vector3 startPosition = targetPosition;
 		Vector3 startScale = targetScale;
 		Quaternion startRotation = targetRotation;
 
 		// Reset before starting
-		displayMode = DisplayModeEnum.InMenu;
+		displayMode = DisplayModeEnum.NotInInventory;
 		DisplayModeEnum lastDisplayMode = displayMode;
 		itemTransform.localPosition = targetPosition;
 		itemTransform.localRotation = targetRotation;
 
-		while (isActiveAndEnabled){
+		while (isActiveAndEnabled) {
 			// Wait for displayMode to change
 			while (displayMode == lastDisplayMode) {
 				yield return null;
@@ -87,35 +94,35 @@ public class InventoryItem : MonoBehaviour {
 			switch (displayMode) {
 			case DisplayModeEnum.InRightHand:
 				targetPosition = inRightHandPosition;
-				targetScale = Vector3.one;
-				targetRotation = Quaternion.Euler(inRightHandRotation);
-				itemTransform.gameObject.SetActive(true);
+				targetScale = inHandScale;
+				targetRotation = Quaternion.Euler (inRightHandRotation);
+				itemTransform.gameObject.SetActive (true);
 				break;
-			
+		
 			case DisplayModeEnum.InLeftHand:
 				targetPosition = inLeftHandPosition;
-				targetScale = Vector3.one;
-				targetRotation = Quaternion.Euler(inLeftHandRotation);
-				itemTransform.gameObject.SetActive(true);
+				targetScale = inHandScale;
+				targetRotation = Quaternion.Euler (inLeftHandRotation);
+				itemTransform.gameObject.SetActive (true);
 				break;
 
 			case DisplayModeEnum.InMenu:
 				targetPosition = inMenuPosition;
-				targetScale = Vector3.one;
-				targetRotation = Quaternion.Euler(inMenuRotation);
-				itemTransform.gameObject.SetActive(true);
+				targetScale = inMenuScale;
+				targetRotation = Quaternion.Euler (inMenuRotation);
+				itemTransform.gameObject.SetActive (true);
 				break;
 
 			case DisplayModeEnum.InMenuSelected:
 				targetPosition = inMenuSelectedPosition;
-				targetScale = Vector3.one;
-				targetRotation = Quaternion.Euler(inMenuSelectedRotation);
-				itemTransform.gameObject.SetActive(true);
+				targetScale = inMenuSelectedScale;
+				targetRotation = Quaternion.Euler (inMenuSelectedRotation);
+				itemTransform.gameObject.SetActive (true);
 				break;
 
 			case DisplayModeEnum.Hidden:
 				targetPosition = inMenuPosition;
-				targetRotation = Quaternion.Euler(inMenuRotation);
+				targetRotation = Quaternion.Euler (inMenuRotation);
 				targetScale = startScale * 0.01f;
 				break;
 			}
@@ -124,9 +131,9 @@ public class InventoryItem : MonoBehaviour {
 			float startTime = Time.unscaledTime;
 			while ((Time.unscaledTime < startTime + transitionDuration) && lastDisplayMode == displayMode) {
 				float normalizedTime = (Time.unscaledTime - startTime) / transitionDuration;
-				itemTransform.localPosition = Vector3.Lerp(startPosition, targetPosition, transitionCurve.Evaluate(normalizedTime));
-				itemTransform.localScale = Vector3.Lerp(startScale, targetScale, transitionCurve.Evaluate(normalizedTime));
-				itemTransform.localRotation = Quaternion.Lerp(startRotation, targetRotation, transitionCurve.Evaluate(normalizedTime));
+				itemTransform.localPosition = Vector3.Lerp (startPosition, targetPosition, transitionCurve.Evaluate (normalizedTime));
+				itemTransform.localScale = Vector3.Lerp (startScale, targetScale, transitionCurve.Evaluate (normalizedTime));
+				itemTransform.localRotation = Quaternion.Lerp (startRotation, targetRotation, transitionCurve.Evaluate (normalizedTime));
 				yield return null;
 			}
 			itemTransform.localPosition = targetPosition;
@@ -134,7 +141,7 @@ public class InventoryItem : MonoBehaviour {
 			itemTransform.localRotation = targetRotation;
 
 			if (displayMode == DisplayModeEnum.Hidden) {
-				itemTransform.gameObject.SetActive(false);
+				itemTransform.gameObject.SetActive (false);
 			}
 
 			yield return null;

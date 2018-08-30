@@ -167,7 +167,7 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
         /// </summary>
         /// <param name="availableObject"></param>
 
-        protected void RemoveContact(BaseGrabbable availableObject)
+        public void RemoveContact(BaseGrabbable availableObject)
         {
             contactObjects.Remove(availableObject);
             availableObject.RemoveContact(this);
@@ -177,6 +177,18 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
                 // What's supposed to happen here?
             }
         }
+
+		public void RemoveContactList(BaseGrabbable availableObject)
+		{
+			contactObjects.Remove(availableObject);
+		}
+
+
+		protected void ClearContact() {
+			foreach (BaseGrabbable bg in contactObjects)
+				bg.RemoveContact(this);
+			contactObjects.Clear ();
+		}
 
         /// <summary>
         /// Sorts by distance from grab point to grab handle by default
@@ -225,5 +237,14 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             prevGrabState = GrabState;
             prevContactState = ContactState;
         }
+
+		//Función propia, finaliza el agarre.
+		public void FinishGrab () {
+			GrabEnd ();
+		}
+
+		public void FinishContact (BaseGrabbable baseGrabbable) {
+			RemoveContact(baseGrabbable);
+		}
     }
 }

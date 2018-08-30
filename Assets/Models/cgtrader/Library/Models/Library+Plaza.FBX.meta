@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 4918c137588fa5643b325da137d4941f
+timeCreated: 1534962108
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Floor
+    100002: Library Frame00
+    100004: Library Frame01
+    100006: Library Frame02
+    100008: Library Frame03
+    100010: Library Frame04
+    100012: Library Panel00
+    100014: Library Panel01
+    100016: Library Panel02
+    100018: Library Panel03
+    100020: Library Panel04
+    100022: Library Panel05
+    100024: Library Panel06
+    100026: Library Panel07
+    100028: Library Panel08
+    100030: //RootNode
+    100032: PhysCamera001
+    100034: PhysCamera001.Target
+    100036: PhysCamera002
+    100038: PhysCamera002.Target
+    100040: PhysCamera003
+    100042: PhysCamera003.Target
+    100044: VRayDome Light
+    100046: Wall
+    400000: Floor
+    400002: Library Frame00
+    400004: Library Frame01
+    400006: Library Frame02
+    400008: Library Frame03
+    400010: Library Frame04
+    400012: Library Panel00
+    400014: Library Panel01
+    400016: Library Panel02
+    400018: Library Panel03
+    400020: Library Panel04
+    400022: Library Panel05
+    400024: Library Panel06
+    400026: Library Panel07
+    400028: Library Panel08
+    400030: //RootNode
+    400032: PhysCamera001
+    400034: PhysCamera001.Target
+    400036: PhysCamera002
+    400038: PhysCamera002.Target
+    400040: PhysCamera003
+    400042: PhysCamera003.Target
+    400044: VRayDome Light
+    400046: Wall
+    2100000: Library Mount
+    2100002: Wood
+    2100004: Floor
+    2100006: Wall
+    2300000: Floor
+    2300002: Library Frame00
+    2300004: Library Frame01
+    2300006: Library Frame02
+    2300008: Library Frame03
+    2300010: Library Frame04
+    2300012: Library Panel00
+    2300014: Library Panel01
+    2300016: Library Panel02
+    2300018: Library Panel03
+    2300020: Library Panel04
+    2300022: Library Panel05
+    2300024: Library Panel06
+    2300026: Library Panel07
+    2300028: Library Panel08
+    2300030: Wall
+    3300000: Floor
+    3300002: Library Frame00
+    3300004: Library Frame01
+    3300006: Library Frame02
+    3300008: Library Frame03
+    3300010: Library Frame04
+    3300012: Library Panel00
+    3300014: Library Panel01
+    3300016: Library Panel02
+    3300018: Library Panel03
+    3300020: Library Panel04
+    3300022: Library Panel05
+    3300024: Library Panel06
+    3300026: Library Panel07
+    3300028: Library Panel08
+    3300030: Wall
+    4300000: Library Frame00
+    4300002: Library Frame01
+    4300004: Library Frame02
+    4300006: Library Frame03
+    4300008: Library Frame04
+    4300010: Library Panel08
+    4300012: Library Panel07
+    4300014: Library Panel06
+    4300016: Library Panel05
+    4300018: Library Panel04
+    4300020: Library Panel03
+    4300022: Library Panel02
+    4300024: Library Panel01
+    4300026: Library Panel00
+    4300028: Floor
+    4300030: Wall
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: b5aa08aa555d7fc4db028e76a3056518, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Library Mount
+    second: {fileID: 2100000, guid: 97803f9606f00204dbf32abd528a7515, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: a1f521d1de68f344fa8510a5dc3f3f91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: bf0ecbd46b54b204fac872ba6042479c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

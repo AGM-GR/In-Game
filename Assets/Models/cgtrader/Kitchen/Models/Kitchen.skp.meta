@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: 91af3093e39f52443a98d80dd0e9281b
+timeCreated: 1535049743
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000
+  assetHash:
+    serializedVersion: 2
+    Hash: ff942a82b00fd4d943afbda35db4f028
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 9.54118, y: 1.8223661, z: 3.3501935}
+      lookAt: {x: -2.1060846, y: -0.8243147, z: 10.472061}
+      up: {x: -0.16237347, y: 0.9817216, z: 0.09928533}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 7068slider
+    100002: box
+    100004: Component#1
+    100006: Component#2
+    100008: cupboard handle
+    100010: cupboard handle 1
+    100012: cupboard handle 2
+    100014: cupboard handle 3
+    100016: cupboard handle 4
+    100018: cupboard handle 5
+    100020: Frame
+    100022: Grail Single Handle Pull-Down Spray Faucet by Delta - 985LF-SS
+    100024: Group 101
+    100026: Group 102
+    100028: Group 104
+    100030: Group 106
+    100032: Group 108
+    100034: Group 110
+    100036: Group 113
+    100038: Group 116
+    100040: Group 118
+    100042: Group 119
+    100044: Group 121
+    100046: Group 124
+    100048: Group 126
+    100050: Group 127
+    100052: Group 129
+    100054: Group 132
+    100056: Group 135
+    100058: Group 137
+    100060: Group 138
+    100062: Group 140
+    100064: Group 143
+    100066: Group 145
+    100068: Group 146
+    100070: Group 148
+    100072: Group 151
+    100074: Group 154
+    100076: Group 156
+    100078: Group 157
+    100080: Group 159
+    100082: Group 162
+    100084: Group 164
+    100086: Group 165
+    100088: Group 167
+    100090: Group 170
+    100092: Group 173
+    100094: Group 175
+    100096: Group 176
+    100098: Group 178
+    100100: Group 181
+    100102: Group 183
+    100104: Group 184
+    100106: Group 186
+    100108: Group 189
+    100110: Group 205
+    100112: Group 25
+    100114: Group 27
+    100116: Group 29
+    100118: Group 31
+    100120: Group 35
+    100122: Group 72
+    100124: Group 74
+    100126: Group 99
+    100128: Group#1
+    100130: Group#1 1
+    100132: Group#1 10
+    100134: Group#1 11
+    100136: Group#1 12
+    100138: Group#1 13
+    100140: Group#1 2
+    100142: Group#1 3
+    100144: Group#1 4
+    100146: Group#1 5
+    100148: Group#1 6
+    100150: Group#1 7
+    100152: Group#1 8
+    100154: Group#1 9
+    100156: Group#12
+    100158: Group#12 1
+    100160: Group#12 10
+    100162: Group#12 11
+    100164: Group#12 12
+    100166: Group#12 13
+    100168: Group#12 14
+    100170: Group#12 15
+    100172: Group#12 16
+    100174: Group#12 17
+    100176: Group#12 2
+    100178: Group#12 3
+    100180: Group#12 4
+    100182: Group#12 5
+    100184: Group#12 6
+    100186: Group#12 7
+    100188: Group#12 8
+    100190: Group#12 9
+    100192: Groupe#11
+    100194: Groupe#11 1
+    100196: Groupe#11 2
+    100198: Groupe#11 3
+    100200: Groupe#12
+    100202: handle
+    100204: handle 1
+    100206: handle 2
+    100208: handle 3
+    100210: handle 4
+    100212: handle 5
+    100214: //RootNode
+    100216: Leg 2
+    100218: Leg 2 1
+    100220: Leg 2 2
+    100222: Leg 2 3
+    100224: moitie
+    100226: moitie 1
+    100228: moitie 2
+    100230: moitie 3
+    100232: moitie 4
+    100234: moitie 5
+    100236: moitie 6
+    100238: moitie 7
+    100240: Morth+Stool
+    100242: Morth+Stool 1
+    100244: Restraint 1
+    100246: Restraint 1 1
+    100248: Restraint 1 2
+    100250: Restraint 1 3
+    100252: Restraint 2
+    100254: Restraint 2 1
+    100256: Restraint 2 2
+    100258: Restraint 2 3
+    100260: roupe_226
+    100262: Seat Upholstered
+    100264: Seat Upholstered 1
+    100266: Slider
+    100268: Slider2
+    100270: V-Ray Rectangle Light
+    100272: V-Ray Rectangle Light#1
+    100274: Window
+    100276: Window 1
+    400000: 7068slider
+    400002: box
+    400004: Component#1
+    400006: Component#2
+    400008: cupboard handle
+    400010: cupboard handle 1
+    400012: cupboard handle 2
+    400014: cupboard handle 3
+    400016: cupboard handle 4
+    400018: cupboard handle 5
+    400020: Frame
+    400022: Grail Single Handle Pull-Down Spray Faucet by Delta - 985LF-SS
+    400024: Group 101
+    400026: Group 102
+    400028: Group 104
+    400030: Group 106
+    400032: Group 108
+    400034: Group 110
+    400036: Group 113
+    400038: Group 116
+    400040: Group 118
+    400042: Group 119
+    400044: Group 121
+    400046: Group 124
+    400048: Group 126
+    400050: Group 127
+    400052: Group 129
+    400054: Group 132
+    400056: Group 135
+    400058: Group 137
+    400060: Group 138
+    400062: Group 140
+    400064: Group 143
+    400066: Group 145
+    400068: Group 146
+    400070: Group 148
+    400072: Group 151
+    400074: Group 154
+    400076: Group 156
+    400078: Group 157
+    400080: Group 159
+    400082: Group 162
+    400084: Group 164
+    400086: Group 165
+    400088: Group 167
+    400090: Group 170
+    400092: Group 173
+    400094: Group 175
+    400096: Group 176
+    400098: Group 178
+    400100: Group 181
+    400102: Group 183
+    400104: Group 184
+    400106: Group 186
+    400108: Group 189
+    400110: Group 205
+    400112: Group 25
+    400114: Group 27
+    400116: Group 29
+    400118: Group 31
+    400120: Group 35
+    400122: Group 72
+    400124: Group 74
+    400126: Group 99
+    400128: Group#1
+    400130: Group#1 1
+    400132: Group#1 10
+    400134: Group#1 11
+    400136: Group#1 12
+    400138: Group#1 13
+    400140: Group#1 2
+    400142: Group#1 3
+    400144: Group#1 4
+    400146: Group#1 5
+    400148: Group#1 6
+    400150: Group#1 7
+    400152: Group#1 8
+    400154: Group#1 9
+    400156: Group#12
+    400158: Group#12 1
+    400160: Group#12 10
+    400162: Group#12 11
+    400164: Group#12 12
+    400166: Group#12 13
+    400168: Group#12 14
+    400170: Group#12 15
+    400172: Group#12 16
+    400174: Group#12 17
+    400176: Group#12 2
+    400178: Group#12 3
+    400180: Group#12 4
+    400182: Group#12 5
+    400184: Group#12 6
+    400186: Group#12 7
+    400188: Group#12 8
+    400190: Group#12 9
+    400192: Groupe#11
+    400194: Groupe#11 1
+    400196: Groupe#11 2
+    400198: Groupe#11 3
+    400200: Groupe#12
+    400202: handle
+    400204: handle 1
+    400206: handle 2
+    400208: handle 3
+    400210: handle 4
+    400212: handle 5
+    400214: //RootNode
+    400216: Leg 2
+    400218: Leg 2 1
+    400220: Leg 2 2
+    400222: Leg 2 3
+    400224: moitie
+    400226: moitie 1
+    400228: moitie 2
+    400230: moitie 3
+    400232: moitie 4
+    400234: moitie 5
+    400236: moitie 6
+    400238: moitie 7
+    400240: Morth+Stool
+    400242: Morth+Stool 1
+    400244: Restraint 1
+    400246: Restraint 1 1
+    400248: Restraint 1 2
+    400250: Restraint 1 3
+    400252: Restraint 2
+    400254: Restraint 2 1
+    400256: Restraint 2 2
+    400258: Restraint 2 3
+    400260: roupe_226
+    400262: Seat Upholstered
+    400264: Seat Upholstered 1
+    400266: Slider
+    400268: Slider2
+    400270: V-Ray Rectangle Light
+    400272: V-Ray Rectangle Light#1
+    400274: Window
+    400276: Window 1
+    2100000: _defaultMat
+    2100002: EGGER_H3734_ST9_NATURAL-DIJON-WALNUT-2
+    2100004: '[0128_White]'
+    2100006: '[0132_LightGray]'
+    2100008: lMT9PFZchE
+    2100010: 23677-0
+    2100012: '[Metal_Corrogated_Shiny]'
+    2100014: 3838997398513_01_large
+    2100016: f147
+    2100018: '[0137_Black]'
+    2100020: 9cc31e29b4131874cdda4402c376d283
+    2100022: '[Color_000]'
+    2100024: F081_560x410
+    2100026: 921144_511550162237940_1624737860_o
+    2100028: gorenje-oven-bci7321sx
+    2100030: '[WarmGray1]'
+    2100032: '[0131_Silver]'
+    2100034: antracit-0164
+    2100036: 14GN0130
+    2100038: '[Translucent_Glass_Gray]1'
+    2100040: H1145_ST10_Rapport_560x410
+    2100042: Delta-Grail-985LF-SS
+    2100044: Material10
+    2100046: Material6
+    2100048: Material7
+    2100050: Material4
+    2100052: 21687446_212111989335280_3056081447410972068_n
+    2100054: _1
+    2100056: Couleur_001
+    2100058: Couleur_008
+    2100060: '[Wood_ Floor]'
+    2100062: '[Color_001]'
+    2100064: '[Color_006]'
+    2100066: 22309031_184811818731964_3798899228809074273_n
+    2300000: box
+    2300002: Component#1
+    2300004: Component#2
+    2300006: Frame
+    2300008: Group 102
+    2300010: Group 104
+    2300012: Group 106
+    2300014: Group 108
+    2300016: Group 110
+    2300018: Group 113
+    2300020: Group 116
+    2300022: Group 119
+    2300024: Group 121
+    2300026: Group 124
+    2300028: Group 127
+    2300030: Group 129
+    2300032: Group 132
+    2300034: Group 135
+    2300036: Group 138
+    2300038: Group 140
+    2300040: Group 143
+    2300042: Group 146
+    2300044: Group 148
+    2300046: Group 151
+    2300048: Group 154
+    2300050: Group 157
+    2300052: Group 159
+    2300054: Group 162
+    2300056: Group 165
+    2300058: Group 167
+    2300060: Group 170
+    2300062: Group 173
+    2300064: Group 176
+    2300066: Group 178
+    2300068: Group 181
+    2300070: Group 184
+    2300072: Group 186
+    2300074: Group 25
+    2300076: Group 27
+    2300078: Group 29
+    2300080: Group 31
+    2300082: Group 72
+    2300084: Group 74
+    2300086: Group 99
+    2300088: Group#1
+    2300090: Group#1 1
+    2300092: Group#1 10
+    2300094: Group#1 11
+    2300096: Group#1 12
+    2300098: Group#1 13
+    2300100: Group#1 2
+    2300102: Group#1 3
+    2300104: Group#1 4
+    2300106: Group#1 5
+    2300108: Group#1 6
+    2300110: Group#1 7
+    2300112: Group#1 8
+    2300114: Group#1 9
+    2300116: Group#12
+    2300118: Group#12 1
+    2300120: Group#12 10
+    2300122: Group#12 11
+    2300124: Group#12 12
+    2300126: Group#12 13
+    2300128: Group#12 14
+    2300130: Group#12 15
+    2300132: Group#12 16
+    2300134: Group#12 17
+    2300136: Group#12 2
+    2300138: Group#12 3
+    2300140: Group#12 4
+    2300142: Group#12 5
+    2300144: Group#12 6
+    2300146: Group#12 7
+    2300148: Group#12 8
+    2300150: Group#12 9
+    2300152: handle
+    2300154: handle 1
+    2300156: handle 2
+    2300158: handle 3
+    2300160: handle 4
+    2300162: handle 5
+    2300164: //RootNode
+    2300166: Leg 2
+    2300168: Leg 2 1
+    2300170: Leg 2 2
+    2300172: Leg 2 3
+    2300174: Restraint 1
+    2300176: Restraint 1 1
+    2300178: Restraint 1 2
+    2300180: Restraint 1 3
+    2300182: Restraint 2
+    2300184: Restraint 2 1
+    2300186: Restraint 2 2
+    2300188: Restraint 2 3
+    2300190: Seat Upholstered
+    2300192: Seat Upholstered 1
+    2300194: Slider
+    2300196: Slider2
+    2300198: V-Ray Rectangle Light
+    2300200: V-Ray Rectangle Light#1
+    2300202: Window
+    2300204: Window 1
+    3300000: box
+    3300002: Component#1
+    3300004: Component#2
+    3300006: Frame
+    3300008: Group 102
+    3300010: Group 104
+    3300012: Group 106
+    3300014: Group 108
+    3300016: Group 110
+    3300018: Group 113
+    3300020: Group 116
+    3300022: Group 119
+    3300024: Group 121
+    3300026: Group 124
+    3300028: Group 127
+    3300030: Group 129
+    3300032: Group 132
+    3300034: Group 135
+    3300036: Group 138
+    3300038: Group 140
+    3300040: Group 143
+    3300042: Group 146
+    3300044: Group 148
+    3300046: Group 151
+    3300048: Group 154
+    3300050: Group 157
+    3300052: Group 159
+    3300054: Group 162
+    3300056: Group 165
+    3300058: Group 167
+    3300060: Group 170
+    3300062: Group 173
+    3300064: Group 176
+    3300066: Group 178
+    3300068: Group 181
+    3300070: Group 184
+    3300072: Group 186
+    3300074: Group 25
+    3300076: Group 27
+    3300078: Group 29
+    3300080: Group 31
+    3300082: Group 72
+    3300084: Group 74
+    3300086: Group 99
+    3300088: Group#1
+    3300090: Group#1 1
+    3300092: Group#1 10
+    3300094: Group#1 11
+    3300096: Group#1 12
+    3300098: Group#1 13
+    3300100: Group#1 2
+    3300102: Group#1 3
+    3300104: Group#1 4
+    3300106: Group#1 5
+    3300108: Group#1 6
+    3300110: Group#1 7
+    3300112: Group#1 8
+    3300114: Group#1 9
+    3300116: Group#12
+    3300118: Group#12 1
+    3300120: Group#12 10
+    3300122: Group#12 11
+    3300124: Group#12 12
+    3300126: Group#12 13
+    3300128: Group#12 14
+    3300130: Group#12 15
+    3300132: Group#12 16
+    3300134: Group#12 17
+    3300136: Group#12 2
+    3300138: Group#12 3
+    3300140: Group#12 4
+    3300142: Group#12 5
+    3300144: Group#12 6
+    3300146: Group#12 7
+    3300148: Group#12 8
+    3300150: Group#12 9
+    3300152: handle
+    3300154: handle 1
+    3300156: handle 2
+    3300158: handle 3
+    3300160: handle 4
+    3300162: handle 5
+    3300164: //RootNode
+    3300166: Leg 2
+    3300168: Leg 2 1
+    3300170: Leg 2 2
+    3300172: Leg 2 3
+    3300174: Restraint 1
+    3300176: Restraint 1 1
+    3300178: Restraint 1 2
+    3300180: Restraint 1 3
+    3300182: Restraint 2
+    3300184: Restraint 2 1
+    3300186: Restraint 2 2
+    3300188: Restraint 2 3
+    3300190: Seat Upholstered
+    3300192: Seat Upholstered 1
+    3300194: Slider
+    3300196: Slider2
+    3300198: V-Ray Rectangle Light
+    3300200: V-Ray Rectangle Light#1
+    3300202: Window
+    3300204: Window 1
+    4300000: Mesh Kitchen
+    4300002: Mesh handle
+    4300004: Mesh Group#1
+    4300006: Mesh Group#1
+    4300008: Mesh Group 25
+    4300010: Mesh Group 27
+    4300012: Mesh Group 29
+    4300014: Mesh Group 31
+    4300016: Mesh box
+    4300018: Mesh Group#12
+    4300020: Mesh Group 72
+    4300022: Mesh Group 74
+    4300024: Mesh Component#2
+    4300026: Mesh V-Ray Rectangle Light
+    4300028: Mesh Group 99
+    4300030: Mesh Group 102
+    4300032: Mesh Group 104
+    4300034: Mesh Group 106
+    4300036: Mesh Group 108
+    4300038: Mesh Group 110
+    4300040: Mesh Group 113
+    4300042: Mesh Group 116
+    4300044: Mesh Group 121
+    4300046: Mesh Leg 2
+    4300048: Mesh Restraint 2
+    4300050: Mesh Restraint 1
+    4300052: Mesh Seat Upholstered
+    4300054: Mesh Frame
+    4300056: Mesh Slider2
+    4300058: Mesh Window
+    4300060: Mesh Slider
+    4300062: Mesh V-Ray Rectangle Light#1
+    4300064: Mesh Component#1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 14GN0130
+    second: {fileID: 2100000, guid: 331e4f784f0a5eb4f8f8077b4376e2ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21687446_212111989335280_3056081447410972068_n
+    second: {fileID: 2100000, guid: b3e0c98133d07f64481fd59213b9adba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22309031_184811818731964_3798899228809074273_n
+    second: {fileID: 2100000, guid: 14b57d4fcdfe8d440be36dca14195574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 23677-0
+    second: {fileID: 2100000, guid: 72719ac7e1e6796478e01885ef1775a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3838997398513_01_large
+    second: {fileID: 2100000, guid: 5920d457d7afb094d990f85dc7502e5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 921144_511550162237940_1624737860_o
+    second: {fileID: 2100000, guid: 00aec90ec704dae45ab8144bb136eab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9cc31e29b4131874cdda4402c376d283
+    second: {fileID: 2100000, guid: 686bac029ff2ed94581e68809ce94d55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Couleur_001
+    second: {fileID: 2100000, guid: 738037b29bcc7c14ea169395cccdb847, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Couleur_008
+    second: {fileID: 2100000, guid: c474c48cd1f11324a9006372d8a3126d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Delta-Grail-985LF-SS
+    second: {fileID: 2100000, guid: 4ed19b9421854214d9a2c463a3505a37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EGGER_H3734_ST9_NATURAL-DIJON-WALNUT-2
+    second: {fileID: 2100000, guid: 81f0ce3f1a19391459007c56032b4c76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F081_560x410
+    second: {fileID: 2100000, guid: ca781e9e2d6da834d90ba83210f93efb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: H1145_ST10_Rapport_560x410
+    second: {fileID: 2100000, guid: de95d4ef0f0b9b1448cfc551bb38fba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material10
+    second: {fileID: 2100000, guid: bb0a27a9d233cbb4f872a86a7c517d0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material4
+    second: {fileID: 2100000, guid: 27e222cef57926d4798b1da8f84698b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material6
+    second: {fileID: 2100000, guid: 756aa15c53822e44bba6f69170d28f35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material7
+    second: {fileID: 2100000, guid: 4e8f13752bcd20d4c80cb7ccdea5539f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0128_White]'
+    second: {fileID: 2100000, guid: d4dfdbf14c3c9cb46b1d55c24058eb67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0131_Silver]'
+    second: {fileID: 2100000, guid: 343e0856f7313384187a8e9d3c1f68fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0132_LightGray]'
+    second: {fileID: 2100000, guid: 7a1bee6a6e9275d40aef538ceb58c3a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0137_Black]'
+    second: {fileID: 2100000, guid: 6d081a400bd9b79438d9d6b8f6107e1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_000]'
+    second: {fileID: 2100000, guid: 2c82d501e44f9ba40bda50d5994e9ccb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_001]'
+    second: {fileID: 2100000, guid: 846b2cdf5ecd6f5468e9f1a9b96370ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_006]'
+    second: {fileID: 2100000, guid: ad05a5097e5b7dc4eaca085354ae50df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal_Corrogated_Shiny]'
+    second: {fileID: 2100000, guid: 224f764955e993c4f861f13bf21f0580, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Translucent_Glass_Gray]1'
+    second: {fileID: 2100000, guid: e0cf743a651497c4196bf4ba9c399547, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[WarmGray1]'
+    second: {fileID: 2100000, guid: e0fdc2a4f2e35984c899b6bc1ed9fbae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood_ Floor]'
+    second: {fileID: 2100000, guid: b635fad602ec27345b7622d382d17114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _1
+    second: {fileID: 2100000, guid: 079bf25ab44180c4db30f63e49f22782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 3831f3e5fac800e44a5720718853c6c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: antracit-0164
+    second: {fileID: 2100000, guid: a87361e1b58a3cd4e869b7a6a82a1232, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: f147
+    second: {fileID: 2100000, guid: 3df3fcc74f76c934a8616d4631f0a786, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gorenje-oven-bci7321sx
+    second: {fileID: 2100000, guid: b4116a880d57681498ffe736da07aa3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lMT9PFZchE
+    second: {fileID: 2100000, guid: bcb5986e6a6a0cf468968f902386fe3d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

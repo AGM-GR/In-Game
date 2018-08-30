@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 12ff8dac1a9f6a047b6d8b4bf8969232
+timeCreated: 1534963066
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 72IMOSXD01
+    100002: 72IMOSXD02
+    100004: 72IMOSXD03
+    100006: 72IMOSXD04
+    100008: 72IMOSXD04.2
+    100010: 72IMOSXD05
+    100012: book_cove0
+    100014: book_cove0.2
+    100016: book_cove1
+    100018: book_cove1.2
+    100020: book_cove2
+    100022: book_cove2.2
+    100024: book_cove3
+    100026: book_cove3.2
+    100028: book_cove4
+    100030: book_cove4.2
+    100032: book_cover
+    100034: book_cover.2
+    100036: book_page0
+    100038: book_page0.2
+    100040: book_page1
+    100042: book_page1.2
+    100044: book_page2
+    100046: book_page2.2
+    100048: book_page3
+    100050: book_page3.2
+    100052: book_page4
+    100054: book_page4.2
+    100056: book_pages
+    100058: book_pages.2
+    100060: book_titl0
+    100062: book_titl0.2
+    100064: book_titl1
+    100066: book_titl1.2
+    100068: book_titl2
+    100070: book_titl2.2
+    100072: book_titl3
+    100074: book_titl3.2
+    100076: book_titl4
+    100078: book_titl4.2
+    100080: book_title
+    100082: book_title.2
+    100084: Group01
+    100086: Group01.1
+    100088: Hilfslinie
+    100090: Hilfslinie.2
+    100092: Hilfslinie.3
+    100094: Null-Objekt
+    100096: Null-Objekt.1
+    100098: Null-Objekt.2
+    100100: podstavka
+    100102: //RootNode
+    100104: statuetka
+    100106: Vase1
+    400000: 72IMOSXD01
+    400002: 72IMOSXD02
+    400004: 72IMOSXD03
+    400006: 72IMOSXD04
+    400008: 72IMOSXD04.2
+    400010: 72IMOSXD05
+    400012: book_cove0
+    400014: book_cove0.2
+    400016: book_cove1
+    400018: book_cove1.2
+    400020: book_cove2
+    400022: book_cove2.2
+    400024: book_cove3
+    400026: book_cove3.2
+    400028: book_cove4
+    400030: book_cove4.2
+    400032: book_cover
+    400034: book_cover.2
+    400036: book_page0
+    400038: book_page0.2
+    400040: book_page1
+    400042: book_page1.2
+    400044: book_page2
+    400046: book_page2.2
+    400048: book_page3
+    400050: book_page3.2
+    400052: book_page4
+    400054: book_page4.2
+    400056: book_pages
+    400058: book_pages.2
+    400060: book_titl0
+    400062: book_titl0.2
+    400064: book_titl1
+    400066: book_titl1.2
+    400068: book_titl2
+    400070: book_titl2.2
+    400072: book_titl3
+    400074: book_titl3.2
+    400076: book_titl4
+    400078: book_titl4.2
+    400080: book_title
+    400082: book_title.2
+    400084: Group01
+    400086: Group01.1
+    400088: Hilfslinie
+    400090: Hilfslinie.2
+    400092: Hilfslinie.3
+    400094: Null-Objekt
+    400096: Null-Objekt.1
+    400098: Null-Objekt.2
+    400100: podstavka
+    400102: //RootNode
+    400104: statuetka
+    400106: Vase1
+    2100000: 'Material #63'
+    2100002: 'Material #62'
+    2100004: 'Material #61'
+    2100006: No Name
+    2100008: Metal Silver
+    2100010: Stone - Marble Indian
+    2100012: "Wei\xDF-glanz"
+    2100014: R4221
+    2300000: 72IMOSXD01
+    2300002: 72IMOSXD02
+    2300004: 72IMOSXD03
+    2300006: 72IMOSXD04
+    2300008: 72IMOSXD04.2
+    2300010: 72IMOSXD05
+    2300012: book_cove0
+    2300014: book_cove0.2
+    2300016: book_cove1
+    2300018: book_cove1.2
+    2300020: book_cove2
+    2300022: book_cove2.2
+    2300024: book_cove3
+    2300026: book_cove3.2
+    2300028: book_cove4
+    2300030: book_cove4.2
+    2300032: book_cover
+    2300034: book_cover.2
+    2300036: book_page0
+    2300038: book_page0.2
+    2300040: book_page1
+    2300042: book_page1.2
+    2300044: book_page2
+    2300046: book_page2.2
+    2300048: book_page3
+    2300050: book_page3.2
+    2300052: book_page4
+    2300054: book_page4.2
+    2300056: book_pages
+    2300058: book_pages.2
+    2300060: book_titl0
+    2300062: book_titl0.2
+    2300064: book_titl1
+    2300066: book_titl1.2
+    2300068: book_titl2
+    2300070: book_titl2.2
+    2300072: book_titl3
+    2300074: book_titl3.2
+    2300076: book_titl4
+    2300078: book_titl4.2
+    2300080: book_title
+    2300082: book_title.2
+    2300084: Hilfslinie
+    2300086: Hilfslinie.2
+    2300088: Hilfslinie.3
+    2300090: podstavka
+    2300092: statuetka
+    2300094: Vase1
+    3300000: 72IMOSXD01
+    3300002: 72IMOSXD02
+    3300004: 72IMOSXD03
+    3300006: 72IMOSXD04
+    3300008: 72IMOSXD04.2
+    3300010: 72IMOSXD05
+    3300012: book_cove0
+    3300014: book_cove0.2
+    3300016: book_cove1
+    3300018: book_cove1.2
+    3300020: book_cove2
+    3300022: book_cove2.2
+    3300024: book_cove3
+    3300026: book_cove3.2
+    3300028: book_cove4
+    3300030: book_cove4.2
+    3300032: book_cover
+    3300034: book_cover.2
+    3300036: book_page0
+    3300038: book_page0.2
+    3300040: book_page1
+    3300042: book_page1.2
+    3300044: book_page2
+    3300046: book_page2.2
+    3300048: book_page3
+    3300050: book_page3.2
+    3300052: book_page4
+    3300054: book_page4.2
+    3300056: book_pages
+    3300058: book_pages.2
+    3300060: book_titl0
+    3300062: book_titl0.2
+    3300064: book_titl1
+    3300066: book_titl1.2
+    3300068: book_titl2
+    3300070: book_titl2.2
+    3300072: book_titl3
+    3300074: book_titl3.2
+    3300076: book_titl4
+    3300078: book_titl4.2
+    3300080: book_title
+    3300082: book_title.2
+    3300084: Hilfslinie
+    3300086: Hilfslinie.2
+    3300088: Hilfslinie.3
+    3300090: podstavka
+    3300092: statuetka
+    3300094: Vase1
+    4300000: book_page4
+    4300002: book_titl4
+    4300004: book_cove4
+    4300006: book_cove3
+    4300008: book_page3
+    4300010: book_titl3
+    4300012: book_titl2
+    4300014: book_cove2
+    4300016: book_page2
+    4300018: book_titl1
+    4300020: book_cove1
+    4300022: book_page1
+    4300024: book_page0
+    4300026: book_titl0
+    4300028: book_cove0
+    4300030: book_pages
+    4300032: book_title
+    4300034: book_cover
+    4300036: book_page4.2
+    4300038: book_titl4.2
+    4300040: book_cove4.2
+    4300042: book_cove3.2
+    4300044: book_page3.2
+    4300046: book_titl3.2
+    4300048: book_titl2.2
+    4300050: book_cove2.2
+    4300052: book_page2.2
+    4300054: book_titl1.2
+    4300056: book_cove1.2
+    4300058: book_page1.2
+    4300060: book_page0.2
+    4300062: book_titl0.2
+    4300064: book_cove0.2
+    4300066: book_pages.2
+    4300068: book_title.2
+    4300070: book_cover.2
+    4300072: Vase1
+    4300074: statuetka
+    4300076: podstavka
+    4300078: 72IMOSXD01
+    4300080: 72IMOSXD02
+    4300082: 72IMOSXD03
+    4300084: 72IMOSXD04
+    4300086: 72IMOSXD04.2
+    4300088: Hilfslinie
+    4300090: Hilfslinie.2
+    4300092: Hilfslinie.3
+    4300094: 72IMOSXD05
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #61'
+    second: {fileID: 2100000, guid: 976be888d3a2eb141a41fb0f72748ab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #62'
+    second: {fileID: 2100000, guid: ff1438dcd43c4a149a5ec971f7b4f1a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #63'
+    second: {fileID: 2100000, guid: 8cb11f08d50e85b42af79469bdf951f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal Silver
+    second: {fileID: 2100000, guid: f766b1be0fc36164fad360baa4af2053, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: c9340707352dd7e4ca268f0fad02bfd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: R4221
+    second: {fileID: 2100000, guid: 8830dde0fedc6924487aa5a17d620a3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone - Marble Indian
+    second: {fileID: 2100000, guid: ee6adcc8d94d30d42ba063e726a71f0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wei\xDF-glanz"
+    second: {fileID: 2100000, guid: 924598047b7e7744d9b2c025ef5217e5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

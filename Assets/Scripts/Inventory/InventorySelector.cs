@@ -1,5 +1,6 @@
 ﻿using HoloToolkit.Unity.UX;
 using HoloToolkit.Unity.InputModule;
+using HoloToolkit.Unity.InputModule.Examples.Grabbables;
 using UnityEngine;
 
 #if UNITY_WSA && UNITY_2017_2_OR_NEWER
@@ -24,11 +25,11 @@ public class InventorySelector : AttachToController {
 	[SerializeField]
 	private float swipeDuration = 0.5f;
 	[SerializeField]
+	private float menuTimeout = 2f;
+	[SerializeField]
 	private int displayItemindex = 0;
 	[SerializeField]
 	private int activeItemindex = 3;
-	[SerializeField]
-	private float menuTimeout = 2f;
 
 	private float menuOpenTime = 0f;
 	private bool menuOpen = false;
@@ -41,6 +42,8 @@ public class InventorySelector : AttachToController {
 	private bool resetInput;
 
 	private InventoryItem activeItem;
+
+	private BaseGrabber activeHandGrabber = null;
 
 	protected override void OnEnable() {
 		base.OnEnable();
@@ -88,7 +91,13 @@ public class InventorySelector : AttachToController {
 			}
 
 			// Get the current offset and the target offset from our collection
-			startOffset = itemsCollection.GetOffsetFromObjectIndex(displayItemindex);
+			if (itemsCollection.Objects.Count % 2 != 0) {
+				startOffset = itemsCollection.GetOffsetFromObjectIndex(displayItemindex) + (itemsCollection.DistributionOffsetPerObject / 2.0f);
+				if (startOffset > 1) startOffset = startOffset - 1;
+			} else {
+				startOffset = itemsCollection.GetOffsetFromObjectIndex(displayItemindex);
+			}
+
 			targetOffset = startOffset;
 
 			switch (currentAction) {
@@ -140,21 +149,29 @@ public class InventorySelector : AttachToController {
 	#if UNITY_WSA && UNITY_2017_2_OR_NEWER
 	private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj) {
 		if (obj.state.touchpadPressed) {
+			if (activeHandGrabber == null)
+				activeHandGrabber = ControllerInfo.ControllerParent.GetComponentInChildren<BaseGrabber> ();
+			
 			if (Handedness != obj.state.source.handedness) {
 				// Quita el modo menú y las animaciones si estubiese activo de la mano actual
 				ExitMenuMode ();
 				ControllerInfo.ControllerParent.GetComponentInChildren<HandAnimationsController> ().SetUndoAnimation (activeItem.HandAction);
+				ControllerInfo.ControllerParent.GetComponentInChildren<BaseGrabber> ().enabled = true;
 				//Cambia la mano que tiene el menú si se pulsa el touchpad con otra mano
 				ChangeHandedness (obj.state.source.handedness);
 				//Entra en el modo menú con la otra mano
 				EnterMenuMode ();
+				activeHandGrabber = ControllerInfo.ControllerParent.GetComponentInChildren<BaseGrabber> ();
+				activeHandGrabber.enabled = false;
 			}
-			// Check which side we clicked
-			if (obj.state.touchpadPosition.x < 0) {
-				currentAction = SwipeEnum.Left;
-			}
-			else {
-				currentAction = SwipeEnum.Right;
+
+			if (activeHandGrabber.GrabState == GrabStateEnum.Inactive && activeHandGrabber.ContactState == GrabStateEnum.Inactive) {
+				// Check which side we clicked
+				if (obj.state.touchpadPosition.x < 0) {
+					currentAction = SwipeEnum.Left;
+				} else {
+					currentAction = SwipeEnum.Right;
+				}
 			}
 		}
 	}
@@ -175,18 +192,39 @@ public class InventorySelector : AttachToController {
 	}
 
 	private void EnterMenuMode () {
-		if (ControllerInfo.ControllerParent != null && ControllerInfo.ControllerParent.GetComponentInChildren<ControllerController> () != null) {
-			ControllerInfo.ControllerParent.GetComponentInChildren<ControllerController> ().ActiveControllerMenu ();
-			ControllerInfo.ControllerParent.GetComponentInChildren<HandModelConnector> ().HideHandModel ();
-			ControllerInfo.ControllerParent.GetComponentInChildren<HandAnimationsController> ().SetUndoAnimation (activeItem.HandAction);
+		if (ControllerInfo != null && ControllerInfo.ControllerParent != null) {
+			GameObject controller = ControllerInfo.ControllerParent;
+			if (controller.GetComponentInChildren<ControllerController> () != null) {
+				controller.GetComponentInChildren<ControllerController> ().ActiveControllerMenu ();
+				controller.GetComponentInChildren<HandModelConnector> ().HideHandModel ();
+				controller.GetComponentInChildren<HandAnimationsController> ().SetUndoAnimation (activeItem.HandAction);
+
+				activeHandGrabber.enabled = false;
+			}
 		}
 	}
 
 	private void ExitMenuMode () {
-		if (ControllerInfo.ControllerParent != null && ControllerInfo.ControllerParent.GetComponentInChildren<ControllerController> () != null) {
-			ControllerInfo.ControllerParent.GetComponentInChildren<ControllerController> ().DeactivateControllerAction ();
-			ControllerInfo.ControllerParent.GetComponentInChildren<HandModelConnector> ().ShowHandModel ();
-			ControllerInfo.ControllerParent.GetComponentInChildren<HandAnimationsController> ().SetAnimation (activeItem.HandAction);
+		if (ControllerInfo != null && ControllerInfo.ControllerParent != null) {
+			GameObject controller = ControllerInfo.ControllerParent;
+			if (controller.GetComponentInChildren<ControllerController> () != null) {
+				controller.GetComponentInChildren<ControllerController> ().DeactivateControllerAction ();
+				controller.GetComponentInChildren<HandModelConnector> ().ShowHandModel ();
+				controller.GetComponentInChildren<HandAnimationsController> ().SetAnimation (activeItem.HandAction);
+
+				if (activeItem == itemsCollection.Objects[0].GetComponent<InventoryItem>())
+					activeHandGrabber.enabled = true;
+			}
 		}
+	}
+
+	public void SetActiveItemindex (int activeIndex) {
+		activeItemindex = activeIndex - displayItemindex;
+		if (activeItemindex < 0)
+			activeItemindex = (itemsCollection.Objects.Count + activeItemindex);
+	}
+
+	public InventoryItem GetActiveItem () {
+		return activeItem;
 	}
 }

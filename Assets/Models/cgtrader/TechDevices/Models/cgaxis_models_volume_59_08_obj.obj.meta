@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 1d24bf4687cbc7743a838e4d81f51642
+timeCreated: 1534876166
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cgaxis_models_59_08_01
+    100002: cgaxis_models_59_08_02
+    100004: cgaxis_models_59_08_03
+    100006: cgaxis_models_59_08_04
+    100008: cgaxis_models_59_08_05
+    100010: //RootNode
+    400000: cgaxis_models_59_08_01
+    400002: cgaxis_models_59_08_02
+    400004: cgaxis_models_59_08_03
+    400006: cgaxis_models_59_08_04
+    400008: cgaxis_models_59_08_05
+    400010: //RootNode
+    2100000: cgaxis_models_59_08_01Mat
+    2100002: cgaxis_models_59_08_02Mat
+    2100004: cgaxis_models_59_08_03Mat
+    2100006: cgaxis_models_59_08_04Mat
+    2100008: cgaxis_models_59_08_05Mat
+    2300000: cgaxis_models_59_08_01
+    2300002: cgaxis_models_59_08_02
+    2300004: cgaxis_models_59_08_03
+    2300006: cgaxis_models_59_08_04
+    2300008: cgaxis_models_59_08_05
+    3300000: cgaxis_models_59_08_01
+    3300002: cgaxis_models_59_08_02
+    3300004: cgaxis_models_59_08_03
+    3300006: cgaxis_models_59_08_04
+    3300008: cgaxis_models_59_08_05
+    4300000: cgaxis_models_59_08_01
+    4300002: cgaxis_models_59_08_02
+    4300004: cgaxis_models_59_08_03
+    4300006: cgaxis_models_59_08_04
+    4300008: cgaxis_models_59_08_05
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_08_01Mat
+    second: {fileID: 2100000, guid: d5671a8cd227c204e927019ebdad51bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_08_02Mat
+    second: {fileID: 2100000, guid: dca0fa4fbb899c943bb6528bcf42d6bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_08_03Mat
+    second: {fileID: 2100000, guid: 36458741912c01d4094e5bb647e567ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_08_04Mat
+    second: {fileID: 2100000, guid: 7a42d77079c8daa48beee4592e81763e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_08_05Mat
+    second: {fileID: 2100000, guid: 287c89f7ed8a2e14fa693234e90a3cc3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.026
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
