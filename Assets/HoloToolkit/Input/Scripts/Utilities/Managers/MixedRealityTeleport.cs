@@ -112,6 +112,7 @@ namespace HoloToolkit.Unity.InputModule
             if (teleportMarker != null)
             {
                 teleportMarker = Instantiate(teleportMarker);
+                teleportMarker.transform.parent = transform;
                 teleportMarker.SetActive(false);
 
                 animationController = teleportMarker.GetComponentInChildren<Animator>();

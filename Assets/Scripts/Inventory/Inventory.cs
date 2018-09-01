@@ -38,4 +38,20 @@ public class Inventory : MonoBehaviour {
 
 		inventorySelector.SetActiveItemindex (newItemIdex);
 	}
+
+    public void ClearItems() {
+        InventoryItem noneItem = null;
+        for (int i = transform.childCount - 1; i >= 0; i--) {
+            if (transform.GetChild(i).name == "NoneItem")
+                noneItem = transform.GetChild(i).GetComponent<InventoryItem>();
+            else {
+                RemoveItemElement(transform.GetChild(i).GetComponent<InventoryItem>());
+                Destroy(transform.GetChild(i));
+            }
+        }
+
+        itemsCollection.Objects.Clear();
+        if (noneItem)
+            AddItemElement(noneItem);
+    }
 }

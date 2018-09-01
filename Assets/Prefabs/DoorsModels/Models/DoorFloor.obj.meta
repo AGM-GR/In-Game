@@ -1,33 +1,18 @@
 fileFormatVersion: 2
 guid: c1b8a9058059afe4896e20457ad9d8b1
-timeCreated: 1534986570
+timeCreated: 1535731938
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Cube_0
-    100002: Cube_1
-    100004: //RootNode
-    100006: Cube_(1)_0
-    100008: Cube_(1)_1
-    400000: Cube_0
-    400002: Cube_1
-    400004: //RootNode
-    400006: Cube_(1)_0
-    400008: Cube_(1)_1
-    2100000: TexturaPuerta
-    2300000: Cube_0
-    2300002: Cube_1
-    2300004: Cube_(1)_0
-    2300006: Cube_(1)_1
-    3300000: Cube_0
-    3300002: Cube_1
-    3300004: Cube_(1)_0
-    3300006: Cube_(1)_1
-    4300000: Cube_0
-    4300002: Cube_1
-    4300004: Cube_(1)_0
-    4300006: Cube_(1)_1
+    100000: DoorFloor
+    100002: //RootNode
+    400000: DoorFloor
+    400002: //RootNode
+    2100000: Wood_Floor_01
+    2300000: DoorFloor
+    3300000: DoorFloor
+    4300000: DoorFloor
   externalObjects: {}
   materials:
     importMaterials: 1

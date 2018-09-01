@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Inventory
   - Charger
+  - HoloToolkitCamera
   layers:
   - Default
   - TransparentFX

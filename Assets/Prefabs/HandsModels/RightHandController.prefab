@@ -4731,8 +4731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeColliderSizeOnPoint: 1
-  center: {x: -0.04, y: -0, z: 0.09}
-  size: {x: 0.02, y: 0.02, z: 0.12}
+  center: {x: -0.04, y: -0, z: 0.12}
+  size: {x: 0.01, y: 0.01, z: 0.055}
 --- !u!114 &114587948280004090
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -70,14 +70,15 @@ public class HandAnimationsController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.enabled && other.gameObject.GetComponent<InteractZone>() != null)
-            if(!inAnimation)
-                SetAnimation(other.gameObject.GetComponent<InteractZone>().handAction);
+            if (!inAnimation)
+                other.gameObject.GetComponent<InteractZone>().SetHandAnimator(this);
+                //SetAnimation(other.gameObject.GetComponent<InteractZone>().handAction);
     }
 
-    private void OnTriggerExit(Collider other) {
+    /*private void OnTriggerExit(Collider other) {
         if (other.enabled && other.gameObject.GetComponent<InteractZone>() != null)
             SetUndoAnimation(other.gameObject.GetComponent<InteractZone>().handAction);
-    }
+    }*/
 
     void OnDrawGizmosSelected() {
         if (!Application.isPlaying && changeColliderSizeOnPoint) {

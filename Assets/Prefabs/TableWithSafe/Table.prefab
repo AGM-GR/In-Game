@@ -2378,8 +2378,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24381436, y: 0.47422737, z: 0.2553885}
-  m_Center: {x: 0.019355066, y: 0.008173823, z: 0.11547604}
+  m_Size: {x: 0.13328645, y: 0.19272523, z: 0.061751783}
+  m_Center: {x: 0.00087714195, y: -0.058910128, z: 0.018657666}
 --- !u!65 &65286831290513444
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2854,6 +2854,16 @@ MonoBehaviour:
   - {fileID: 114427233478641870}
   locked: 1
   keyId: -1
+  OnUnlockDoor:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnLockDoor:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114344684250259192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3302,6 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handAction: 3
+  maxDistanceInteract: 0.26
 --- !u!114 &114644142559043234
 MonoBehaviour:
   m_ObjectHideFlags: 1

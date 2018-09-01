@@ -16,6 +16,12 @@ MonoBehaviour:
   - pbUVMaterialPreview
   - pbCollapseVertexToFirst
   - pbFillHoleSelectsEntirePath
+  - pbObjExportRightHanded
+  - pbObjApplyTransform
+  - pbObjExportCopyTextures
+  - pbObjExportVertexColors
+  - pbObjTextureOffsetScale
+  - pbObjQuads
   m_Int_keys:
   - pbHandleAlignment
   - pbDefaultEditLevel
@@ -31,8 +37,8 @@ MonoBehaviour:
   m_String_keys: []
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 00010101
-  m_Int_values: 020000000000000000000000000000000100000000000000
+  m_Bool_values: 00010101010100000100
+  m_Int_values: 020000000000000002000000000000000100000000000000
   m_Float_values:
   - 0
   - 0

@@ -18,7 +18,7 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
             //Vector3 vel = grabbable.GetAverageVelocity();
             Vector3 vel = LatestControllerThrowVelocity;
             Vector3 angVel = LatestControllerThrowAngularVelocity;
-            if (GetComponent<GrabbableFixedJoint>() || GetComponent<GrabbableSpringJoint>())
+            if ((GetComponent<GrabbableFixedJoint>() || GetComponent<GrabbableSpringJoint>()) && gameObject.activeInHierarchy)
             {
                 StartCoroutine(ThrowDelay(vel, angVel, grabbable));
             }
