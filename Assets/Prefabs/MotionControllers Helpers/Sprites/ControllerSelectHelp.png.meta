@@ -1,21 +1,17 @@
 fileFormatVersion: 2
-guid: df227653657cd5b43a7bf2a6d63da367
-timeCreated: 1533685110
+guid: 7c9ae933bfcf4674f98433f3f545a28b
+timeCreated: 1535799620
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ControllerGaspHelp_0
-    21300002: ControllerGaspHelp_1
-    21300004: ControllerGaspHelp_2
-    21300006: ControllerGaspHelp_3
-    21300008: ControllerGaspHelp_4
-    21300010: ControllerGaspHelp_5
-    21300012: ControllerGaspHelp_6
-    21300014: ControllerGaspHelp_7
-    21300016: ControllerGaspHelp_8
-    21300018: ControllerGaspHelp_9
-    21300020: ControllerGaspHelp_10
-    21300022: ControllerGaspHelp_11
+    21300000: ControllerSelectHelp_0
+    21300002: ControllerSelectHelp_1
+    21300004: ControllerSelectHelp_2
+    21300006: ControllerSelectHelp_3
+    21300008: ControllerSelectHelp_4
+    21300010: ControllerSelectHelp_5
+    21300012: ControllerSelectHelp_6
+    21300014: ControllerSelectHelp_7
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -43,7 +39,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -58,7 +54,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 14
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -132,169 +128,113 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ControllerGaspHelp_0
+      name: ControllerSelectHelp_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1488
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 2
+        y: 1487
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_1
+      name: ControllerSelectHelp_1
       rect:
         serializedVersion: 2
-        x: 1129
-        y: 1488
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 1125
+        y: 1487
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_2
+      name: ControllerSelectHelp_2
       rect:
         serializedVersion: 2
-        x: 2252
-        y: 1488
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 2248
+        y: 1487
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_3
+      name: ControllerSelectHelp_3
       rect:
         serializedVersion: 2
-        x: 3375
-        y: 1488
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 3371
+        y: 1487
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_4
+      name: ControllerSelectHelp_4
       rect:
         serializedVersion: 2
-        x: 4498
-        y: 1488
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 2
+        y: 4
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_5
+      name: ControllerSelectHelp_5
       rect:
         serializedVersion: 2
-        x: 5621
-        y: 1488
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 1125
+        y: 4
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_6
+      name: ControllerSelectHelp_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 6
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 2248
+        y: 4
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ControllerGaspHelp_7
+      name: ControllerSelectHelp_7
       rect:
         serializedVersion: 2
-        x: 1129
-        y: 6
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ControllerGaspHelp_8
-      rect:
-        serializedVersion: 2
-        x: 2252
-        y: 6
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ControllerGaspHelp_9
-      rect:
-        serializedVersion: 2
-        x: 3375
-        y: 6
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ControllerGaspHelp_10
-      rect:
-        serializedVersion: 2
-        x: 4498
-        y: 6
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ControllerGaspHelp_11
-      rect:
-        serializedVersion: 2
-        x: 5621
-        y: 6
-        width: 1117
-        height: 1476
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 3371
+        y: 4
+        width: 1119
+        height: 1479
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

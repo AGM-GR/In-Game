@@ -571,11 +571,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: In-Game
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: D:\aleja\OneDrive\Proyectos\Unity Projects\In-Game\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: AGM-GR
+  metroCertificateIssuer: AGM-GR
+  metroCertificateNotAfter: 8082ad4c9960d501
   metroApplicationDescription: Scape Room Game for Windows Mixed Reality HDM
   wsaImages: {}
   metroTileShortName: In-Game

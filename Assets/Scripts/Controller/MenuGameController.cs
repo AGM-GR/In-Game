@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class MenuGameController : MonoBehaviour {
 
     public InitialLightOn sceneLight;
 
     private CustomFadeManager gameFadePlane;
+    private bool loading = false;
 
     private void Start() {
         gameFadePlane = CustomFadeManager.Instance;
+        loading = false;
         StartCoroutine(StartMenuGame());
     }
 
@@ -22,17 +25,24 @@ public class MenuGameController : MonoBehaviour {
     }
 
     public void ExitGame() {
-        Application.Quit();
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
     }
 
     public void StartGame() {
         if (sceneLight)
             sceneLight.LightOff();
-        StartCoroutine(LoadAsyncScene());
+        if (!loading) {
+            loading = true;
+            StartCoroutine(LoadAsyncScene());
+        }
     }
 
     IEnumerator LoadAsyncScene() {
-
+        
         yield return new WaitForSeconds(2f);
 
         AsyncOperation asyncload = SceneManager.LoadSceneAsync("ScapeRoom");
