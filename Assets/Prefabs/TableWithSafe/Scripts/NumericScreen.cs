@@ -11,13 +11,19 @@ public class NumericScreen : MonoBehaviour {
     [SerializeField]
     private List<int> unlockCode = new List<int>();
 
+    [Header("Sounds")]
+    public AudioClip codeFail;
+    public AudioClip codeOk;
+
     [Header("Code Entered Methods")]
     public UnityEvent correctCodeMethods;
     public UnityEvent incorrectCodeMethods;
 
+    private AudioSource audioSource;
     private List<int> numbers = new List<int>();
 
 	void Awake () {
+        audioSource = GetComponent<AudioSource>();
         ClearNumbers();
     }
 
@@ -42,14 +48,17 @@ public class NumericScreen : MonoBehaviour {
                 bool correctCode = true;
                 for (int i = 0; i< numbers.Count; i++){
                     if (numbers[i] != unlockCode[i]) {
+                        audioSource.PlayOneShot(codeFail);
                         incorrectCodeMethods.Invoke();
                         correctCode = false;
                         break;
                     }
                 }
 
-                if (correctCode)
+                if (correctCode) {
+                    audioSource.PlayOneShot(codeOk);
                     correctCodeMethods.Invoke();
+                }
             }
         }
     }

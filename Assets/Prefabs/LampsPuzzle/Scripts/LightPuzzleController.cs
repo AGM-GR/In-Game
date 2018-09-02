@@ -8,9 +8,14 @@ public class LightPuzzleController : MonoBehaviour {
     public Vector3 openRotation;
     public float rotationSpeed = 1f;
 
+    [Header("Content")]
     public ContentController contentController;
 
+    [Header("Sounds")]
+    public AudioClip openingSecret;
+
     private Dictionary<LightKey, bool> codeStatus = new Dictionary<LightKey, bool>();
+    private AudioSource audioSource;
 
     private Quaternion initialRotation;
     private Quaternion initialMovementRotation;
@@ -27,6 +32,7 @@ public class LightPuzzleController : MonoBehaviour {
         initialRotation = ObjectToRotate.rotation;
         if (contentController == null)
             contentController = GetComponent<ContentController>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void AddLightStatus(LightKey lightKey, bool status) {
@@ -62,6 +68,7 @@ public class LightPuzzleController : MonoBehaviour {
     IEnumerator OpenSecret() {
         lerpStep = 0f;
         opened = true;
+        audioSource.PlayOneShot(openingSecret);
         initialMovementRotation = ObjectToRotate.rotation;
         while (lerpStep < 1f) {
             lerpStep = lerpStep + Time.deltaTime * rotationSpeed;

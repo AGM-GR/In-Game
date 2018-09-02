@@ -18,11 +18,17 @@ public class LampBlink : MonoBehaviour {
     public float minOff = 0.6f;
     public float maxOff = 2f;
 
+    [Header("Sounds")]
+    public AudioClip lightOn;
+    public AudioClip lightOff;
+
+    private AudioSource audioSource;
     private Material blinkingMaterialEmission;
 
     private void Awake() {
         if (blinkingEmission != null)
             blinkingMaterialEmission = blinkingEmission.material;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start() {
@@ -33,7 +39,7 @@ public class LampBlink : MonoBehaviour {
     }
 
     private IEnumerator LightBlinkOn() {
-
+        audioSource.PlayOneShot(lightOn);
         foreach (Light light in blinkingLight)
             light.enabled = true;
         if (blinkingEmission != null)
@@ -45,7 +51,7 @@ public class LampBlink : MonoBehaviour {
     }
 
     private IEnumerator LightBlinkOff() {
-
+        audioSource.PlayOneShot(lightOff);
         foreach (Light light in blinkingLight)
             light.enabled = false;
         if (blinkingEmission != null)

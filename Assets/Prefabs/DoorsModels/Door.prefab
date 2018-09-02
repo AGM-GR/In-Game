@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 4206016133835968}
   - component: {fileID: 114322533580044458}
   - component: {fileID: 114302244290872780}
+  - component: {fileID: 82126647798045912}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1253,6 +1254,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.8, y: 4.8, z: 4.8}
   m_Center: {x: 1.4, y: 0.000011444092, z: 0.000022888184}
+--- !u!82 &82126647798045912
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363000185002250}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114015855743175620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1403,6 +1484,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  doorOpen: {fileID: 8300000, guid: 1330d329cd104254e913ee6a368dd175, type: 3}
+  doorClosed: {fileID: 8300000, guid: 81e5f55b877036743ae2939cc497c41c, type: 3}
+  doorLocked: {fileID: 8300000, guid: 7841ec4f733caed41aaf34f05c54dd7e, type: 3}
+  unlockDoor: {fileID: 8300000, guid: 078adb3a78075984e86eea8bee44be9b, type: 3}
 --- !u!114 &114384692078579132
 MonoBehaviour:
   m_ObjectHideFlags: 1

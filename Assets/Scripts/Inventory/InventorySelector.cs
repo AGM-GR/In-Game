@@ -159,10 +159,9 @@ public class InventorySelector : AttachToController {
 				ControllerInfo.ControllerParent.GetComponentInChildren<BaseGrabber> ().enabled = true;
 				//Cambia la mano que tiene el menú si se pulsa el touchpad con otra mano
 				ChangeHandedness (obj.state.source.handedness);
-				//Entra en el modo menú con la otra mano
-				EnterMenuMode ();
-				activeHandGrabber = ControllerInfo.ControllerParent.GetComponentInChildren<BaseGrabber> ();
-				activeHandGrabber.enabled = false;
+                //Entra en el modo menú con la otra mano
+                activeHandGrabber = ControllerInfo.ControllerParent.GetComponentInChildren<BaseGrabber>();
+                EnterMenuMode ();
 			}
 
 			if (activeHandGrabber.GrabState == GrabStateEnum.Inactive && activeHandGrabber.ContactState == GrabStateEnum.Inactive) {

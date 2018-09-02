@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule.Examples.Grabbables;
+using HoloToolkit.Unity.InputModule;
 
 public class HandControllerHelper : MonoBehaviour {
 

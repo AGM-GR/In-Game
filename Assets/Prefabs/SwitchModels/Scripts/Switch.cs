@@ -5,7 +5,11 @@ using UnityEngine.Events;
 
 public class Switch : MonoBehaviour {
 
-	[Header("Switch Methods")]
+    [Header("Sounds")]
+    public AudioClip switchOnSound;
+    public AudioClip switchOffSound;
+
+    [Header("Switch Methods")]
 	public UnityEvent switchOnMethods;
 	public UnityEvent switchOffMethods;
 
@@ -13,11 +17,19 @@ public class Switch : MonoBehaviour {
 	public GrabbableRotation grabbable;
 	public bool lockOnSwitchOn = false;
 
-	public void SwitchOn() {
+    private AudioSource audioSource;
+
+    private void Awake() {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void SwitchOn() {
+        audioSource.PlayOneShot(switchOnSound);
 		switchOnMethods.Invoke();
 	}
 
 	public void SwitchOff() {
-		switchOffMethods.Invoke();
+        audioSource.PlayOneShot(switchOffSound);
+        switchOffMethods.Invoke();
 	}
 }

@@ -270,6 +270,8 @@ GameObject:
   - component: {fileID: 81452518607876728}
   - component: {fileID: 114272187675446642}
   - component: {fileID: 114431818513343848}
+  - component: {fileID: 114341076879153456}
+  - component: {fileID: 82742775341765048}
   m_Layer: 0
   m_Name: MixedRealityCamera
   m_TagString: MainCamera
@@ -625,6 +627,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1931222108666320}
   m_Enabled: 1
+--- !u!82 &82742775341765048
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931222108666320}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114009540924868754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -769,6 +851,27 @@ MonoBehaviour:
   Axis0Destination: 0
   Axis1Destination: 2
   Axis2Destination: 6
+--- !u!114 &114341076879153456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931222108666320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 453d40f71943bdd43a3ced2b6f43f36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music:
+  - {fileID: 8300000, guid: 2191652f50db04e4685c78afc3cd210d, type: 3}
+  - {fileID: 8300000, guid: 977dd9a95d5889e4da38fe754c34f971, type: 3}
+  - {fileID: 8300000, guid: c9fe4059e754e584f838f9a5e5e7e2a2, type: 3}
+  - {fileID: 8300000, guid: f5f2a3e79f0065344a3e321b083aa94f, type: 3}
+  - {fileID: 8300000, guid: a3113f8e4d709ea4e92578ea177c2bde, type: 3}
+  - {fileID: 8300000, guid: 84ab6ff5b3dec764480f802b54fbc8a8, type: 3}
+  - {fileID: 8300000, guid: d207a4ac6d4d1544d8334295982afc6a, type: 3}
+  - {fileID: 8300000, guid: fed178b3dad9cec40bd086dc02008c7b, type: 3}
+  - {fileID: 8300000, guid: 90db91fc3c5e0ff49b670bea49f2847e, type: 3}
 --- !u!114 &114431818513343848
 MonoBehaviour:
   m_ObjectHideFlags: 1

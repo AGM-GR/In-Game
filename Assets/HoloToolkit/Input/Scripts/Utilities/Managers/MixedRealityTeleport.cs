@@ -3,6 +3,7 @@
 
 
 using System;
+using System.Collections;
 using UnityEngine;
 
 #if UNITY_2017_2_OR_NEWER
@@ -53,6 +54,9 @@ namespace HoloToolkit.Unity.InputModule
         public bool EnableTeleport = true;
         public bool EnableRotation = true;
         public bool EnableStrafe = true;
+
+        [Tooltip("Interpolate positions at Teleport")]
+        private bool smoothTeleport = false;
 
         [Tooltip("Makes sure you don't get put 'on top' of holograms, just on the floor")]
         public bool StayOnTheFloor = false;
@@ -257,12 +261,36 @@ namespace HoloToolkit.Unity.InputModule
 
                     fadeControl.DoFade(0.25f, 0.5f, () =>
                     {
-                        SetWorldPosition(hitPos);
+                        if (smoothTeleport)
+                            StartCoroutine(SmoothTeleport(hitPos));
+                        else
+                            InmediateTeleport(hitPos);
                     }, null);
                 }
 
                 DisableMarker();
             }
+        }
+
+        /// FUNCIONES PROPIAS
+
+        IEnumerator SmoothTeleport(Vector3 hitPoint) {
+            float startTime = Time.unscaledTime;
+            float normalizedTime = 0f;
+            Vector3 currentPosition = transform.position;
+            Vector3 nextPosition;
+
+            while (normalizedTime < 1f) {
+                normalizedTime = (Time.unscaledTime - startTime) / 0.5f;
+                nextPosition = Vector3.MoveTowards(currentPosition, hitPoint, normalizedTime);
+                InmediateTeleport(nextPosition);
+                yield return null;
+                currentPosition = nextPosition;
+            }
+        }
+
+        void InmediateTeleport(Vector3 hitPoint) {
+            SetWorldPosition(hitPoint);
         }
 
         public void DoRotation(float rotationAmount)
@@ -274,7 +302,7 @@ namespace HoloToolkit.Unity.InputModule
                     0.25f, // Fade in time
                     () => // Action after fade out
                     {
-                        transform.RotateAround(CameraCache.Main.transform.position, Vector3.up, rotationAmount);
+                        InmediateRotation(rotationAmount);
                     }, null); // Action after fade in
             }
         }
@@ -283,17 +311,51 @@ namespace HoloToolkit.Unity.InputModule
         {
             if (strafeAmount.magnitude != 0 && !fadeControl.Busy)
             {
+                Vector3 strafeDest = transform.position + (Quaternion.Euler(0, CameraCache.Main.transform.rotation.eulerAngles.y, 0) * strafeAmount);
                 fadeControl.DoFade(
                     0.25f, // Fade out time
                     0.25f, // Fade in time
                     () => // Action after fade out
                     {
-                        Transform transformToRotate = CameraCache.Main.transform;
-                        transformToRotate.rotation = Quaternion.Euler(0, transformToRotate.rotation.eulerAngles.y, 0);
-                        transform.Translate(strafeAmount, CameraCache.Main.transform);
-                    }, null); // Action after fade in
+                        StartCoroutine(SmoothStrafe(strafeDest));
+                    //InmediateStrafe(strafeDest);
+                }, null); // Action after fade in
             }
         }
+
+        void InmediateRotation(float rotationAmount) {
+            transform.RotateAround(CameraCache.Main.transform.position, Vector3.up, rotationAmount);
+        }
+
+        IEnumerator SmoothStrafe(Vector3 strafeDest) {
+            float startTime = Time.unscaledTime;
+            float normalizedTime = 0f;
+            Vector3 nextPosition;
+            Transform transformToRotate = CameraCache.Main.transform;
+            transformToRotate.rotation = Quaternion.Euler(0, transformToRotate.rotation.eulerAngles.y, 0);
+
+            while (normalizedTime < 1f) {
+                normalizedTime = (Time.unscaledTime - startTime) / 0.2f;
+                nextPosition = Vector3.MoveTowards(transform.position, strafeDest, normalizedTime);
+                if (IsStrafePossible(nextPosition))
+                    transform.position = nextPosition;
+                else
+                    break;
+                yield return null;
+            }
+        }
+
+        void InmediateStrafe(Vector3 strafeDest) {
+            Transform transformToRotate = CameraCache.Main.transform;
+            transformToRotate.rotation = Quaternion.Euler(0, transformToRotate.rotation.eulerAngles.y, 0);
+            transform.position = strafeDest;
+        }
+
+        bool IsStrafePossible(Vector3 strafeDest) {
+            RaycastHit rayHit;
+            return (Physics.Raycast(strafeDest + (Vector3.up * 0.5f), Vector3.down, out rayHit, 2f, 1 << LayerMask.NameToLayer("Ground")));
+        }
+        // FINAL FUNCIONES PROPIAS
 
         /// <summary>
         /// Places the player in the specified position of the world
