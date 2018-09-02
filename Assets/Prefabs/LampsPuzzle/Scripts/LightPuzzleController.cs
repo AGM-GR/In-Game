@@ -22,6 +22,8 @@ public class LightPuzzleController : MonoBehaviour {
     private float lerpStep = 0f;
     private bool opened = false;
 
+    private Coroutine checkCode;
+
     public Transform ObjectToRotate {
         get {
             return objectToRotate ? objectToRotate : transform;
@@ -42,7 +44,9 @@ public class LightPuzzleController : MonoBehaviour {
     public void UpdateLightStatus(LightKey lightKey, bool status) {
         codeStatus[lightKey] = status;
         if (status) {
-            CheckCodeStatus();
+            if (checkCode != null)
+                StopCoroutine(checkCode);
+            checkCode = StartCoroutine(CheckCodeStatus());
         }
         else if (opened) {
 
@@ -53,16 +57,22 @@ public class LightPuzzleController : MonoBehaviour {
         }
     }
 
-    private void CheckCodeStatus() {
+    private IEnumerator CheckCodeStatus() {
+        yield return new WaitForEndOfFrame();
+        bool statusOk = true;
         foreach (KeyValuePair<LightKey, bool> status in codeStatus) {
-            if (!status.Value)
-                return;
+            if (!status.Value) {
+                statusOk = false;
+                break;
+            }
         }
 
-        StopCoroutine(CloseSecret());
-        StartCoroutine(OpenSecret());
+        if (statusOk) {
+            StopCoroutine(CloseSecret());
+            StartCoroutine(OpenSecret());
 
-        contentController.ActivateContent();
+            contentController.ActivateContent();
+        }
     }
 
     IEnumerator OpenSecret() {
