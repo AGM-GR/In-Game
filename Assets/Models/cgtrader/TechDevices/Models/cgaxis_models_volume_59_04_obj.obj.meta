@@ -15,6 +15,7 @@ ModelImporter:
     100014: cgaxis_models_59_04_06
     100016: cgaxis_models_59_04_07
     100018: //RootNode
+    100020: cgaxis_models_59_04_07.HD_cgaxis_models_59_04_07.001
     400000: cgaxis_models_59_04_01_1
     400002: cgaxis_models_59_04_01_2
     400004: cgaxis_models_59_04_02
@@ -25,6 +26,7 @@ ModelImporter:
     400014: cgaxis_models_59_04_06
     400016: cgaxis_models_59_04_07
     400018: //RootNode
+    400020: cgaxis_models_59_04_07.HD_cgaxis_models_59_04_07.001
     2100000: cgaxis_models_59_04_01_1Mat
     2100002: cgaxis_models_59_04_01_2Mat
     2100004: cgaxis_models_59_04_02Mat
@@ -43,6 +45,7 @@ ModelImporter:
     2300012: cgaxis_models_59_04_05_2
     2300014: cgaxis_models_59_04_06
     2300016: cgaxis_models_59_04_07
+    2300018: cgaxis_models_59_04_07.HD_cgaxis_models_59_04_07.001
     3300000: cgaxis_models_59_04_01_1
     3300002: cgaxis_models_59_04_01_2
     3300004: cgaxis_models_59_04_02
@@ -52,6 +55,7 @@ ModelImporter:
     3300012: cgaxis_models_59_04_05_2
     3300014: cgaxis_models_59_04_06
     3300016: cgaxis_models_59_04_07
+    3300018: cgaxis_models_59_04_07.HD_cgaxis_models_59_04_07.001
     4300000: cgaxis_models_59_04_01_1
     4300002: cgaxis_models_59_04_01_2
     4300004: cgaxis_models_59_04_02
@@ -61,6 +65,7 @@ ModelImporter:
     4300012: cgaxis_models_59_04_05_2
     4300014: cgaxis_models_59_04_06
     4300016: cgaxis_models_59_04_07
+    4300018: cgaxis_models_59_04_07.HD_cgaxis_models_59_04_07.001
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -105,6 +110,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_04_07.HD_cgaxis_models_59_04_07.001Mat
+    second: {fileID: 2100000, guid: 235ba3263436939438eca0039886a6c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_04_07Mat
     second: {fileID: 2100000, guid: a0f1d7cdef421fa44be9c29d842e4d91, type: 2}
   materials:
@@ -137,7 +147,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 0.026
-    meshCompression: 3
+    meshCompression: 0
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
@@ -158,7 +168,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 0
