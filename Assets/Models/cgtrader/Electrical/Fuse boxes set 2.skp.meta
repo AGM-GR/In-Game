@@ -213,7 +213,152 @@ SketchUpImporter:
     4300052: Mesh Group 58
     4300054: Mesh Group 61
     4300056: Mesh Group 63
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u992
+    second: {fileID: 2100000, guid: 6848269cd35691a4d8b96b0c2ee50147, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u993
+    second: {fileID: 2100000, guid: a1bd8d0b8f090544fb592bbafc905fe7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u994
+    second: {fileID: 2100000, guid: f62c312cc82099241993dce5b280aa27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u995
+    second: {fileID: 2100000, guid: 87a23f27bb0b30e408416818267ca370, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u996
+    second: {fileID: 2100000, guid: 1d4c4a4a2b75b734bb97d293d03280ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u997
+    second: {fileID: 2100000, guid: 4898684e7c1662b4692393df6cbde7b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zz222 (34)F2u998
+    second: {fileID: 2100000, guid: 48e209740125dd846b7cac42c4cb3089, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0003_DeepPink]12'
+    second: {fileID: 2100000, guid: 6d711dd28d3ac384d9a8b33294edd8cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0003_DeepPink]9'
+    second: {fileID: 2100000, guid: e0a3e69b2f11bcf4483efa7c3b3fbfd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 59ed6386da3292644acbde25a0f0ac7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: apole (156)#1
+    second: {fileID: 2100000, guid: 527d2b70b6718fb4faf0fd2b9b8e1662, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: apole (75)#1
+    second: {fileID: 2100000, guid: 2a93eb473f5879349bf6fc6f2fe1bf2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: apole (75)#2
+    second: {fileID: 2100000, guid: 9eeca1e9867f68c4a934305db93f050a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (123)
+    second: {fileID: 2100000, guid: 5daf5b969fdbbcf4cb6a26b3db6876b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (124)
+    second: {fileID: 2100000, guid: 11d6ccbcc6b957c4dae3a47e3171d058, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (126)
+    second: {fileID: 2100000, guid: cd1e12ed468c3a3478bb176612ea7b13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (128)
+    second: {fileID: 2100000, guid: 60c9bf457e2728e40a590ea5f84823b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (129)
+    second: {fileID: 2100000, guid: cf75823468a5443439bacd83d22618e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (131)1
+    second: {fileID: 2100000, guid: dcb7a490c5dfe4f4490ae81e87489fb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (132)
+    second: {fileID: 2100000, guid: 94dc5148170d70b43a2f31418b9b0e5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: felix (135)1
+    second: {fileID: 2100000, guid: 10d0aa0f7b2b0024f8b4f03a76ecd452, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gradiant (8)#1
+    second: {fileID: 2100000, guid: cf895630125652949b8a352173a507a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: signbk8
+    second: {fileID: 2100000, guid: 6f6d70d62fbd5f74693b2db9c495fb68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (19)a
+    second: {fileID: 2100000, guid: 8bbac31d8821824439840c8fc72dad69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (19)b
+    second: {fileID: 2100000, guid: 35011af75824d5444b11c80e4fbc59d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (19)c
+    second: {fileID: 2100000, guid: b90fde73612e7514197a79e4f89a582a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (19)e
+    second: {fileID: 2100000, guid: 14cb2af463583e7478d3f8097a2cd467, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (19)1
+    second: {fileID: 2100000, guid: aebd682e3057e3b4dbc0fa7ec6d5983c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (19)b
+    second: {fileID: 2100000, guid: 3f5fbabb28df76c49b144f40148f5ff8, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -244,12 +389,12 @@ SketchUpImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 0.0254
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

@@ -112,22 +112,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Floor
-    second: {fileID: 2100000, guid: b5aa08aa555d7fc4db028e76a3056518, type: 2}
+    second: {fileID: 2100000, guid: 1fd9f5214b7cf8046b7bc44a027c2671, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Library Mount
-    second: {fileID: 2100000, guid: 97803f9606f00204dbf32abd528a7515, type: 2}
+    second: {fileID: 2100000, guid: 917de518bed1dd24ba64bd82e758fc31, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wall
-    second: {fileID: 2100000, guid: a1f521d1de68f344fa8510a5dc3f3f91, type: 2}
+    second: {fileID: 2100000, guid: 7105f077009fc3a4eb1ef491ab7d5a19, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wood
-    second: {fileID: 2100000, guid: bf0ecbd46b54b204fac872ba6042479c, type: 2}
+    second: {fileID: 2100000, guid: 752bdda0436cd6c4192178ea68e831b3, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -158,12 +158,12 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1.1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

@@ -46,7 +46,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 0
+  m_ActiveColorSpace: 1
   m_MTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
@@ -571,7 +571,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: In-Game
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: D:\aleja\OneDrive\Proyectos\Unity Projects\In-Game\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: AGM-GR
   metroCertificateIssuer: AGM-GR

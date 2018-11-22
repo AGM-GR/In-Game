@@ -270,42 +270,42 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 'Material #61'
-    second: {fileID: 2100000, guid: 976be888d3a2eb141a41fb0f72748ab4, type: 2}
+    second: {fileID: 2100000, guid: 925d5a9137ba37e41aa4d6d6d54144d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 'Material #62'
-    second: {fileID: 2100000, guid: ff1438dcd43c4a149a5ec971f7b4f1a5, type: 2}
+    second: {fileID: 2100000, guid: 7a01883785c76be4c9a4f5ca6a042c86, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 'Material #63'
-    second: {fileID: 2100000, guid: 8cb11f08d50e85b42af79469bdf951f5, type: 2}
+    second: {fileID: 2100000, guid: f4d1c981feb230247ab980022d3caa3f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Metal Silver
-    second: {fileID: 2100000, guid: f766b1be0fc36164fad360baa4af2053, type: 2}
+    second: {fileID: 2100000, guid: 29b919c1583265346b4aaef23f01dd85, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: c9340707352dd7e4ca268f0fad02bfd4, type: 2}
+    second: {fileID: 2100000, guid: 32921949c9223414aaa92f772d032a83, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: R4221
-    second: {fileID: 2100000, guid: 8830dde0fedc6924487aa5a17d620a3b, type: 2}
+    second: {fileID: 2100000, guid: edfd882954b20604dad2dc811be38805, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stone - Marble Indian
-    second: {fileID: 2100000, guid: ee6adcc8d94d30d42ba063e726a71f0b, type: 2}
+    second: {fileID: 2100000, guid: 573fbd1461308924e9d7465d76b3a046, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "Wei\xDF-glanz"
-    second: {fileID: 2100000, guid: 924598047b7e7744d9b2c025ef5217e5, type: 2}
+    second: {fileID: 2100000, guid: 7a5637089cf893a40999cc946f211687, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -336,12 +336,12 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1.1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

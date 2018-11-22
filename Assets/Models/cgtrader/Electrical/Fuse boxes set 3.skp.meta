@@ -206,7 +206,102 @@ SketchUpImporter:
     4300034: Mesh Group 65
     4300036: Mesh Group 67
     4300038: Mesh Group 69
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Untitleu5d7fd3f
+    second: {fileID: 2100000, guid: 017881052ec42744cbde157cf1c8caa5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0003_DeepPink]14'
+    second: {fileID: 2100000, guid: 55654e224e8f0ce479b0a52deaf371cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: apole (41)#1
+    second: {fileID: 2100000, guid: 961cdf90c49362c459bb7d1718f20b07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (12)
+    second: {fileID: 2100000, guid: 37e5d1a08be4f7d4d93de0c81be14438, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (12)b
+    second: {fileID: 2100000, guid: 573d9862739c8ee408cb81aec64331e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (13)a
+    second: {fileID: 2100000, guid: 39929aba645bdd84181ddcc3bf848b5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (13)b
+    second: {fileID: 2100000, guid: 6c4f52bc5b2b94842a48fc6e4d717e2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (13)b#1
+    second: {fileID: 2100000, guid: 70729db3240caaf49a9c84245387eb31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (15)g
+    second: {fileID: 2100000, guid: 161019478d6a51c4c88c0dfe529a05a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (15)h
+    second: {fileID: 2100000, guid: 9b53c00648164f1499f43f0a5861d1ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (9)
+    second: {fileID: 2100000, guid: 0192a9b458c1f9c48a1e08a36bfe664e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (9)b
+    second: {fileID: 2100000, guid: ed3b1bf718fc1ee4f858fb6e22340d8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (16)glab2
+    second: {fileID: 2100000, guid: 10ebe628517267a4ca589c4f8be5a53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (16)glac1
+    second: {fileID: 2100000, guid: de94ca12f37e9de4595853485bfcf6b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (16)glaeagk
+    second: {fileID: 2100000, guid: 936377de7a4bbed4680818bae11f5b10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (22)
+    second: {fileID: 2100000, guid: 5e5e54a8ac4680842bba624357e9fb9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (22)b
+    second: {fileID: 2100000, guid: 84dc30be8e856c445ae3f798bc899b37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (22)t
+    second: {fileID: 2100000, guid: d8906742fdd8c0f4bbfe214ca398ec80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (22)u
+    second: {fileID: 2100000, guid: ce5e7e67d25af66429abb393c705ece8, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -237,12 +332,12 @@ SketchUpImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 0.0254
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

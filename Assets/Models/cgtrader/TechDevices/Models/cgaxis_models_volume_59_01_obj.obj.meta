@@ -13,6 +13,7 @@ ModelImporter:
     100010: cgaxis_models_59_01_06
     100012: cgaxis_models_59_01_07
     100014: //RootNode
+    100016: default
     400000: cgaxis_models_59_01_01
     400002: cgaxis_models_59_01_02
     400004: cgaxis_models_59_01_03
@@ -21,6 +22,7 @@ ModelImporter:
     400010: cgaxis_models_59_01_06
     400012: cgaxis_models_59_01_07
     400014: //RootNode
+    400016: default
     2100000: cgaxis_models_59_01_01Mat
     2100002: cgaxis_models_59_01_02Mat
     2100004: cgaxis_models_59_01_03Mat
@@ -35,6 +37,7 @@ ModelImporter:
     2300008: cgaxis_models_59_01_05
     2300010: cgaxis_models_59_01_06
     2300012: cgaxis_models_59_01_07
+    2300014: default
     3300000: cgaxis_models_59_01_01
     3300002: cgaxis_models_59_01_02
     3300004: cgaxis_models_59_01_03
@@ -42,6 +45,7 @@ ModelImporter:
     3300008: cgaxis_models_59_01_05
     3300010: cgaxis_models_59_01_06
     3300012: cgaxis_models_59_01_07
+    3300014: default
     4300000: cgaxis_models_59_01_01
     4300002: cgaxis_models_59_01_02
     4300004: cgaxis_models_59_01_03
@@ -49,7 +53,13 @@ ModelImporter:
     4300008: cgaxis_models_59_01_05
     4300010: cgaxis_models_59_01_06
     4300012: cgaxis_models_59_01_07
+    4300014: default
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_01
+    second: {fileID: 2100000, guid: a1e9a24f2eb51c34594279c1d1aa4d0a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -58,8 +68,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_02
+    second: {fileID: 2100000, guid: 7470ca933a1156b4c9acf2f3e1be3b45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_02Mat
     second: {fileID: 2100000, guid: 0c221b1d9532cc04e9a4eafdd9f50649, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_03
+    second: {fileID: 2100000, guid: 8996dafafb74d2849ab082ede294aef7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -68,8 +88,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_04
+    second: {fileID: 2100000, guid: dbc2c1ace9bf96e48a145e78f4d5cccc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_04Mat
     second: {fileID: 2100000, guid: cb956f57b9ea07b48b05794c63170a70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_05
+    second: {fileID: 2100000, guid: 861e45952571e284ea74df6c7b2bab3a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -78,8 +108,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_06
+    second: {fileID: 2100000, guid: e9933228c70662441a3cee21a9647813, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_06Mat
     second: {fileID: 2100000, guid: c8f740b614c142541b83f67dd4622e62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_07
+    second: {fileID: 2100000, guid: 32ea6c61bf4f5454ba5ffef1245ba76a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -119,8 +159,8 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -136,7 +176,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 0

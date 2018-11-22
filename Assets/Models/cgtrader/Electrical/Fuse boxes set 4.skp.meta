@@ -145,7 +145,117 @@ SketchUpImporter:
     4300030: Mesh Group 34
     4300032: Mesh Group 36
     4300034: Mesh Group 38
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[0004_HotPink]14'
+    second: {fileID: 2100000, guid: 5dfd1c64c2ba9874086e8115635c0a1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: signbk10
+    second: {fileID: 2100000, guid: 1d01be8a4d04b494a84d9d248582522a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: signbk10y
+    second: {fileID: 2100000, guid: a59490f18683e524a9fd73e13211a61e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: signbk9
+    second: {fileID: 2100000, guid: de8e16fe5616a4b42b65566d25e04c56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: signbk9y
+    second: {fileID: 2100000, guid: e3148e2320ff8a146ad9a0bbdfefa690, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spark (1)
+    second: {fileID: 2100000, guid: a5fc4a748d1e5544088d5b3c6067cde8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spark (2)
+    second: {fileID: 2100000, guid: d7101610403e78a44a5770228e888d8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (16)2
+    second: {fileID: 2100000, guid: 8864d9ca942155348915c389722607e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (16)b
+    second: {fileID: 2100000, guid: 7026f22f1f9ddd14787a28b10cde43dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (16)f
+    second: {fileID: 2100000, guid: 15c200225cc5e804a93827b1af80b0c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (16)h
+    second: {fileID: 2100000, guid: d6ff855355232584e93e89f979ba2206, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (5)
+    second: {fileID: 2100000, guid: 2d1e2dabd7414654e9f7bb464efdb78f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sparky (5)b
+    second: {fileID: 2100000, guid: a4fe5129ea4fe8048b31fcff295a732c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (11)
+    second: {fileID: 2100000, guid: 9b5231854133ab541a72e9ac902e2470, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (11)b
+    second: {fileID: 2100000, guid: ccceadc6ab31e4a4fa620895e7654c17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (11)c1
+    second: {fileID: 2100000, guid: 1ac34962c5dc6f84a92660777c8430dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (12)a
+    second: {fileID: 2100000, guid: 350d225859565694c99fcc7f83a30e96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (12)b
+    second: {fileID: 2100000, guid: 8aae2d1fa87752045bdd30d0baf09aa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (14)a
+    second: {fileID: 2100000, guid: 4d9e5db8fcffbaf4bbf9d4dea5483884, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (14)b
+    second: {fileID: 2100000, guid: 07ec9cab8e2e8ef418aff4481d3ab61b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (23)
+    second: {fileID: 2100000, guid: 490d61dd731a388489661c5aac11ec1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zzx (23)b
+    second: {fileID: 2100000, guid: 2ecee6baaca0e114197b99fb31605589, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -176,12 +286,12 @@ SketchUpImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 0.0254
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

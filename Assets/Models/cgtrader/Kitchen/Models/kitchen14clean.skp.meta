@@ -15,8 +15,8 @@ SketchUpImporter:
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -1.978069, y: 7.738694, z: -10.494398}
-      lookAt: {x: -1.4710906, y: 6.9643626, z: -8.68367}
+      position: {x: -2.024795, y: 7.9214983, z: -10.742297}
+      lookAt: {x: -1.5058408, y: 7.1288753, z: -8.888796}
       up: {x: 0.1026641, y: 0.92466694, z: 0.36667585}
       fov: 28.932076
       aspectRatio: 0
@@ -24,8 +24,8 @@ SketchUpImporter:
       isPerspective: 1
     scenes:
     - camera:
-        position: {x: 8.470804, y: 1.1930642, z: 2.0792463}
-        lookAt: {x: 7.169622, y: 1.0667654, z: 3.6260688}
+        position: {x: 8.670902, y: 1.2212468, z: 2.1283624}
+        lookAt: {x: 7.3389835, y: 1.0919646, z: 3.7117243}
         up: {x: -0.04014401, y: 0.9980536, z: 0.04772251}
         fov: 28.932076
         aspectRatio: 0
@@ -496,127 +496,127 @@ SketchUpImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 12_s21
-    second: {fileID: 2100000, guid: 681a33a5f8d498b49aa902ac07793f88, type: 2}
+    second: {fileID: 2100000, guid: 3e3899869d0ac4841ad8a48a5f670c8f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 65675LF-BL
-    second: {fileID: 2100000, guid: c93a6a966ebd1d4419dfe91a304317c3, type: 2}
+    second: {fileID: 2100000, guid: 37be7b35afac98c438389bdae5f7cdd9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 8796568616990
-    second: {fileID: 2100000, guid: 0c76e5d29c2e01647b9c0e55ad2315c9, type: 2}
+    second: {fileID: 2100000, guid: 3f7f25cdb5fa42340b1561ea61d8781e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 8796973203486
-    second: {fileID: 2100000, guid: 425b25b35d0c02541b0bef3dabde9ae8, type: 2}
+    second: {fileID: 2100000, guid: 2e611e8cf3ba76d47b2368d4cede3938, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 8798106517534
-    second: {fileID: 2100000, guid: ce5531bea8f4898458f7879e27b2c7e9, type: 2}
+    second: {fileID: 2100000, guid: 991d1f9d9af87aa44b08b62504994a9e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Color_006
-    second: {fileID: 2100000, guid: a850ddc9eb4a38b4eb9d2371b4fb3a8c, type: 2}
+    second: {fileID: 2100000, guid: fa72f3b1ffc14bd4db4b766ce7e60f70, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material1
-    second: {fileID: 2100000, guid: 709892cf80b8830498d3a9db125732ba, type: 2}
+    second: {fileID: 2100000, guid: 19d22e0443d4c1947bceaf461196a424, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Metal_Corrogated_Shiny
-    second: {fileID: 2100000, guid: aecea37af9263c74e917e96d9685a61c, type: 2}
+    second: {fileID: 2100000, guid: 5c177c98a485a2340914d88dbc011a18, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PORTAS______________________PVC ACABAMENTO
-    second: {fileID: 2100000, guid: 6ac2bffcee6997e429bbe275b86a4951, type: 2}
+    second: {fileID: 2100000, guid: 14491392d4d3dcc4286475dce44b8a54, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: U765_ST15
-    second: {fileID: 2100000, guid: c93c7bc7d840e5246bbb097e347810fd, type: 2}
+    second: {fileID: 2100000, guid: af2d778fc712cf940a7bab57eabb2fd9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Blinds_Vertical_Stripe_Gray]'
-    second: {fileID: 2100000, guid: fad3ca03b648688439efe1f1c0763ecc, type: 2}
+    second: {fileID: 2100000, guid: 319dbbb852fb10947b39689c8f3cb3f5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color B03]'
-    second: {fileID: 2100000, guid: eea2a319d212b484a8c9573420993bd9, type: 2}
+    second: {fileID: 2100000, guid: 756af6809a862fd41ac3ff91cca4fdf1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color H01]'
-    second: {fileID: 2100000, guid: df6e5dd49a69c0642b8f9f310f799635, type: 2}
+    second: {fileID: 2100000, guid: 5046b65c4608679409fa2313c3c6fada, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color M08]'
-    second: {fileID: 2100000, guid: 4e9de585b34ef8d409d010876f06c037, type: 2}
+    second: {fileID: 2100000, guid: 6c8b2ef86a5b976458d7efd8f84ab279, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color_002]'
-    second: {fileID: 2100000, guid: 335831e0867b36848ad996f84c1b84de, type: 2}
+    second: {fileID: 2100000, guid: d3bb5dade413e374a9287e8c82fcf4cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Color_009]'
-    second: {fileID: 2100000, guid: 0808f35aa746b2a4d85d03de556c2b9b, type: 2}
+    second: {fileID: 2100000, guid: 521589f685d30bc4bacf7f4fa087c258, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Metal_Aluminum_Anodized]'
-    second: {fileID: 2100000, guid: eed00e059d6d6a642a3313fd4eb5f9fe, type: 2}
+    second: {fileID: 2100000, guid: 40853410b770de546969f0a8e6def217, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: '[Translucent_Glass_Gray]'
-    second: {fileID: 2100000, guid: a7cfc7303fd68f043b0dd05fee834bca, type: 2}
+    second: {fileID: 2100000, guid: 6e17220dfeb9a174b88349f20706d58d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _1
-    second: {fileID: 2100000, guid: 1ab8ee5c69c0cf94db7309be7344c19f, type: 2}
+    second: {fileID: 2100000, guid: 349db34fb83623d4e8052408c84facb3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _54
-    second: {fileID: 2100000, guid: 7ed3dcc94b372a0498a375a505ec16c0, type: 2}
+    second: {fileID: 2100000, guid: 5d7e63ee63ea30242b4f4b0318c3d1fb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _auto_
-    second: {fileID: 2100000, guid: c3c8eefb1d5dd314dac20c07a4f5281c, type: 2}
+    second: {fileID: 2100000, guid: 5c921dc40bc89df4b95d434d8d30bef4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _defaultMat
-    second: {fileID: 2100000, guid: 2991b48e6b385744abb65532845bcac8, type: 2}
+    second: {fileID: 2100000, guid: fff25e854f0a70d4ea51db6134982670, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: b113_BS
-    second: {fileID: 2100000, guid: 93a4ec5099d2f084e8b6e41b703e8cb9, type: 2}
+    second: {fileID: 2100000, guid: d7da38e7d1fc132439930a3df90f5788, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: csm_D34321_DP_04_c40dd285d5
-    second: {fileID: 2100000, guid: 5ee17ae48dcace249b82251aa942876b, type: 2}
+    second: {fileID: 2100000, guid: 4dafc1eda6a2a134da26eced81e8d22b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: getimage (10)
-    second: {fileID: 2100000, guid: 5f96242fa07c6594181b11f7f676119b, type: 2}
+    second: {fileID: 2100000, guid: d0299586d4da9e6408ee6baf014a90a6, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -647,12 +647,12 @@ SketchUpImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 0.026
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
