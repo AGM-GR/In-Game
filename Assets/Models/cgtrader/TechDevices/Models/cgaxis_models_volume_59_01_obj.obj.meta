@@ -14,6 +14,13 @@ ModelImporter:
     100012: cgaxis_models_59_01_07
     100014: //RootNode
     100016: default
+    100018: cgaxis_models_59_01_01_cgaxis_models_59_01_01.002
+    100020: cgaxis_models_59_01_02_cgaxis_models_59_01_02.002
+    100022: cgaxis_models_59_01_03_cgaxis_models_59_01_03.002
+    100024: cgaxis_models_59_01_04_cgaxis_models_59_01_04.002
+    100026: cgaxis_models_59_01_05_cgaxis_models_59_01_05.002
+    100028: cgaxis_models_59_01_06_cgaxis_models_59_01_06.002
+    100030: cgaxis_models_59_01_07_cgaxis_models_59_01_07.002
     400000: cgaxis_models_59_01_01
     400002: cgaxis_models_59_01_02
     400004: cgaxis_models_59_01_03
@@ -23,6 +30,13 @@ ModelImporter:
     400012: cgaxis_models_59_01_07
     400014: //RootNode
     400016: default
+    400018: cgaxis_models_59_01_01_cgaxis_models_59_01_01.002
+    400020: cgaxis_models_59_01_02_cgaxis_models_59_01_02.002
+    400022: cgaxis_models_59_01_03_cgaxis_models_59_01_03.002
+    400024: cgaxis_models_59_01_04_cgaxis_models_59_01_04.002
+    400026: cgaxis_models_59_01_05_cgaxis_models_59_01_05.002
+    400028: cgaxis_models_59_01_06_cgaxis_models_59_01_06.002
+    400030: cgaxis_models_59_01_07_cgaxis_models_59_01_07.002
     2100000: cgaxis_models_59_01_01Mat
     2100002: cgaxis_models_59_01_02Mat
     2100004: cgaxis_models_59_01_03Mat
@@ -38,6 +52,13 @@ ModelImporter:
     2300010: cgaxis_models_59_01_06
     2300012: cgaxis_models_59_01_07
     2300014: default
+    2300016: cgaxis_models_59_01_01_cgaxis_models_59_01_01.002
+    2300018: cgaxis_models_59_01_02_cgaxis_models_59_01_02.002
+    2300020: cgaxis_models_59_01_03_cgaxis_models_59_01_03.002
+    2300022: cgaxis_models_59_01_04_cgaxis_models_59_01_04.002
+    2300024: cgaxis_models_59_01_05_cgaxis_models_59_01_05.002
+    2300026: cgaxis_models_59_01_06_cgaxis_models_59_01_06.002
+    2300028: cgaxis_models_59_01_07_cgaxis_models_59_01_07.002
     3300000: cgaxis_models_59_01_01
     3300002: cgaxis_models_59_01_02
     3300004: cgaxis_models_59_01_03
@@ -46,6 +67,13 @@ ModelImporter:
     3300010: cgaxis_models_59_01_06
     3300012: cgaxis_models_59_01_07
     3300014: default
+    3300016: cgaxis_models_59_01_01_cgaxis_models_59_01_01.002
+    3300018: cgaxis_models_59_01_02_cgaxis_models_59_01_02.002
+    3300020: cgaxis_models_59_01_03_cgaxis_models_59_01_03.002
+    3300022: cgaxis_models_59_01_04_cgaxis_models_59_01_04.002
+    3300024: cgaxis_models_59_01_05_cgaxis_models_59_01_05.002
+    3300026: cgaxis_models_59_01_06_cgaxis_models_59_01_06.002
+    3300028: cgaxis_models_59_01_07_cgaxis_models_59_01_07.002
     4300000: cgaxis_models_59_01_01
     4300002: cgaxis_models_59_01_02
     4300004: cgaxis_models_59_01_03
@@ -54,6 +82,13 @@ ModelImporter:
     4300010: cgaxis_models_59_01_06
     4300012: cgaxis_models_59_01_07
     4300014: default
+    4300016: cgaxis_models_59_01_01_cgaxis_models_59_01_01.002
+    4300018: cgaxis_models_59_01_02_cgaxis_models_59_01_02.002
+    4300020: cgaxis_models_59_01_03_cgaxis_models_59_01_03.002
+    4300022: cgaxis_models_59_01_04_cgaxis_models_59_01_04.002
+    4300024: cgaxis_models_59_01_05_cgaxis_models_59_01_05.002
+    4300026: cgaxis_models_59_01_06_cgaxis_models_59_01_06.002
+    4300028: cgaxis_models_59_01_07_cgaxis_models_59_01_07.002
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -68,6 +103,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_01_cgaxis_models_59_01_01.002Mat
+    second: {fileID: 2100000, guid: 8c8bcb09f3e25ab4e9d7aca4e5c1ea18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_02
     second: {fileID: 2100000, guid: 7470ca933a1156b4c9acf2f3e1be3b45, type: 2}
   - first:
@@ -75,6 +115,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_02Mat
     second: {fileID: 2100000, guid: 0c221b1d9532cc04e9a4eafdd9f50649, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_02_cgaxis_models_59_01_02.002Mat
+    second: {fileID: 2100000, guid: a77b2143f1002d34cba7403d873a6687, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -88,6 +133,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_03_cgaxis_models_59_01_03.002Mat
+    second: {fileID: 2100000, guid: caddb2c72072db345abaea772dbc1a74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_04
     second: {fileID: 2100000, guid: dbc2c1ace9bf96e48a145e78f4d5cccc, type: 2}
   - first:
@@ -95,6 +145,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_04Mat
     second: {fileID: 2100000, guid: cb956f57b9ea07b48b05794c63170a70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_04_cgaxis_models_59_01_04.002Mat
+    second: {fileID: 2100000, guid: 9b52706ee2ebba54aa663004ac23c6d2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -108,6 +163,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_05_cgaxis_models_59_01_05.002Mat
+    second: {fileID: 2100000, guid: dd2691ad6b796ca4aacf37ab2156be0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_06
     second: {fileID: 2100000, guid: e9933228c70662441a3cee21a9647813, type: 2}
   - first:
@@ -118,6 +178,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_06_cgaxis_models_59_01_06.002Mat
+    second: {fileID: 2100000, guid: 7b3d6cd1672f0274bbd348a53579fed1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_07
     second: {fileID: 2100000, guid: 32ea6c61bf4f5454ba5ffef1245ba76a, type: 2}
   - first:
@@ -125,6 +190,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: cgaxis_models_59_01_07Mat
     second: {fileID: 2100000, guid: 596522d3a0c66104dac0605180403ba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_59_01_07_cgaxis_models_59_01_07.002Mat
+    second: {fileID: 2100000, guid: 0d16b8b458a47f24180c73f37d13e73b, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
