@@ -191,6 +191,7 @@ public class InventorySelector : AttachToController {
 	}
 
 	private void EnterMenuMode () {
+		#if UNITY_WSA && UNITY_2017_2_OR_NEWER
 		if (ControllerInfo != null && ControllerInfo.ControllerParent != null) {
 			GameObject controller = ControllerInfo.ControllerParent;
 			if (controller.GetComponentInChildren<ControllerController> () != null) {
@@ -201,9 +202,11 @@ public class InventorySelector : AttachToController {
 				activeHandGrabber.enabled = false;
 			}
 		}
+		#endif
 	}
 
 	private void ExitMenuMode () {
+#if UNITY_WSA && UNITY_2017_2_OR_NEWER
 		if (ControllerInfo != null && ControllerInfo.ControllerParent != null) {
 			GameObject controller = ControllerInfo.ControllerParent;
 			if (controller.GetComponentInChildren<ControllerController> () != null) {
@@ -215,9 +218,10 @@ public class InventorySelector : AttachToController {
 					activeHandGrabber.enabled = true;
 			}
 		}
-	}
+#endif
+    }
 
-	public void SetActiveItemindex (int activeIndex) {
+    public void SetActiveItemindex (int activeIndex) {
 		activeItemindex = activeIndex - displayItemindex;
 		if (activeItemindex < 0)
 			activeItemindex = (itemsCollection.Objects.Count + activeItemindex);

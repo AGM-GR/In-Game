@@ -1,9 +1,7 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
-
 using System;
-using System.Collections;
 using UnityEngine;
 
 #if UNITY_2017_2_OR_NEWER
@@ -55,10 +53,7 @@ namespace HoloToolkit.Unity.InputModule
         public bool EnableRotation = true;
         public bool EnableStrafe = true;
 
-        [Tooltip("Interpolate positions at Teleport")]
-        private bool smoothTeleport = false;
-
-        [Tooltip("Makes sure you don't get put 'on top' of holograms, just on the floor")]
+        [Tooltip("Makes sure you don't get put 'on top' of holograms, just on the floor. If true, your height won't change as a result of a teleport.")]
         public bool StayOnTheFloor = false;
 
         public float RotationSize = 45.0f;
@@ -116,7 +111,6 @@ namespace HoloToolkit.Unity.InputModule
             if (teleportMarker != null)
             {
                 teleportMarker = Instantiate(teleportMarker);
-                teleportMarker.transform.parent = transform;
                 teleportMarker.SetActive(false);
 
                 animationController = teleportMarker.GetComponentInChildren<Animator>();
@@ -256,41 +250,14 @@ namespace HoloToolkit.Unity.InputModule
 
                 if (isTeleportValid)
                 {
-                    RaycastHit hitInfo;
-                    Vector3 hitPos = teleportMarker.transform.position + Vector3.up * (Physics.Raycast(CameraCache.Main.transform.position, Vector3.down, out hitInfo, 5.0f) ? hitInfo.distance : 2.6f);
-
                     fadeControl.DoFade(0.25f, 0.5f, () =>
                     {
-                        if (smoothTeleport)
-                            StartCoroutine(SmoothTeleport(hitPos));
-                        else
-                            InmediateTeleport(hitPos);
+                        SetWorldPosition(teleportMarker.transform.position);
                     }, null);
                 }
 
                 DisableMarker();
             }
-        }
-
-        /// FUNCIONES PROPIAS
-
-        IEnumerator SmoothTeleport(Vector3 hitPoint) {
-            float startTime = Time.unscaledTime;
-            float normalizedTime = 0f;
-            Vector3 currentPosition = transform.position;
-            Vector3 nextPosition;
-
-            while (normalizedTime < 1f) {
-                normalizedTime = (Time.unscaledTime - startTime) / 0.5f;
-                nextPosition = Vector3.MoveTowards(currentPosition, hitPoint, normalizedTime);
-                InmediateTeleport(nextPosition);
-                yield return null;
-                currentPosition = nextPosition;
-            }
-        }
-
-        void InmediateTeleport(Vector3 hitPoint) {
-            SetWorldPosition(hitPoint);
         }
 
         public void DoRotation(float rotationAmount)
@@ -302,7 +269,7 @@ namespace HoloToolkit.Unity.InputModule
                     0.25f, // Fade in time
                     () => // Action after fade out
                     {
-                        InmediateRotation(rotationAmount);
+                        transform.RotateAround(CameraCache.Main.transform.position, Vector3.up, rotationAmount);
                     }, null); // Action after fade in
             }
         }
@@ -311,51 +278,17 @@ namespace HoloToolkit.Unity.InputModule
         {
             if (strafeAmount.magnitude != 0 && !fadeControl.Busy)
             {
-                Vector3 strafeDest = transform.position + (Quaternion.Euler(0, CameraCache.Main.transform.rotation.eulerAngles.y, 0) * strafeAmount);
                 fadeControl.DoFade(
                     0.25f, // Fade out time
                     0.25f, // Fade in time
                     () => // Action after fade out
                     {
-                        StartCoroutine(SmoothStrafe(strafeDest));
-                    //InmediateStrafe(strafeDest);
-                }, null); // Action after fade in
+                        Transform transformToRotate = CameraCache.Main.transform;
+                        transformToRotate.rotation = Quaternion.Euler(0, transformToRotate.rotation.eulerAngles.y, 0);
+                        transform.Translate(strafeAmount, CameraCache.Main.transform);
+                    }, null); // Action after fade in
             }
         }
-
-        void InmediateRotation(float rotationAmount) {
-            transform.RotateAround(CameraCache.Main.transform.position, Vector3.up, rotationAmount);
-        }
-
-        IEnumerator SmoothStrafe(Vector3 strafeDest) {
-            float startTime = Time.unscaledTime;
-            float normalizedTime = 0f;
-            Vector3 nextPosition;
-            Transform transformToRotate = CameraCache.Main.transform;
-            transformToRotate.rotation = Quaternion.Euler(0, transformToRotate.rotation.eulerAngles.y, 0);
-
-            while (normalizedTime < 1f) {
-                normalizedTime = (Time.unscaledTime - startTime) / 0.2f;
-                nextPosition = Vector3.MoveTowards(transform.position, strafeDest, normalizedTime);
-                if (IsStrafePossible(nextPosition))
-                    transform.position = nextPosition;
-                else
-                    break;
-                yield return null;
-            }
-        }
-
-        void InmediateStrafe(Vector3 strafeDest) {
-            Transform transformToRotate = CameraCache.Main.transform;
-            transformToRotate.rotation = Quaternion.Euler(0, transformToRotate.rotation.eulerAngles.y, 0);
-            transform.position = strafeDest;
-        }
-
-        bool IsStrafePossible(Vector3 strafeDest) {
-            RaycastHit rayHit;
-            return (Physics.Raycast(strafeDest + (Vector3.up * 0.5f), Vector3.down, out rayHit, 2f, 1 << LayerMask.NameToLayer("Ground")));
-        }
-        // FINAL FUNCIONES PROPIAS
 
         /// <summary>
         /// Places the player in the specified position of the world
@@ -363,17 +296,27 @@ namespace HoloToolkit.Unity.InputModule
         /// <param name="worldPosition"></param>
         public void SetWorldPosition(Vector3 worldPosition)
         {
-            var originalY = transform.position.y;
-
             // There are two things moving the camera: the camera parent (that this script is attached to)
             // and the user's head (which the MR device is attached to. :)). When setting the world position,
             // we need to set it relative to the user's head in the scene so they are looking/standing where 
             // we expect.
             var newPosition = worldPosition - (CameraCache.Main.transform.position - transform.position);
-            if (StayOnTheFloor)
+
+            // If we're Stationary, we'll need to raycast to estimate our height. In RoomScale, that will be accounted for by the offset between the camera and its parent.
+#if UNITY_2017_2_OR_NEWER
+            if (XRDevice.GetTrackingSpaceType() == TrackingSpaceType.Stationary && !StayOnTheFloor)
+#else
+            if (VRDevice.GetTrackingSpaceType() == TrackingSpaceType.Stationary && !StayOnTheFloor)
+#endif
             {
-                newPosition.y = originalY;
+                RaycastHit hitInfo;
+                newPosition.y += (Physics.Raycast(CameraCache.Main.transform.position, Vector3.down, out hitInfo, 5.0f) ? hitInfo.distance : 1.7f);
             }
+            else
+            {
+                newPosition.y = StayOnTheFloor ? transform.position.y : worldPosition.y;
+            }
+
             transform.position = newPosition;
         }
 
